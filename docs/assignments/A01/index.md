@@ -26,7 +26,11 @@ The primary function of kitchen scissors is to transmit force from the user's ha
 
 Where in model 1, T is torque, F is the force applied and L is the length of the lever perpendicular to that force and In model 2, t is the shear stress, F is the force acting parallel to the surface, and A is the cross-sectional area of the surface. These models work to describe the mechanics of scissors by assuming that the force applied to the handles is almost entirely perpendicular to the blades, the same part of the blades are being used to cut each time (same distance from the pivot point), and that the object being cut has a uniform thickness.
 
+<img width="481" height="640" alt="image" src="https://github.com/user-attachments/assets/bd8ed03f-e26d-45cc-9e91-86644b6c0fcd" />
 
+<img width="481" height="640" alt="image" src="https://github.com/user-attachments/assets/b8fdf904-7f9e-4ec5-8339-f0a32ce29b57" />
+
+Left: the length of the handle (lever arm) dictates the mechanical advantage, reducing the amount of force required to operate the scissors and increasing the force applied to the blades. Right: the profile of each blade allows for more efficient cutting by reducing the surface area, thereby increasing the shear stress on the material being cut.
 
 ## Decide
 
