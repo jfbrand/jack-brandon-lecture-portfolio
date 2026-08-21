@@ -18,6 +18,14 @@ Portfolio example two is from Nathan Hoong. Nathan's portfolio highlights four o
 
 Task B: Product Analysis
 
+Product: Kitchen Scissors
+
+The primary function of kitchen scissors is to transmit force from the user's hand via two opposing handles (acting as levers about a fulcrum point) to blades to cut (shear) through a material. The main physical principles behind scissors is torque and shear stress which can be described by the governing models: 
+
+1. T = F x L and 2. t = F/A
+
+Where in model 1, T is torque, F is the force applied and L is the length of the lever perpendicular to that force and In model 2, t is the shear stress, F is the force acting parallel to the surface, and A is the cross-sectional area of the surface. These models work to describe the mechanics of scissors by assuming that the force applied to the handles is almost entirely perpendicular to the blades, the same part of the blades are being used to cut each time (same distance from the pivot point), and that the object being cut has a uniform thickness.
+
 
 
 ## Decide
