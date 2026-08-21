@@ -30,16 +30,19 @@ Where in model 1, T is torque, F is the force applied and L is the length of the
 
 <img width="481" height="640" alt="image" src="https://github.com/user-attachments/assets/b8fdf904-7f9e-4ec5-8339-f0a32ce29b57" />
 
-Left: the length of the handle (lever arm) dictates the mechanical advantage, reducing the amount of force required to operate the scissors and increasing the force applied to the blades. Right: the profile of each blade allows for more efficient cutting by reducing the surface area, thereby increasing the shear stress on the material being cut.
+Left: the length of the handle (lever arm) dictates the mechanical advantage, reducing the amount of force required to operate the scissors and increasing the force applied to the blades. Note the jaw/gripper built into the handles. Right: the profile of each blade allows for more efficient cutting by reducing the surface area, thereby increasing the shear stress on the material being cut.
 
-Patent number: 
+Patent number: US2131395A
 
-Inventor: 
+Inventor: Voss Arthur
 
-Two alternatives to these scissors would be scissors with
+Two alternatives to kitchen scissors would be scissors without the jaw or with thinner blades. The addition of the jaw/gripper between the two handles allows the scissors to become two tools in one. Taking advantage of the inherent mechanical advantage in the handles acting as levers, the scissors can effectively grip, crack, or open an object. 
 
 ## Decide
 
+1. The portfolio homepage is intended to communicate the field of study/career of the creator, the type of projects, and the organization of the content. The homepage should accomplish these goals in a professional manner, i.e., using engineering language, leaving out superfluous information, and presenting the experience of the creator in a way that could be presented to a potential employer. If an employer from an engineering firm is looking through the portfolio they should be able to immediately learn about the focus, strengths, and experiences of the candidate in order to determine if they are a good fit for the role. It can also tell a lot about the engineer based on its quality and attention to detail: a vague homepage that lacks information can give an impression that the engineer is not detail oriented or well organized.
+
+2. 
 
 ## Communicate
 
