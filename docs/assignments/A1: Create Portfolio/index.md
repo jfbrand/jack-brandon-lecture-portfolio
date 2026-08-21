@@ -1,4 +1,4 @@
-# A1 – [Topic]
+# A1 – Create Portfolio
 
 ## Objective
 
@@ -28,9 +28,11 @@ Where in model 1, T is torque, F is the force applied and L is the length of the
 
 <img width="481" height="640" alt="image" src="https://github.com/user-attachments/assets/bd8ed03f-e26d-45cc-9e91-86644b6c0fcd" />
 
+Above: the length of the handle (lever arm) dictates the mechanical advantage, reducing the amount of force required to operate the scissors and increasing the force applied to the blades. Note the jaw/gripper built into the handles.
+
 <img width="481" height="640" alt="image" src="https://github.com/user-attachments/assets/b8fdf904-7f9e-4ec5-8339-f0a32ce29b57" />
 
-Left: the length of the handle (lever arm) dictates the mechanical advantage, reducing the amount of force required to operate the scissors and increasing the force applied to the blades. Note the jaw/gripper built into the handles. Right: the profile of each blade allows for more efficient cutting by reducing the surface area, thereby increasing the shear stress on the material being cut.
+Above: the profile of each blade allows for more efficient cutting by reducing the surface area, thereby increasing the shear stress on the material being cut.
 
 Patent number: US2131395A
 
