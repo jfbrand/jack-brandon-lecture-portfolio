@@ -1,2 +1,11 @@
 #About Me
-This is how to edit
+
+Welcome to my engineering portfolio! My name is Jack Brandon and I am a mechanical engineering student at the University of North Carolina-Charlotte. 
+
+  Since I was a child, my goal has always been to push the envelope of what is possible through learning and the constant improvement of myself and the things around me. It was always apparent to me that my main interest was in learning about, assembling, and disassembling (sometimes permanently, much to my father's dismay) complex machines to better understand how they function. While I was in high school, I began to feel that I wasn't ready to pursue my education goals quite yet, so I decided to join the military. Although originally intending to be in a more combat-oriented role, the Marine Corps decided I was best suited to doing math and using computers to direct artillery fire. That experience not only gave me a new confidence and discipline that I still carry today, but revealed a hidden talent for mathematics and science that I hadn't fully unlocked earlier in my life. After four years of service, I realized that my passion for cars and all other sorts of machines could become something more than a dream - I just had to apply myself. I knew then that my calling was to study mechanical engineering. Since beginning my studies, I have worked at three different companies as an intern, accruing almost two years of total experience. These opportunities gave me the ability to experience almost every type of company: from the aerospace defense contractor to the industrial equipment supplier. My roles were in process, support, and quality with some design work throughout. Overall, these experiences have helped shape me into a more discerning and confident future engineer and that is something that I plan to bring wherever my career takes me.
+
+What does it mean to defend an engineering decision? 
+
+Engineers are expected to be able to use their reason and understanding of the core principles of engineering to make and defend their decisions. Defending a decision requires knowledge (as much as possible) about the original problem, a logical solution that is supported by a model/data/calculations, and the ability to communicate effectively. I believe that my engineering knowledge is still limited compared to those with more education and experience so I would likely not have the hard skills necessary to fully support or defend a decision I made about a complex problem.
+
+I spent close to 8 hours on this assignment.
