@@ -1,6 +1,5 @@
 site_name: MEGR 2157 – Design Portfolio
 site_description: Design portfolio documentation, built with the Analyze / Decide / Communicate framework
-
 theme:
   name: material
   palette:
@@ -8,13 +7,11 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-
 nav:
   - Home: index.md
   - About Me: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
   - Assignments:
-- Assignments:
     - 'A1: Create Portfolio': 'assignments/A1: Create Portfolio/index.md'
     - 'A2: Design with Basic Stresses': 'assignments/A2: Design with Basic Stresses/index.md'
     - 'A3: Parametric and FEA': 'assignments/A3: Parametric and FEA/index.md'
