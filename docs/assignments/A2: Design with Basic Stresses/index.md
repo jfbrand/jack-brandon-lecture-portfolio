@@ -8,7 +8,7 @@ The goal of this assignment was to practice designing a basic truss while accoun
 
 <img width="832" height="491" alt="image" src="https://github.com/user-attachments/assets/0cd30194-4622-4a71-b6c7-6847749d8705" />
 
-The problem description is displayed above along with the design constraints. Note the asymmetrical loading, roller on the left, and pin connection to the right. The selected load was 30kN for both.
+The problem description is displayed above along with the design constraints. Note the asymmetrical loading, roller on the left, and pin connection to the right. The selected load was 30kN.
 
 ## Decide
 
@@ -37,3 +37,22 @@ Once the reaction forces were solved at A and B, the method of joints could be u
 <img width="271" height="227" alt="image" src="https://github.com/user-attachments/assets/8001c373-053e-4367-b71f-52495b84127d" />
 
 The above table showed the the force (kN) for each member and whether it was in tension or compression.
+
+<img width="461" height="285" alt="image" src="https://github.com/user-attachments/assets/7efc9c40-3643-44e3-bbf7-6be0fa1e7030" />
+
+Next, the minimum cross section had to be calculated using the given information above. The yield strength for A500 steel is a conservative value for a square rectangular section. Given a safety factor of 3.5, the minimum cross section was determined to be 312 mm^2.
+
+<img width="537" height="92" alt="image" src="https://github.com/user-attachments/assets/b25d5ba0-0c78-4c8f-b184-19862b96c67d" />
+
+The mass of the truss (without pins) was then predicted by finding the total volume of the members and multiplying by the density of A500 steel. The predicted mass was 8.13 kg (79.75 N).
+
+<img width="552" height="562" alt="image" src="https://github.com/user-attachments/assets/723f41d1-3c64-4460-98c9-30c7239841b4" />
+
+Lastly, the same was done for the pins. The minimum cross sectional area was calculated to be 81.90 mm^2 given a safety factor of 4. To determine the volume of each pin, the length was estimated to be 35.32 mm which is the width of exactly 2 square trusses together. This is not accurate to the actual design which would actually have one joint with 4 overlapping members and two joints with three overlapping members. Also, the thickness of each member was later changed from the 17.66 mm used here. However, given the instructions to calculate for a single shear and the relative low mass of the pins, this estimate was deemed "good enough". The predicted mass per pin was 22.26 g and the total was 111.3 g.
+
+<img width="908" height="560" alt="Screenshot 2026-09-02 214748" src="https://github.com/user-attachments/assets/335fb691-ba01-453c-80cd-8a71141a16f6" />
+
+
+
+
+
