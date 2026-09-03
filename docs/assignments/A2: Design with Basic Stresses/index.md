@@ -52,7 +52,8 @@ Lastly, the same was done for the pins. The minimum cross sectional area was cal
 
 <img width="908" height="560" alt="Screenshot 2026-09-02 214748" src="https://github.com/user-attachments/assets/335fb691-ba01-453c-80cd-8a71141a16f6" />
 
+Above is the CAD model of my truss design. The material used for the material properties was "steel" as Fusion does not have A500 steel in its material library. However, it is worth noting that their densities are exactly the same at 7850 kg/m^3. The predicted mass of the truss was 7.337 kg compared to my prediction of 8.13 kg. The link to download it is here: https://a360.co/3Un2BsV
 
+**Lesson Learned**
 
-
-
+The main takeaway was just how much time and effort goes into civil engineering. The calculations are time consuming for a simple truss such as this one, and so it is hard to imagine the amount of work that goes into doing the same for full sized bridges and buildings.
