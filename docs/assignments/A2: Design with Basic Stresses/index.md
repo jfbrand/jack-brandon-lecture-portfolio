@@ -54,6 +54,10 @@ Lastly, the same was done for the pins. The minimum cross sectional area was cal
 
 Above is the CAD model of my truss design. The material used for the material properties was "steel" as Fusion does not have A500 steel in its material library. However, it is worth noting that their densities are exactly the same at 7850 kg/m^3. The predicted mass of the truss was 7.337 kg compared to my prediction of 8.13 kg. The link to download it is here: https://a360.co/3Un2BsV
 
+<img width="370" height="447" alt="image" src="https://github.com/user-attachments/assets/1740406a-a4f6-4d40-9fc5-e5b0bc224dc0" />
+
+The pin design. The diameter is 10.21 mm and the length is 35.32 mm.
+
 **Lesson Learned**
 
-The main takeaway was just how much time and effort goes into civil engineering. The calculations are time consuming for a simple truss such as this one, and so it is hard to imagine the amount of work that goes into doing the same for full sized bridges and buildings.
+The main lessons from this assignment were to take an engineering problem, produce a conceptual design, and do the calculations in order to produce a workable prototype in CAD. I found that the whole process is time consuming but highly rewarding and helped me brush up on older concepts that I may need later in my career.
