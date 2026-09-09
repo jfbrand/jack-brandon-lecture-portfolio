@@ -30,6 +30,8 @@ First, I wrote down the knowns and unknowns of the problem. As previously mentio
 
 **Parametric Design**
 
+Link to download file: https://a360.co/4gHHU3w
+
 <img width="1501" height="600" alt="Screenshot 2026-09-08 225559" src="https://github.com/user-attachments/assets/424e6d04-0892-4b85-809a-ed1a4f82969e" />
 
 In Fusion 360, the first step to parametrically designing this beam was assigning values to parameters. This is done by selecting "modify" and then "change parameters". From here parameters could be added and modified. Note that some parameters have units and others are unitless but with a comment to the right showing the units. This was because I discovered that my version of Fusion 360 did not have units for area (in^2). The work around was creating parameters without units when possible and keeping the parameters with correct units as such when necessary. Once complete, I was able to have both the complete modulus of elasticity equation, and the ability to reference the dimension parameters crucial to the design. I will go into more detail later about this process.
@@ -71,3 +73,23 @@ Hole problem: If the bar had a hole on the left where attached it would create a
 The largest issue I came across during this project was solving the problem of not having the correct units for area in Fusion 360 parameters. This took multiple iterations of parameters until I was able to have both the required dimensional parameters for the bar and the variables for the modulus of elasticity equation. What I ended up doing after running into an error for having a unitless area in the equation was divide the OD and ID by 1 inch in the area parameter function. This allowed for the diameters to have units and be referenced for the geometry of the bar but didn't require that area had units since there weas no in^2 units. I was then able to create a third parameter with units for the length made up of the other unitless parameters.
 
 What this taught me was to be creative and persist with solving a problem even when the software is not complete. My workaround, although not perfect, still allowed for parametric modeling to take place. 
+
+I spent roughly 12 hours on this assignment.
+
+**Modify Design Parameters**
+
+Parameters changed:
+Load: 500 -> 1000 lbf
+ID: .50 -> .75 in
+OD: .75 -> 1 in
+
+Prediction: The original length will decrease since the axial load is twice what it was and the cross sectional has increased by a smaller factor. The deflection will be greater than before for the same reasons.
+
+<img width="1916" height="987" alt="image" src="https://github.com/user-attachments/assets/e97ef7ea-d310-45a9-a143-9d31a993164c" />
+
+<img width="1917" height="990" alt="image" src="https://github.com/user-attachments/assets/29ca5e33-c3e4-48cd-aa5f-0d7335dd0ea1" />
+
+Results:
+Length: 44.17 -> 30.92 in
+Deflection: 0.009 in
+Maximum stress: 2.23 -> 3.33 ksi (Still less than the yield strength of aluminum)
