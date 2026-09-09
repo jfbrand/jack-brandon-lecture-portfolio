@@ -24,9 +24,12 @@ Given the above problem statement and given values, I decided on 500 lbf for my 
 
 <img width="632" height="662" alt="image" src="https://github.com/user-attachments/assets/e79405bf-630d-4184-9804-815e604f7968" />
 
+First, I wrote down the knowns and unknowns of the problem. As previously mentioned, the change in length, \delta 
+
 <img width="1021" height="685" alt="Screenshot 2026-09-08 202549" src="https://github.com/user-attachments/assets/1653bd57-ac1a-47ff-ac2d-93dccc4e0cd7" />
 
 <img width="565" height="562" alt="Screenshot 2026-09-08 202641" src="https://github.com/user-attachments/assets/45aa0dbb-2704-4be3-9c40-917091347a1c" />
 
 <img width="1242" height="548" alt="Screenshot 2026-09-08 202805" src="https://github.com/user-attachments/assets/96a4963d-c6ad-493f-b874-f6c4e82eb2f6" />
 
+<img width="1497" height="602" alt="image" src="https://github.com/user-attachments/assets/830463f0-2e33-484b-9563-0611c3c3a043" />
