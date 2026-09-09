@@ -60,4 +60,14 @@ The Von Mises stress map showed a maximum stress of 2,229.64 psi (2.23 ksi) whic
 
 **Design Reflection**
 
+The bar was designed to have a maximum deflection of 0.009 inches with an applied axial load of 500 lbf. After the simulation, the bar was shown to have exactly the same deflection that it was designed for. This was expected since the problem and simulation were in ideal conditions. The problem had an evenly distributed axial load applied to a perfectly constrained beam. The simulation was similarly idealized, using a generic aluminum material without imperfections lending perfect cross section uniformity and no stress concentrations. For this simple problem, I would trust the hand calculated value more because the simulation did introduce some non perfectly axial stress on the bar causing it to have slight bending in the x and y. This was assumed to be some an error inherent to the software as the load and the constraints were both supposed to be distributed perfectly evenly on the faces at the two ends of the bar. Thankfully this error did not carry over to the axial strain (z axis in the deflection map) and was only visually noticeable after adjusting the deformation factor to 2X or 5X. Lastly, without using an exact type of aluminum material in Fusion, the young's modulus could have been slightly different than the value I used in my calculations.
 
+Hole problem: If the bar had a hole on the left where attached it would create a stress concentration. This stress concentration factor (Kt) ranges from 2.0 to 3.0. Given a nominal stress of 2.23 ksi, this would give a maximum stress at the hole of roughly 4-6 ksi. This would still pass the safety factor (yield strength of aluminum).
+
+**Lessons Learned**
+
+<img width="382" height="457" alt="image" src="https://github.com/user-attachments/assets/7f9cb4de-2eac-43b9-bd4d-e7628b60fb6c" />
+
+The largest issue I came across during this project was solving the problem of not having the correct units for area in Fusion 360 parameters. This took multiple iterations of parameters until I was able to have both the required dimensional parameters for the bar and the variables for the modulus of elasticity equation. What I ended up doing after running into an error for having a unitless area in the equation was divide the OD and ID by 1 inch in the area parameter function. This allowed for the diameters to have units and be referenced for the geometry of the bar but didn't require that area had units since there weas no in^2 units. I was then able to create a third parameter with units for the length made up of the other unitless parameters.
+
+What this taught me was to be creative and persist with solving a problem even when the software is not complete. My workaround, although not perfect, still allowed for parametric modeling to take place. 
