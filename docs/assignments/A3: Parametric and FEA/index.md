@@ -16,6 +16,8 @@ From the professor:
 
 <img width="736" height="452" alt="image" src="https://github.com/user-attachments/assets/a6b90bb2-d130-4245-8df6-1c066846eb7e" />
 
+The load is applied axially to the bar that is fixed on one end, creating internal tension forces.
+
 ## Decide
 
 Given the above problem statement and given values, I decided on 500 lbf for my axial load and chose a Young's Modulus of 10x10^6 psi because it is within the range for typical aluminum. For the design and dimensions of the bar I decided on a hollow cylinder/pipe because I was interested to see the affect of the reduced cross sectional area on the axial length. For the outside (OD) and inside (ID) diameters I chose .75 and .5 inches respectively. This gave the pipe a wall thickness of .125 or 1/8 in. 
@@ -48,7 +50,13 @@ The same process as above was performed when extruding the length of the bar.
 
 **FEA**
 
+<img width="1917" height="1018" alt="Screenshot 2026-09-09 151724" src="https://github.com/user-attachments/assets/8df91902-d942-4d4b-943b-bac4b89a9b58" />
 
+The deflection map showed a 0.009 inch deflection of the bar, exactly the same as the it was designed for.
+
+<img width="1917" height="992" alt="Screenshot 2026-09-09 151953" src="https://github.com/user-attachments/assets/38bc7798-f9e9-45a9-808d-6930c29f4355" />
+
+The Von Mises stress map showed a maximum stress of 2,229.64 psi (2.23 ksi) which was well below the given 40 ksi yield strength of aluminum.
 
 **Design Reflection**
 
