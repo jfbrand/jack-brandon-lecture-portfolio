@@ -24,12 +24,18 @@ Given the above problem statement and given values, I decided on 500 lbf for my 
 
 <img width="632" height="662" alt="image" src="https://github.com/user-attachments/assets/e79405bf-630d-4184-9804-815e604f7968" />
 
-First, I wrote down the knowns and unknowns of the problem. As previously mentioned, the change in length, \delta 
+First, I wrote down the knowns and unknowns of the problem. As previously mentioned, the max axial deflection (lowercase delta) was given: 0.009 in. The values of the axial load and Young's Modulus were selected by me. The overall length (L), ID, OD, and weight
 
-<img width="1021" height="685" alt="Screenshot 2026-09-08 202549" src="https://github.com/user-attachments/assets/1653bd57-ac1a-47ff-ac2d-93dccc4e0cd7" />
+<img width="1501" height="600" alt="Screenshot 2026-09-08 225559" src="https://github.com/user-attachments/assets/424e6d04-0892-4b85-809a-ed1a4f82969e" />
 
-<img width="565" height="562" alt="Screenshot 2026-09-08 202641" src="https://github.com/user-attachments/assets/45aa0dbb-2704-4be3-9c40-917091347a1c" />
+<img width="475" height="392" alt="Screenshot 2026-09-08 225305" src="https://github.com/user-attachments/assets/7834d7de-9ee7-4b18-b9ed-11c308545c5e" />
 
-<img width="1242" height="548" alt="Screenshot 2026-09-08 202805" src="https://github.com/user-attachments/assets/96a4963d-c6ad-493f-b874-f6c4e82eb2f6" />
+<img width="443" height="410" alt="Screenshot 2026-09-08 225324" src="https://github.com/user-attachments/assets/de0b38b8-2524-4ed6-a387-238177d09097" />
 
-<img width="1497" height="602" alt="image" src="https://github.com/user-attachments/assets/830463f0-2e33-484b-9563-0611c3c3a043" />
+<img width="397" height="385" alt="Screenshot 2026-09-08 225348" src="https://github.com/user-attachments/assets/12c768ad-6d5e-4731-9184-f9f0b668d5b0" />
+
+<img width="396" height="385" alt="Screenshot 2026-09-08 225401" src="https://github.com/user-attachments/assets/22995cc9-6605-419a-8ea3-e58b3335d458" />
+
+<img width="962" height="642" alt="Screenshot 2026-09-08 225541" src="https://github.com/user-attachments/assets/a1480209-ca25-4167-9e47-8086a9174ce1" />
+
+
