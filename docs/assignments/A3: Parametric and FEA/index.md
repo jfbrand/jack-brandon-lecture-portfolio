@@ -24,9 +24,13 @@ Given the above problem statement and given values, I decided on 500 lbf for my 
 
 <img width="632" height="662" alt="image" src="https://github.com/user-attachments/assets/e79405bf-630d-4184-9804-815e604f7968" />
 
-First, I wrote down the knowns and unknowns of the problem. As previously mentioned, the max axial deflection (lowercase delta) was given: 0.009 in. The values of the axial load and Young's Modulus were selected by me. The overall length (L), ID, OD, and weight
+First, I wrote down the knowns and unknowns of the problem. As previously mentioned, the max axial deflection (lowercase delta) was given: 0.009 in. The values of the axial load and Young's Modulus were selected by me. The overall length (L), ID, and OD of the bar were unknown. I started by isolating the variables in the young's modulus (stress-strain equation). Once that was done I decided to assign values for ID and OD as mentioned previously. I was then able to calculate the cross sectional area leaving me with one unknown variable left, the length of the bar. After plugging in values, I obtained a length of 44.17 inches. 
+
+**Parametric Design**
 
 <img width="1501" height="600" alt="Screenshot 2026-09-08 225559" src="https://github.com/user-attachments/assets/424e6d04-0892-4b85-809a-ed1a4f82969e" />
+
+In Fusion 360, the first step to parametrically designing this beam was assigning values to parameters. This is done by selecting "modify" and then "change parameters". From here parameters could be added and modified. Note that some parameters have units and others are unitless but with a comment to the right showing the units. This was because I discovered that my version of Fusion 360 did not have units for area (in^2). The work around was creating parameters without units when possible and keeping the parameters with correct units as such when necessary. Once complete, I was able to have both the complete modulus of elasticity equation, and the ability to reference the dimension parameters crucial to the design. I will go into more detail later about this process.
 
 <img width="475" height="392" alt="Screenshot 2026-09-08 225305" src="https://github.com/user-attachments/assets/7834d7de-9ee7-4b18-b9ed-11c308545c5e" />
 
@@ -37,5 +41,11 @@ First, I wrote down the knowns and unknowns of the problem. As previously mentio
 <img width="396" height="385" alt="Screenshot 2026-09-08 225401" src="https://github.com/user-attachments/assets/22995cc9-6605-419a-8ea3-e58b3335d458" />
 
 <img width="962" height="642" alt="Screenshot 2026-09-08 225541" src="https://github.com/user-attachments/assets/a1480209-ca25-4167-9e47-8086a9174ce1" />
+
+**FEA**
+
+
+
+**Design Reflection**
 
 
