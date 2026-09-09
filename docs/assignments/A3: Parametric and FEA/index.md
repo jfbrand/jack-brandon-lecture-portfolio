@@ -40,7 +40,11 @@ In Fusion 360, the first step to parametrically designing this beam was assignin
 
 <img width="396" height="385" alt="Screenshot 2026-09-08 225401" src="https://github.com/user-attachments/assets/22995cc9-6605-419a-8ea3-e58b3335d458" />
 
+In the above photos, the base sketch for the profile of the bar was made. The parameters were typed in for the dimensions to the left, resulting in the correct dimension once entered, as seen on the right. 
+
 <img width="962" height="642" alt="Screenshot 2026-09-08 225541" src="https://github.com/user-attachments/assets/a1480209-ca25-4167-9e47-8086a9174ce1" />
+
+The same process as above was performed when extruding the length of the bar.
 
 **FEA**
 
