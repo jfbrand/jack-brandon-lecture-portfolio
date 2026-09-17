@@ -20,14 +20,32 @@ First, a material had to be chosen for the design. I decided to use high impact 
 
 <img width="1645" height="445" alt="image" src="https://github.com/user-attachments/assets/a42239d7-da00-4deb-8c13-d0e5e1fc1dae" />
 
-Next, I had to decide how to solve for the cross sectional area of the 2 features. Given the thickness and width were unconstrained, one had to be chosen while the other was calculated. I decided to set the width (variable "b" in my work) because I wanted to ensure the mount was the correct size for the motor. I chose 28mm for this dimension to account for the diameter of the motor casing. Similarly, I chose an overall length of 32mm for each feature so that motor could fit properly without too much extra material being used.
+Next, I had to decide how to solve for the cross sectional area of the 2 features. Given the thickness and width were unconstrained, one had to be chosen while the other was calculated. I decided to set the width (variable "b" in my work) because I wanted to ensure the mount was the correct size for the motor. I chose 28 mm for this dimension to account for the diameter of the motor casing. Similarly, I chose an overall length of 32 mm for each feature so that motor could fit properly without too much extra material being used.
 
-## Communicate
+## Feature 1
+
+**Designed for Yield Strength**
 
 <img width="657" height="862" alt="image" src="https://github.com/user-attachments/assets/170b32bc-ee3a-44b4-b69a-16907a8c5aa6" />
 
+First the knowns and unknowns were listed for the problem.
+
+Knowns: Yield strength (Sy), force (P), motor shaft length (Lshaft), and safety factor (SF).
+
+Unknowns: Length (L), moment of inertia (I), centroidal distance (c), thickness (h), and width (b).
+
+I then drew a free body diagram and then algebraically solved for h given a b of 28 mm (mentioned earlier in "Decide" section). The result was a thickness of 8.8 mm. 
+
+**Designed for Maximum Deflection**
+
 <img width="657" height="717" alt="image" src="https://github.com/user-attachments/assets/9a19a727-999d-49c9-893f-fe7ad1b44cb2" />
 
+## Feature 2
+
+**Designed for Yield Strength**
+
 <img width="656" height="622" alt="image" src="https://github.com/user-attachments/assets/5eb584a9-52ea-4a78-9d9d-156899fad38f" />
+
+**Designed for Maximum Deflection**
 
 <img width="657" height="627" alt="image" src="https://github.com/user-attachments/assets/a85d8138-ac12-40e6-aff5-c2e972643341" />
