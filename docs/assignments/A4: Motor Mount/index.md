@@ -79,3 +79,12 @@ A free body diagram was drawn, now with the sum of the 2 moments and the max def
 ## Isometric Design Sketch
 
 <img width="295" height="325" alt="image" src="https://github.com/user-attachments/assets/20d06a39-fe4f-46a3-b75d-f7b5a423c243" />
+
+## CAD Model
+
+<img width="692" height="707" alt="image" src="https://github.com/user-attachments/assets/939c74b0-ef22-4a5d-bbdd-6b666cf1b78e" />
+
+<img width="592" height="700" alt="image" src="https://github.com/user-attachments/assets/99ecf646-5c7f-4695-ada6-104248cf4978" />
+
+With added 45 degree support plates to reduce deflection.
+
