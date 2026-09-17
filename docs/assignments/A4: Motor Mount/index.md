@@ -92,6 +92,10 @@ With added 45 degree support plates to reduce deflection.
 
 The parameters used to dimension the model.
 
+## Drawing
+
+<img width="1122" height="740" alt="image" src="https://github.com/user-attachments/assets/103618aa-d592-41d7-a750-df52e8b06602" />
+
 ## Lessons Learned
 
 This project took me over 12 hours to complete.
