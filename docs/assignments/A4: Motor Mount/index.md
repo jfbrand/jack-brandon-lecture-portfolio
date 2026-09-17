@@ -89,5 +89,6 @@ A free body diagram was drawn, now with the sum of the 2 moments and the max def
 With added 45 degree support plates to reduce deflection.
 
 <img width="1502" height="605" alt="image" src="https://github.com/user-attachments/assets/82f462bb-3d59-47f9-bfb1-fb79e407055d" />
-With added 45 degree support plates to reduce deflection.
+
+The parameters used to dimension the model.
 
