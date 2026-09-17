@@ -34,7 +34,7 @@ Knowns: Yield strength (Sy), force (P), motor shaft length (Lshaft), and safety 
 
 Unknowns: Length (L), moment of inertia (I), centroidal distance (c), thickness (h), and width (b).
 
-I then drew a free body diagram and then algebraically solved for h given a b of 28 mm (mentioned earlier in "Decide" section). The result was a thickness of 8.8 mm. 
+I then drew a free body diagram and then algebraically solved for h given a b of 28 mm (mentioned earlier in "Decide" section). The result was a thickness of 8.8 mm. Note that I made the assumption that the feature would react like a cantilever beam hence the equation used here (from the *Machinery's Handbook*).
 
 **Designed for Maximum Deflection**
 
