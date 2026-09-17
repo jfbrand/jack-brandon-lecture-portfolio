@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of this project is to gain experience designing a basic motor mount by calculating the minimum cross sectional area using the yield strength and maximum deflection.
+The goal of this project was to gain experience designing a basic motor mount by calculating the minimum cross sectional area using the yield strength and maximum deflection.
 
 ## Analyze
 
@@ -24,3 +24,10 @@ Next, I had to decide how to solve for the cross sectional area of the 2 feature
 
 ## Communicate
 
+<img width="657" height="862" alt="image" src="https://github.com/user-attachments/assets/170b32bc-ee3a-44b4-b69a-16907a8c5aa6" />
+
+<img width="657" height="717" alt="image" src="https://github.com/user-attachments/assets/9a19a727-999d-49c9-893f-fe7ad1b44cb2" />
+
+<img width="656" height="622" alt="image" src="https://github.com/user-attachments/assets/5eb584a9-52ea-4a78-9d9d-156899fad38f" />
+
+<img width="657" height="627" alt="image" src="https://github.com/user-attachments/assets/a85d8138-ac12-40e6-aff5-c2e972643341" />
