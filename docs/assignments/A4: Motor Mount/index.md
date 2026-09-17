@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of this project was to gain experience designing a basic motor mount by calculating the minimum cross sectional area using the yield strength and maximum deflection.
+The goal of this project was to gain experience designing a basic motor mount by calculating the minimum cross sectional area using the yield strength and maximum deflection equations.
 
 ## Analyze
 
@@ -74,3 +74,8 @@ Knowns: Moment of feature 1 (M1), force (P), overhang distance (used L here beca
 
 Unknowns: thickness (h)
 
+A free body diagram was drawn, now with the sum of the 2 moments and the max deflection. Because of the second moment, the equation had another component added, the pure moment due to the force (P) acting perpendicular to the overhang. The result was a thickness of 5.48 mm. Since 10.72 > 5.48, 10.72 mm would become the governing dimension for the thickness of feature 2.
+
+## Isometric Design Sketch
+
+<img width="295" height="325" alt="image" src="https://github.com/user-attachments/assets/20d06a39-fe4f-46a3-b75d-f7b5a423c243" />
