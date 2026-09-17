@@ -32,9 +32,9 @@ Similarly, I chose an overall length (L) of 32 mm for each feature so that motor
 
 First the knowns and unknowns were listed for the problem:
 
-Knowns: Yield strength (Sy), force (P), motor shaft length (Lshaft), and safety factor (SF).
+Knowns: Yield strength (Sy), force (P), motor shaft length (Lshaft), safety factor (SF)
 
-Unknowns: Length (L), moment of inertia (I), centroidal distance (c), thickness (h), and width (b).
+Unknowns: Length (L), moment of inertia (I), centroidal distance (c), thickness (h), width (b)
 
 I then drew a free body diagram and algebraically solved for h given a b of 28 mm (mentioned earlier in "Decide" section). The result was a thickness of 8.8 mm. Note that I made the assumption that the feature would react like a cantilever beam hence the equation used here (from the *Machinery's Handbook*).
 
@@ -44,9 +44,9 @@ I then drew a free body diagram and algebraically solved for h given a b of 28 m
 
 Same as before, the knowns and unknowns were listed for the problem:
 
-Knowns: Moment (M), modulus of elasticity (E), moment of inertia (I), max deflection (δmax), and width (b).
+Knowns: Moment (M), modulus of elasticity (E), moment of inertia (I), max deflection (δmax), width (b)
 
-Unknowns: Length (L) and thickness (h). 
+Unknowns: Length (L), thickness (h)
 
 A free body diagram was drawn representing the moment and max deflection. Then, h was again solved for algebraically given a length of 32 mm. The result was a thickness of 11.8mm. Since 11.8mm > 8.8mm, 11.8 mm would become the governing dimension for the thickness of feature 1.
 
@@ -58,12 +58,19 @@ A free body diagram was drawn representing the moment and max deflection. Then, 
 
 Again the knowns and unknowns were listed for the problem:
 
-Knowns: Yield strength (Sy), moment of feature 1 (M1), width (b), and safety factor (SF).
+Knowns: Yield strength (Sy), moment of feature 1 (M1), width (b), safety factor (SF)
 
-Unknowns: Overhang distance of feature 2 from wall (d_overhang), moment of feature 2 (M2), and thickness (h).
+Unknowns: Overhang distance of feature 2 from wall (d_overhang), moment of feature 2 (M2), thickness (h)
 
-
+A free body diagram was drawn for feature 2 which was fixed to a wall but had an unknown overhang on one end. This overhang introduced another moment due to the force (P) acting perpendicular to the overhang (d_overhang). I then took the combined moments from fixture 1 and 2 and plugged the total into the equation for yield strength from earlier. The result was a thickness of 10.72 mm.
 
 **Designed for Maximum Deflection**
 
 <img width="657" height="627" alt="image" src="https://github.com/user-attachments/assets/a85d8138-ac12-40e6-aff5-c2e972643341" />
+
+Once more, the knowns and unknowns:
+
+Knowns: Moment of feature 1 (M1), force (P), overhang distance (used L here because it was easier), max deflection (δmax)
+
+Unknowns: thickness (h)
+
