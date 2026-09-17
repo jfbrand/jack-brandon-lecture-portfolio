@@ -92,3 +92,6 @@ With added 45 degree support plates to reduce deflection.
 
 The parameters used to dimension the model.
 
+## Lessons Learned
+
+This project took me over 12 hours to complete.
