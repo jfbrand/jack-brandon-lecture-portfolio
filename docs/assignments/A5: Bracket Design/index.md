@@ -10,35 +10,33 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="480" height="450" alt="image" src="https://github.com/user-attachments/assets/e11108d0-7f21-47cd-b65b-d7a3dc14227a" />
 
-
-
 ## Calculating Dimensions
 
 **Designing for Stress**
 
 <img width="482" height="702" alt="image" src="https://github.com/user-attachments/assets/13053609-e6d0-457c-bfa2-6776e9ecc10c" />
 
-First, 
+First, an intial sketch was drawn of the different features and the dimensions of the T bar. For each feature, the knowns and unknowns were listed, as well as the assumptions.
 
 <img width="460" height="757" alt="image" src="https://github.com/user-attachments/assets/569d135d-9877-4d3f-8a02-b345a391fbaa" />
 
-
+Feature A was solved for stress first by treating it as a cantilever beam with a distributed load, the dimension being solved for was the radius (r). The result was 0.38 in.
 
 <img width="456" height="605" alt="image" src="https://github.com/user-attachments/assets/79a482c2-9479-48f3-a859-4456854e7529" />
 
-
+Similarly feature B was solved for stress by treating it as an axially loaded beam, the dimension being solved for was the thickness (t). The result was 0.15 in. 
 
 <img width="462" height="752" alt="image" src="https://github.com/user-attachments/assets/2a8dc636-2459-42ff-98b1-8eda0cfb50b3" />
 
-
+Feature C was solved for stress by treating it as a simply supported beam with a central load. The dimension being solved for was the height (d). The result was 0.68 in.
 
 <img width="492" height="777" alt="image" src="https://github.com/user-attachments/assets/0588e6bb-a974-4a19-a260-206797a4315b" />
 
-
+Feature D was also treated as an axially loaded beam. The dimension being solved for was the width (w). The result was 0.082 in.
 
 <img width="465" height="757" alt="image" src="https://github.com/user-attachments/assets/af876546-e6d3-4330-b6e3-f3bcd9f1b781" />
 
-
+Feature E was solved for stress by treating it as a cantilever beam with a distributed load. The dimension being solved for was the height (d). The result was 0.43 in. 
 
 **Designing for Stiffness**
 
