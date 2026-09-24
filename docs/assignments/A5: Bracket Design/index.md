@@ -28,7 +28,7 @@ First,
 
 
 
-<img width="481" height="776" alt="image" src="https://github.com/user-attachments/assets/bcf014c2-ac23-4c50-9f2e-39464602eef3" />
+
 
 
 
