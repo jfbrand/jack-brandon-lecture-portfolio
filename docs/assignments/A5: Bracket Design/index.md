@@ -8,7 +8,9 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="817" height="380" alt="image" src="https://github.com/user-attachments/assets/f12ca92d-dd45-4d17-9373-d0cf8f2d3521" />
 
-<img width="552" height="497" alt="image" src="https://github.com/user-attachments/assets/5c69475a-b668-4c0b-98b7-48ace059cd62" />
+<img width="480" height="450" alt="image" src="https://github.com/user-attachments/assets/e11108d0-7f21-47cd-b65b-d7a3dc14227a" />
+
+
 
 ## Calculating Dimensions
 
@@ -16,7 +18,7 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="482" height="702" alt="image" src="https://github.com/user-attachments/assets/13053609-e6d0-457c-bfa2-6776e9ecc10c" />
 
-
+First, 
 
 <img width="460" height="757" alt="image" src="https://github.com/user-attachments/assets/569d135d-9877-4d3f-8a02-b345a391fbaa" />
 
@@ -32,11 +34,13 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="462" height="742" alt="image" src="https://github.com/user-attachments/assets/6eff45d8-ba8d-4a59-8d84-6945aa350f3b" />
 
-**Designing for Stiffness**
+
 
 <img width="465" height="757" alt="image" src="https://github.com/user-attachments/assets/af876546-e6d3-4330-b6e3-f3bcd9f1b781" />
 
 
+
+**Designing for Stiffness**
 
 <img width="460" height="662" alt="image" src="https://github.com/user-attachments/assets/89fb1fa4-0f7e-4978-915f-26d84fe0e60d" />
 
