@@ -42,21 +42,23 @@ Feature E was solved for stress by treating it as a cantilever beam with a distr
 
 <img width="460" height="662" alt="image" src="https://github.com/user-attachments/assets/89fb1fa4-0f7e-4978-915f-26d84fe0e60d" />
 
-
+Following the stress calculations, the same features were analyzed again for stiffness. The knowns and unknowns were written for each problem once again. The assumptions were not restated as they did not change and neither did the dimensions being solved for. The result for feature A was a radius of 0.15. 0.38 in. from the stress analysis remained the governing dimension.
 
 <img width="462" height="670" alt="image" src="https://github.com/user-attachments/assets/856c7adc-18e0-4ba7-9791-60af9799a8f8" />
 
-
+The result for feature B was a thickness of 0.014 in. 0.15 in. from the stress analysis remained the governing dimension.
 
 <img width="470" height="697" alt="image" src="https://github.com/user-attachments/assets/46942638-d20e-4696-a186-b02529cff75e" />
 
-
+The result for feature C was a height of 0.31 in. 0.68 in. from the stress analysis remained the governing dimension. 
 
 <img width="462" height="637" alt="image" src="https://github.com/user-attachments/assets/cc5def1b-bb4f-466b-b677-447e811c38a5" />
 
-
+The result for feature D was a width of 0.006 in. 0.082 in. from the stress analysis remained the governing dimension.
 
 <img width="491" height="702" alt="image" src="https://github.com/user-attachments/assets/80c7c38b-3b84-43f3-b0fc-f2589eefc072" />
+
+The result for feature E was a height of 0.18 in. 0.43 in. from the stress analysis remained the governing dimension.
 
 ## Drawings
 
