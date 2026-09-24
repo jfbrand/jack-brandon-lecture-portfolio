@@ -80,11 +80,11 @@ After deciding the length and width of the link, the thickness (t) could be comp
 
 **Fit for Feature A shaft**
 
-For feature A, an ISO H7 hole with a g6 shaft is ideal. The tolerances are 0.76 - 0.7608".
+For feature A, an ISO H7 hole with a g6 shaft would be ideal. The tolerances are 0.76 - 0.7608". In order to find the tolerances for this fit, I first referred to the ISO fit table and found the shaft and hole fit that was closest to a running /sliding fit. Once I found that, I plugged that into a helpful calculator that I found along with the nominal diameter of the shaft in order to get the tolerance range.
 
 **Fit for 1 in. Diameter Shaft**
 
-For the 1 inch diameter shaft, an ISO H7 hole with a k6 shaft would be ideal. The tolerances are 1 - 1.0008".
+For the 1 inch diameter shaft, an ISO H7 hole with a k6 shaft would be ideal. The tolerances are 1 - 1.0008". Similar to before, I referred to the ISO fit table and found the closest fit to one that requires light assembly pressure.  Once again, I plugged that into the calculator along with the nominal diameter of the shaft to get the tolerance range.
 
 Sources: 
 
