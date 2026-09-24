@@ -60,6 +60,11 @@ First,
 
 <img width="491" height="702" alt="image" src="https://github.com/user-attachments/assets/80c7c38b-3b84-43f3-b0fc-f2589eefc072" />
 
+## Drawings
+
+<img width="1086" height="725" alt="image" src="https://github.com/user-attachments/assets/b6293c49-1a9c-4ab6-bd2a-2b015851cae4" />
+
+<img width="1117" height="685" alt="image" src="https://github.com/user-attachments/assets/db1efb7e-b39d-485e-9df3-8024c6f46664" />
 
 ## Lessons Learned
 
