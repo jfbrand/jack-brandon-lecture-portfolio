@@ -10,12 +10,9 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="552" height="497" alt="image" src="https://github.com/user-attachments/assets/5c69475a-b668-4c0b-98b7-48ace059cd62" />
 
+## Calculating Dimensions
 
-## Decide
-
-
-
-## Communicate
+**Designing for Stress**
 
 <img width="482" height="702" alt="image" src="https://github.com/user-attachments/assets/13053609-e6d0-457c-bfa2-6776e9ecc10c" />
 
@@ -35,7 +32,7 @@ The goal of this project was to design a component by assigning dimensions to fe
 
 <img width="462" height="742" alt="image" src="https://github.com/user-attachments/assets/6eff45d8-ba8d-4a59-8d84-6945aa350f3b" />
 
-
+**Designing for Stiffness**
 
 <img width="465" height="757" alt="image" src="https://github.com/user-attachments/assets/af876546-e6d3-4330-b6e3-f3bcd9f1b781" />
 
