@@ -68,4 +68,25 @@ The result for feature E was a height of 0.18 in. 0.43 in. from the stress analy
 
 ## Lessons Learned
 
+The dimensions were fully governed by the stress analysis in this project. I was surprised that not a single dimension solved for using max deflection was larger than the one using yield strength. I assume this is because of the effect of the safety factor and the relatively large max deflection of 0.005 (5 thou). One mistake I made early on was solving for the depth of feature C instead of letting it equal a set length and then solving for the height. The first attempt lead to an extremely thin overall geometry that I think would have not been as stable in practical use. This highlighted to me the importance of strategically choosing which variables to solve for and which ones to constrain. In the instance where the height of C mattered, it would have made sense to do it the way I did originally, but that wasn't the case here. Also, I forgot to account for the tolerances for a,b,c. Luckily, these would have very little effect, if at all on the results in my calculations, but for the modeling stage of the design process, it will be necessary to go back and double check that those dimensions will have the correct clearances. Lastly, the assumption of feature B and feature D being axially loaded cause the geometry of those features to have relatively small cross sections. In reality, due to the moments acting on those two features, the cross sectional area would have had to be larger to account for this. 
 
+## Fits
+
+<img width="457" height="782" alt="image" src="https://github.com/user-attachments/assets/d9ecd32d-6b1a-4bb9-9fc0-b47a359cafad" />
+
+<img width="465" height="652" alt="image" src="https://github.com/user-attachments/assets/53820688-ceec-4de4-bf1a-38dad0225447" />
+
+After deciding the length and width of the link, the thickness (t) could be computed. The result was 0.07 in for the stress analysis and 0.01 in for the stiffness analysis respectively. Once again, the stress analysis produced the governing dimension. 
+
+**Fit for Feature A shaft**
+
+For feature A, an ISO H7 hole with a g6 shaft is ideal. The tolerances are 0.76 - 0.7608".
+
+**Fit for 1 in. Diameter Shaft**
+
+For the 1 inch diameter shaft, an ISO H7 hole with a k6 shaft would be ideal. The tolerances are 1 - 1.0008".
+
+Sources: 
+
+1. https://www.simplybearings.com/pages/faq-iso-286-limits-and-fits-reference?srsltid=AU7gw4UFfB1q_tH_Fb7ubHIMuCYa8_jFdkdc9cx4ZHT7mC-9t_upf2Dx&shpxid=36617a5b-4e01-4357-be69-a3f6ce14769b
+2. https://www.machiningdoctor.com/calculators/tolerances/
