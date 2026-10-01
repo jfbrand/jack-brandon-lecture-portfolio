@@ -38,6 +38,8 @@ Feature A was then extruded to the depth of the bracket, d.
 
 The completed model of the bracket.
 
+[Download the Model Here](https://a360.co/4hWGmmI)
+
 ## Drawing
 
 <img width="1115" height="722" alt="image" src="https://github.com/user-attachments/assets/d7d61fbd-2b0e-4bf6-91ff-eca94dde752d" />
@@ -71,6 +73,8 @@ The edges were filleted to match the design concept.
 <img width="582" height="632" alt="image" src="https://github.com/user-attachments/assets/0e0dd5aa-4746-48f5-883a-866e510fd0a6" />
 
 The completed model of the link.
+
+[Download the Model Here](https://a360.co/4hG3wwx)
 
 **Drawing**
 
