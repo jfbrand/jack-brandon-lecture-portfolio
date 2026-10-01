@@ -40,13 +40,13 @@ The completed model of the bracket.
 
 ## Drawing
 
-<img width="1067" height="692" alt="image" src="https://github.com/user-attachments/assets/ec5a077a-f50c-47d4-9d76-70f88758f62e" />
+<img width="1115" height="722" alt="image" src="https://github.com/user-attachments/assets/d7d61fbd-2b0e-4bf6-91ff-eca94dde752d" />
 
 ## Reflections
 
 As mentioned earlier, all of the governing dimensions for this model were obtained by designing for strength. One example of of this was the dimension for the width of feature D. The feature was assumed to be axially loaded and so the equation to solve for the width was simply yield strength/safety factor = force/area. I then isolated the width variable and entered that equation into CAD. The result was 0.0617 in. This dimension is mathematically correct when solving for the cross sectional area of the feature while its only axially loaded. However, it is clear that in reality this feature (and a couple others in this design) would undergo bending moments as well. The Calculated width would simply be far too narrow for a 1000 lbf load on the bracket. For the purpose of this assignment, I decided to not change the dimension manually as I believed that would go against the intent.
 
-None of the dimensions received a tighter tolerance as it was not necessary. The only features that maintained tight tolerances were the internal dimensions that would interact with the T-beam. The dimensions were intentionally kept loose throughout the rest of the bracket to make it more manufacturable and because there were no other fits needing tighter tolerances.
+Only one of the features, A, required a tighter tolerance due to interfacing with the link. The desired fit was a running sliding fit. The only other features that maintained tight tolerances were the internal dimensions that would interact with the T-beam. The dimensions were intentionally kept loose throughout the rest of the bracket to make it more manufacturable and because there were no other fits needing tighter tolerances.
 
 ## 2157
 
@@ -78,3 +78,6 @@ The completed model of the link.
 
 **Reflections**
 
+The important takeaway is determining the desired fit before choosing tolerances of both of the parts. This requires careful attention to both the tolerances themselves but also the direction of the deviation. For example, the deviation should be +.000x for a hole and -.000x for a shaft in order to ensure that there is no interference (unless desired).
+
+Lastly dimensions communicate design intent by showing where manufacturers need to prioritize their accuracy/precision. If a part has an intended function that requires a tight or loose fit, manufacturers can discern this by reading the drawing and seeing the tolerances.
