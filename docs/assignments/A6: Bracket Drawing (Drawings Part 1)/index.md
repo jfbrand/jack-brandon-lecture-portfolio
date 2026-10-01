@@ -44,6 +44,10 @@ The completed model of the bracket.
 
 ## Reflections
 
+As mentioned earlier, all of the governing dimensions for this model were obtained by designing for strength. One example of of this was the dimension for the width of feature D. The feature was assumed to be axially loaded and so the equation to solve for the width was simply yield strength/safety factor = force/area. I then isolated the width variable and entered that equation into CAD. The result was 0.0617 in. This dimension is mathematically correct when solving for the cross sectional area of the feature while its only axially loaded. However, it is clear that in reality this feature (and a couple others in this design) would undergo bending moments as well. The Calculated width would simply be far too narrow for a 1000 lbf load on the bracket. For the purpose of this assignment, I decided to not change the dimension manually as I believed that would go against the intent.
+
+None of the dimensions received a tighter tolerance as it was not necessary. The only features that maintained tight tolerances were the internal dimensions that would interact with the T-beam. The dimensions were intentionally kept loose throughout the rest of the bracket to make it more manufacturable and because there were no other fits needing tighter tolerances.
+
 ## 2157
 
 **Parametric Design**
@@ -70,7 +74,7 @@ The completed model of the link.
 
 **Drawing**
 
-<img width="1100" height="712" alt="image" src="https://github.com/user-attachments/assets/98833d15-4419-4af8-af46-7e35b6d446ce" />
+<img width="1097" height="712" alt="image" src="https://github.com/user-attachments/assets/9e039c04-21fa-41bc-80e6-5dbb55c6440e" />
 
 **Reflections**
 
