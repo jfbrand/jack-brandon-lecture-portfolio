@@ -70,5 +70,7 @@ The completed model of the link.
 
 **Drawing**
 
+<img width="1100" height="712" alt="image" src="https://github.com/user-attachments/assets/98833d15-4419-4af8-af46-7e35b6d446ce" />
+
 **Reflections**
 
