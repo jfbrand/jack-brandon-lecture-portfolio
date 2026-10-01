@@ -48,6 +48,26 @@ The completed model of the bracket.
 
 **Parametric Design**
 
+<img width="1622" height="800" alt="image" src="https://github.com/user-attachments/assets/ab15186c-d951-4830-8e92-f4df0bec70a4" />
+
+The parameters for the model of the link. Note that the length and width were chosen to accommodate the two diameters. The governing dimension for the thickness of the link was obtained by designing for strength. The diameter of the largest hole was included in the equation to account for the part of the link with the least cross sectional area.
+
+<img width="617" height="600" alt="image" src="https://github.com/user-attachments/assets/88fd471c-774f-4d47-99bc-09a6fab5bfd3" />
+
+The sketch of the geometry of the link. Holes were placed strategically to ensure .25 in of material between the top and bottom edges of the link and the circumference of the holes.
+
+<img width="607" height="657" alt="image" src="https://github.com/user-attachments/assets/b5cd7429-dc11-4399-a414-22db1f3f1bcb" />
+
+The link was extruded to the thickness, t, calculated earlier.
+
+<img width="532" height="637" alt="image" src="https://github.com/user-attachments/assets/6ffc2c50-4c9d-47db-9197-62b57cb3f2a9" />
+
+The edges were filleted to match the design concept.
+
+<img width="582" height="632" alt="image" src="https://github.com/user-attachments/assets/0e0dd5aa-4746-48f5-883a-866e510fd0a6" />
+
+The completed model of the link.
+
 **Drawing**
 
 **Reflections**
