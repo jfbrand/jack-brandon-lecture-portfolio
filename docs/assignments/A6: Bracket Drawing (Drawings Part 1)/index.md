@@ -40,7 +40,7 @@ The completed model of the bracket.
 
 ## Drawing
 
-<img width="1067" height="692" alt="image" src="https://github.com/user-attachments/assets/b5e8f80d-b2c9-43a6-a8d4-f023b7c027da" />
+<img width="1067" height="692" alt="image" src="https://github.com/user-attachments/assets/ec5a077a-f50c-47d4-9d76-70f88758f62e" />
 
 ## Reflections
 
