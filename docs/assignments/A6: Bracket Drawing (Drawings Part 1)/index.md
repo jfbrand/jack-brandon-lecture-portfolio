@@ -30,9 +30,17 @@ Feature B was extruded to 1.5 in (not a calculated value/parameter since it was 
 
 Feature A was sketched using the parameter for the diameter of feature A, d_A.
 
+<img width="642" height="637" alt="image" src="https://github.com/user-attachments/assets/69de361e-20f1-4d1e-9c69-fe2f6844bae8" />
 
+Feature A was then extruded to the depth of the bracket, d.
+
+<img width="540" height="677" alt="image" src="https://github.com/user-attachments/assets/8170b3b2-1b7c-4fd5-8d43-d46d69be7a36" />
+
+The completed model of the bracket.
 
 ## Drawing
+
+
 
 ## Reflections
 
