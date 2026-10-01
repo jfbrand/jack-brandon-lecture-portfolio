@@ -12,7 +12,7 @@ Here was the parameters used in the model for the bracket. Every value was eithe
 
 <img width="850" height="641" alt="image" src="https://github.com/user-attachments/assets/8aa19c70-3b93-4b65-85ec-182dcb6dcbdd" />
 
-Here was the overall geometry of the bracket. Note the "fx:" before each value, showing that a parameter was being referred to in the sketch.
+Here was the overall geometry of the bracket. Note the "fx:" before each value, showing that a parameter was being referred to in the sketch. Clearly, the sides are too thin due to the assumption that they were experiencing axial stress only.
 
 <img width="765" height="640" alt="image" src="https://github.com/user-attachments/assets/8bf5d3ef-9292-42f1-b7fe-30060c392fa4" />
 
