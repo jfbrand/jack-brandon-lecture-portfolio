@@ -47,6 +47,11 @@ The objectives from the professor:
 
 **Fine Mesh**
 
+<img width="1087" height="605" alt="image" src="https://github.com/user-attachments/assets/47734cf6-883c-4987-a750-7eedefccedd0" />
+
+<img width="1062" height="602" alt="image" src="https://github.com/user-attachments/assets/a210ef56-5c26-445e-bc1d-555160b9c186" />
+
+<img width="1066" height="605" alt="image" src="https://github.com/user-attachments/assets/2bae5b5d-31aa-4943-a875-8ed4abf5b0f5" />
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
