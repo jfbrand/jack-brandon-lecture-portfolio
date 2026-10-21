@@ -33,15 +33,15 @@ The objectives from the professor:
 
 <img width="1081" height="605" alt="Screenshot 2026-10-20 212443" src="https://github.com/user-attachments/assets/4b41e31b-972b-4237-8f47-e33ec1523312" />
 
-<img width="357" height="578" alt="Screenshot 2026-10-20 214702" src="https://github.com/user-attachments/assets/bcce4459-a04c-4988-8739-a56f501be376" />
 
-<img width="1162" height="583" alt="Screenshot 2026-10-20 214853" src="https://github.com/user-attachments/assets/ba192372-ba21-4c24-9a55-fbf39a24eff0" />
 
-<img width="1143" height="580" alt="Screenshot 2026-10-20 214901" src="https://github.com/user-attachments/assets/f7289406-9886-4c9b-910b-eacabf646662" />
 
-<img width="1167" height="582" alt="Screenshot 2026-10-20 214912" src="https://github.com/user-attachments/assets/f1091118-9ed6-4bed-b3d3-ed955b0740c2" />
 
 **Medium Mesh**
+
+<img width="1170" height="548" alt="Screenshot 2026-10-20 221254" src="https://github.com/user-attachments/assets/53483747-9d1f-4550-9e4c-ab4b74919f47" />
+
+<img width="1158" height="558" alt="Screenshot 2026-10-20 221322" src="https://github.com/user-attachments/assets/ef1e21d9-749e-4240-b7fd-67efe033c623" />
 
 **Fine Mesh**
 
