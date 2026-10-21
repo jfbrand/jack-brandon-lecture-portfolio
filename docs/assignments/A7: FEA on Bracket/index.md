@@ -45,6 +45,8 @@ The objectives from the professor:
 
 <img width="1158" height="558" alt="Screenshot 2026-10-20 221322" src="https://github.com/user-attachments/assets/ef1e21d9-749e-4240-b7fd-67efe033c623" />
 
+The displacement with the medium mesh was greater than 7% different than the course mesh. Due to there not being convergence, I moved on to the fine mesh.
+
 **Fine Mesh**
 
 <img width="1087" height="605" alt="image" src="https://github.com/user-attachments/assets/47734cf6-883c-4987-a750-7eedefccedd0" />
