@@ -53,6 +53,12 @@ The objectives from the professor:
 
 <img width="1066" height="605" alt="image" src="https://github.com/user-attachments/assets/2bae5b5d-31aa-4943-a875-8ed4abf5b0f5" />
 
+## Outer Loop
+
+**Design II**
+
+**Design III**
+
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
 | Max Stress & Location | 234,472.509 psi - bottom beam |    |     |
