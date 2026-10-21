@@ -43,8 +43,6 @@ The objectives from the professor:
 
 <img width="1167" height="582" alt="Screenshot 2026-10-20 214912" src="https://github.com/user-attachments/assets/f1091118-9ed6-4bed-b3d3-ed955b0740c2" />
 
-<img width="1190" height="567" alt="Screenshot 2026-10-20 215004" src="https://github.com/user-attachments/assets/e3b27ea3-5e08-4677-99e0-aac28543df74" />
-
 **Medium Mesh**
 
 **Fine Mesh**
