@@ -33,9 +33,9 @@ The objectives from the professor:
 
 <img width="1081" height="605" alt="Screenshot 2026-10-20 212443" src="https://github.com/user-attachments/assets/4b41e31b-972b-4237-8f47-e33ec1523312" />
 
+<img width="1121" height="550" alt="Screenshot 2026-10-20 221843" src="https://github.com/user-attachments/assets/7be94a9d-14f8-4c8f-a360-1091c2c0facc" />
 
-
-
+<img width="1102" height="545" alt="Screenshot 2026-10-20 221902" src="https://github.com/user-attachments/assets/50b4a36f-2825-4e7a-87d6-7441d10e9f28" />
 
 **Medium Mesh**
 
