@@ -39,6 +39,8 @@ The objectives from the professor:
 
 **Medium Mesh**
 
+<img width="1133" height="552" alt="Screenshot 2026-10-20 220940" src="https://github.com/user-attachments/assets/7214f0e4-9007-4599-8115-a287bcb2f383" />
+
 <img width="1170" height="548" alt="Screenshot 2026-10-20 221254" src="https://github.com/user-attachments/assets/53483747-9d1f-4550-9e4c-ab4b74919f47" />
 
 <img width="1158" height="558" alt="Screenshot 2026-10-20 221322" src="https://github.com/user-attachments/assets/ef1e21d9-749e-4240-b7fd-67efe033c623" />
