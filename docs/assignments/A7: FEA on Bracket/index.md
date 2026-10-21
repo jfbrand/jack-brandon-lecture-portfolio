@@ -6,7 +6,7 @@ The goal of this assignment was to modify the bracket from A5 and A6 using FEA a
 
 ## Analyze
 
-|          | Design 4 | Design 3 | Design 4 |
+|          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
 | Max Stress & Location |   |    |     |
 | Max Deflection & Location  |   |    |     |
