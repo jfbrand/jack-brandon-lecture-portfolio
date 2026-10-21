@@ -35,8 +35,6 @@ The objectives from the professor:
 
 <img width="357" height="578" alt="Screenshot 2026-10-20 214702" src="https://github.com/user-attachments/assets/bcce4459-a04c-4988-8739-a56f501be376" />
 
-<img width="375" height="290" alt="Screenshot 2026-10-20 212500" src="https://github.com/user-attachments/assets/1f6c8911-2182-4583-8ccb-ad0db86e67a2" />
-
 <img width="1162" height="583" alt="Screenshot 2026-10-20 214853" src="https://github.com/user-attachments/assets/ba192372-ba21-4c24-9a55-fbf39a24eff0" />
 
 <img width="1143" height="580" alt="Screenshot 2026-10-20 214901" src="https://github.com/user-attachments/assets/f7289406-9886-4c9b-910b-eacabf646662" />
