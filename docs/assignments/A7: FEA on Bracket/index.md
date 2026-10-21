@@ -73,7 +73,7 @@ The displacement with the medium mesh was greater than 7% different than the cou
 | Max Stress & Location | 234,472.509 psi - bottom beam |    |     |
 | Max Deflection & Location  | 6.144 in - left beam |    |     |
 | Mass | 0.889 lbm |    |     |
-| Safety Factor |    |     |     |
+| Safety Factor | 0.128 |     |     |
 | Number of Elements |    |    |    |
 
 ## Communicate
