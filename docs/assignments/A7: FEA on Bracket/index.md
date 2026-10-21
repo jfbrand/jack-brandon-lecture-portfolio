@@ -55,9 +55,9 @@ The objectives from the professor:
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
-| Max Stress & Location |   |    |     |
-| Max Deflection & Location  |   |    |     |
-| Mass |    |    |     |
+| Max Stress & Location | 234,472.509 psi - bottom beam |    |     |
+| Max Deflection & Location  | 6.144 in - left beam |    |     |
+| Mass | 0.889 lbm |    |     |
 | Safety Factor |    |     |     |
 | Number of Elements |    |    |    |
 
