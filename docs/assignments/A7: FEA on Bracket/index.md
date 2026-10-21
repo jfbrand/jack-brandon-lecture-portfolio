@@ -21,6 +21,36 @@ The objectives from the professor:
 
 <img width="477" height="515" alt="image" src="https://github.com/user-attachments/assets/535959c7-4077-460b-b668-1a50876752d7" />
 
+## Preprocessing
+
+<img width="382" height="552" alt="Screenshot 2026-10-20 215202" src="https://github.com/user-attachments/assets/c2d69e52-ff51-48d8-8a94-d38d8603968f" />
+
+<img width="1175" height="662" alt="Screenshot 2026-10-20 211301" src="https://github.com/user-attachments/assets/e601c9d2-6e0c-4042-9d7f-5d989abd27e8" />
+
+## Inner Loop
+
+**Coarse Mesh**
+
+<img width="1081" height="605" alt="Screenshot 2026-10-20 212443" src="https://github.com/user-attachments/assets/4b41e31b-972b-4237-8f47-e33ec1523312" />
+
+<img width="357" height="578" alt="Screenshot 2026-10-20 214702" src="https://github.com/user-attachments/assets/bcce4459-a04c-4988-8739-a56f501be376" />
+
+<img width="375" height="290" alt="Screenshot 2026-10-20 212500" src="https://github.com/user-attachments/assets/1f6c8911-2182-4583-8ccb-ad0db86e67a2" />
+
+<img width="1162" height="583" alt="Screenshot 2026-10-20 214853" src="https://github.com/user-attachments/assets/ba192372-ba21-4c24-9a55-fbf39a24eff0" />
+
+<img width="1143" height="580" alt="Screenshot 2026-10-20 214901" src="https://github.com/user-attachments/assets/37dc3b44-fbda-4d4c-968f-f2e638024e70" />
+
+<img width="1143" height="580" alt="Screenshot 2026-10-20 214901" src="https://github.com/user-attachments/assets/f7289406-9886-4c9b-910b-eacabf646662" />
+
+<img width="1167" height="582" alt="Screenshot 2026-10-20 214912" src="https://github.com/user-attachments/assets/f1091118-9ed6-4bed-b3d3-ed955b0740c2" />
+
+<img width="1190" height="567" alt="Screenshot 2026-10-20 215004" src="https://github.com/user-attachments/assets/e3b27ea3-5e08-4677-99e0-aac28543df74" />
+
+**Medium Mesh**
+
+**Fine Mesh**
+
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
@@ -29,10 +59,6 @@ The objectives from the professor:
 | Mass |    |    |     |
 | Safety Factor |    |     |     |
 | Number of Elements |    |    |    |
-
-
-## Decide
-
 
 ## Communicate
 
