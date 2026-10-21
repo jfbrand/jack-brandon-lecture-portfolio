@@ -59,7 +59,7 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 **Design I**
 
-
+<img width="540" height="677" alt="image" src="https://github.com/user-attachments/assets/39e7d656-0578-41f3-b537-4275585bc692" />
 
 **Design II**
 
