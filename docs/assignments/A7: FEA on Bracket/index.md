@@ -29,6 +29,8 @@ The objectives from the professor:
 
 The setup for the constraints and applied load on the model. I used frictionless constraints underneath the top beams to best simulate the sliding fit of the bracket and not over constrain the bracket, which could lead to inaccurate simulations.
 
+<img width="1055" height="577" alt="Screenshot 2026-10-21 221833" src="https://github.com/user-attachments/assets/fc4a9c53-2680-4cff-912f-cd1bfca8d6c0" />
+
 ## Inner Loop
 
 **Coarse Mesh**
@@ -38,6 +40,10 @@ The setup for the constraints and applied load on the model. I used frictionless
 <img width="1121" height="550" alt="Screenshot 2026-10-20 221843" src="https://github.com/user-attachments/assets/7be94a9d-14f8-4c8f-a360-1091c2c0facc" />
 
 <img width="1102" height="545" alt="Screenshot 2026-10-20 221902" src="https://github.com/user-attachments/assets/50b4a36f-2825-4e7a-87d6-7441d10e9f28" />
+
+<img width="782" height="562" alt="image" src="https://github.com/user-attachments/assets/a3ecdd05-2f79-4fd1-910a-90bc2d8ff3ca" />
+
+
 
 **Medium Mesh**
 
@@ -92,10 +98,6 @@ The safety factor map for design III. Although the model was almost entirely blu
 <img width="950" height="657" alt="image" src="https://github.com/user-attachments/assets/a2250685-fd80-403f-952a-46591c2b966a" />
 
 <img width="937" height="647" alt="image" src="https://github.com/user-attachments/assets/910fbf84-1162-4412-904f-29b815d61442" />
-
-**Link**
-
-
 
 ## Communicate
 
