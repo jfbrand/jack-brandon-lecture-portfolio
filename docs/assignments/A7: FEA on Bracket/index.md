@@ -71,11 +71,11 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
-| Max Stress & Location | 234,472.509 psi - bottom beam | 34,482.717 psi - corners where bottom beam attaches |     |
-| Max Deflection & Location  | 6.144 in - outside of L side beam | 4.461 - outside of L/R side beams |     |
-| Mass | 0.889 lbm | 1.47 lbm |     |
-| Safety Factor | 0.128 | 0.871 |     |
-| Number of Elements |    | 264,911 | 265,718 |
+| Max Stress & Location | 234,472.509 psi - beam w/ cylinder | 34,482.717 psi - corners | 13,928.54 psi - corners |
+| Max Deflection & Location  | 6.144 in - outside of L vertical beam | 4.461 in - outside of vertical beams | 3.85 in - outside of vertical beams|
+| Mass | 0.889 lbm | 1.47 lbm | 1.513 lbm |
+| Safety Factor | 0.128 | 0.871 | 2.155 |
+| Number of Elements |    | 264,911 | 270,541 |
 
 ## Communicate
 
