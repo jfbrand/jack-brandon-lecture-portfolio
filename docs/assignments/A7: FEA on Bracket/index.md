@@ -25,7 +25,7 @@ Before the outer loop could begin, each model had to go through the inner loop t
 
 <img width="350" height="183" alt="image" src="https://github.com/user-attachments/assets/79b17576-4939-4366-8bab-26685f73a216" />
 
-Where a and b represented values for two different simulations, each with a different mesh. The difference had to be below 7% in order for the results to converge. If the data did not converge, then the fine mesh had to be used.
+Where a and b represented values from two different simulations, each with a different mesh. The difference had to be below 7% in order for the results to converge. If the data did not converge, then the fine mesh had to be used.
 
 ## Preprocessing
 
@@ -145,5 +145,13 @@ For the link, I did not move onto design III, as it met the minimum safety facto
 
 <img width="797" height="642" alt="image" src="https://github.com/user-attachments/assets/23829f83-311d-475d-9de3-dfc96504a6da" />
 
+## Reflection
 
+This assignment made me learn two important lessons. First, that the FEA software is not foolproof, as in it can be easily misused by improperly constraining the part or using the wrong mesh size. For whatever reason, I was unable to get my coarse (maximum element size) and medium (medium element size) meshes to converge for either model. This led to me having to use the fine mesh which was the absolute minimum element size in Fusion 360. Although this was the correct process, I believe that it did make this assignment more difficult. The finer the mesh, the more stress concentrations it could find, no matter how small. This caused my models to have drastically lower factors of safety than they would have had with coarser meshes. It seemed that no matter what modifications were made, the safety factors would not go much higher than 2. After my third design, I even tried some absurdly bulky and overbuilt designs to test this and found that no matter how much material I added, the mesh was so small that it would find even the slightest stress concentration. That said, I believe that my design was good enough considering it met the minimum safety factor of 2. That was my second lesson in this assignment; to not chase perfection. I realized after spending 9 hours on this assignment, that I needed to accept when something is just good enough.
+
+**CAD Files**
+
+Bracket: https://a360.co/4hWGmmI
+
+Link: https://a360.co/4hG3wwx
 
