@@ -75,7 +75,7 @@ The displacement with the medium mesh was greater than 7% different than the cou
 | Max Deflection & Location  | 6.144 in - outside of L side beam | 4.461 - outside of L/R side beams |     |
 | Mass | 0.889 lbm | 1.47 lbm |     |
 | Safety Factor | 0.128 | 0.871 |     |
-| Number of Elements |    | 264,911 |    |
+| Number of Elements |    | 264,911 | 265,718 |
 
 ## Communicate
 
