@@ -61,6 +61,8 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 <img width="775" height="555" alt="image" src="https://github.com/user-attachments/assets/b9b72438-0106-46d7-84c5-5ae406508d04" />
 
+Similarly, the safety factor 
+
 **Fine Mesh**
 
 <img width="1087" height="605" alt="image" src="https://github.com/user-attachments/assets/47734cf6-883c-4987-a750-7eedefccedd0" />
