@@ -67,11 +67,11 @@ The initial design, with dimensions from calculations A5.
 
 <img width="555" height="652" alt="image" src="https://github.com/user-attachments/assets/4b61abf3-c530-4b5d-a647-308594ac8764" />
 
-Doubled the thickness of the L/R vertical beams. Added another beam to simply support the cylinder. Used half the original thickness of the single beam for both.
+Increased the thickness of the L/R vertical beams to 0.5 in. Added another beam to simply support the cylinder. Used half the original thickness of the single beam for both.
 
 **Design III**
 
-Added fillets with radius 0.32 in to corners with the highest stress, where possible. Increased thickness of L/R vertical beams to .5 in.
+Added fillets with radius 0.32 in. to corners with the highest stress, where possible. Increased thickness of beams supporting the cylinder to 0.125 in.
 
 <img width="485" height="667" alt="image" src="https://github.com/user-attachments/assets/f9ef2442-f454-4ebe-b3f9-c251412440bc" />
 
