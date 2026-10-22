@@ -23,8 +23,6 @@ The objectives from the professor:
 
 ## Preprocessing
 
-<img width="382" height="552" alt="Screenshot 2026-10-20 215202" src="https://github.com/user-attachments/assets/c2d69e52-ff51-48d8-8a94-d38d8603968f" />
-
 <img width="1175" height="662" alt="Screenshot 2026-10-20 211301" src="https://github.com/user-attachments/assets/e601c9d2-6e0c-4042-9d7f-5d989abd27e8" />
 
 The setup for the constraints and applied load on the model. I used frictionless constraints underneath the top beams to best simulate the sliding fit of the bracket and not over constrain the bracket, which could lead to inaccurate simulations.
