@@ -77,11 +77,19 @@ Added fillets with radius 0.5 in. to corners with the highest stress, where poss
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
-| Max Stress & Location | 234,472.509 psi - beam w/ cylinder | 34,482.717 psi - corners | 13,928.54 psi - corners |
-| Max Deflection & Location  | 6.144 in - outside of L vertical beam | 4.461 in - outside of vertical beams | 3.85 in - outside of vertical beams|
-| Mass | 0.889 lbm | 1.47 lbm | 1.513 lbm |
-| Safety Factor | 0.128 | 0.871 | 2.155 |
-| Number of Elements | 159,818 | 264,911 | 270,541 |
+| Max Stress & Location | 234,472.509 psi - beam w/ cylinder | 34,482.717 psi - corners | 13,781.745 psi - corners |
+| Max Deflection & Location  | 6.144 in - outside of L vertical beam | 4.461 in - outside of vertical beams | 4.345 in - outside of vertical beams|
+| Mass | 0.889 lbm | 1.47 lbm | 1.504 lbm |
+| Safety Factor | 0.128 | 0.871 | 2.178 |
+| Number of Elements | 159,818 | 264,911 | 270,335 |
+
+<img width="957" height="647" alt="image" src="https://github.com/user-attachments/assets/8d8fe8ec-b1f7-4e39-8e93-d77d46ddd58c" />
+
+The safety factor map for design III. Although the model was almost entirely blue (above a safety factor of 4), some green was still visible around the radii, leading to the minimum safety factor of 2.178. This was unavoidable due to how fine the mesh was.
+
+<img width="950" height="657" alt="image" src="https://github.com/user-attachments/assets/a2250685-fd80-403f-952a-46591c2b966a" />
+
+<img width="937" height="647" alt="image" src="https://github.com/user-attachments/assets/910fbf84-1162-4412-904f-29b815d61442" />
 
 ## Communicate
 
