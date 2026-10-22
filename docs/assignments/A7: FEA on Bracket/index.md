@@ -21,6 +21,8 @@ The objectives from the professor:
 
 <img width="477" height="515" alt="image" src="https://github.com/user-attachments/assets/535959c7-4077-460b-b668-1a50876752d7" />
 
+
+
 ## Preprocessing
 
 <img width="1175" height="662" alt="Screenshot 2026-10-20 211301" src="https://github.com/user-attachments/assets/e601c9d2-6e0c-4042-9d7f-5d989abd27e8" />
@@ -131,5 +133,13 @@ The safety factor map for design III. Although the model was almost entirely blu
 | Safety Factor | 1.955 | 2.658 |
 | Number of Elements | 135,702 | 232,632 |
 
-## Communicate
+<img width="807" height="621" alt="image" src="https://github.com/user-attachments/assets/f95eb63b-616b-4daa-a50e-4dde0c09644b" />
+
+For the link, I did not move onto design III, as it met the minimum safety factor at Design II. 
+
+<img width="802" height="635" alt="image" src="https://github.com/user-attachments/assets/537c36d6-a9cc-45fa-baa5-e2215c6132cd" />
+
+<img width="797" height="642" alt="image" src="https://github.com/user-attachments/assets/23829f83-311d-475d-9de3-dfc96504a6da" />
+
+
 
