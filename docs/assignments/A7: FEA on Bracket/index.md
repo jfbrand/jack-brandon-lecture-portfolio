@@ -71,9 +71,9 @@ Increased the thickness of the L/R vertical beams to 0.5 in. Added another beam 
 
 **Design III**
 
-Added fillets with radius 0.32 in. to corners with the highest stress, where possible. Increased thickness of beams supporting the cylinder to 0.125 in.
+<img width="485" height="655" alt="image" src="https://github.com/user-attachments/assets/5048eb91-d44a-4b60-aa72-2d447d06aeb1" />
 
-<img width="485" height="667" alt="image" src="https://github.com/user-attachments/assets/f9ef2442-f454-4ebe-b3f9-c251412440bc" />
+Added fillets with radius 0.5 in. to corners with the highest stress, where possible. Increased thickness of beams supporting the cylinder to 0.125 in.
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
