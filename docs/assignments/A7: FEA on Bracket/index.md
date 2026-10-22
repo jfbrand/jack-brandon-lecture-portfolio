@@ -67,7 +67,7 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 **Design III**
 
-<img width="522" height="657" alt="image" src="https://github.com/user-attachments/assets/4daa44fb-a523-46b0-908e-d93d50269362" />
+<img width="485" height="667" alt="image" src="https://github.com/user-attachments/assets/f9ef2442-f454-4ebe-b3f9-c251412440bc" />
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
