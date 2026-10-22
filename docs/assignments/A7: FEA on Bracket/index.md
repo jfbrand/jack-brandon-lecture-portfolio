@@ -93,6 +93,10 @@ The initial designs, with dimensions calculated in A5.
 
 Increased the thickness of the L/R vertical beams to 0.5 in. Added another beam to simply support the cylinder. Used half the original thickness of the single beam for both.
 
+<img width="352" height="610" alt="image" src="https://github.com/user-attachments/assets/13aab5b5-109c-4442-8833-8080854b5b3e" />
+
+Increased the thickness to 0.3 in.
+
 **Design III**
 
 <img width="485" height="655" alt="image" src="https://github.com/user-attachments/assets/5048eb91-d44a-4b60-aa72-2d447d06aeb1" />
@@ -119,13 +123,13 @@ The safety factor map for design III. Although the model was almost entirely blu
 
 **Link**
 
-|          | Design I | Design II | Design III |
-| -------- | -------- | -------- | -------- |
-| Max Stress & Location | 234,472.509 psi - beam w/ cylinder | 34,482.717 psi - corners | 13,781.745 psi - corners |
-| Max Deflection & Location  | 6.144 in - outside of L vertical beam | 4.461 in - outside of vertical beams | 4.345 in - outside of vertical beams|
-| Mass | 0.128 lbm | 1.47 lbm | 1.504 lbm |
-| Safety Factor | 1.955 | 0.871 | 2.178 |
-| Number of Elements | 135,702 | 264,911 | 270,335 |
+|          | Design I | Design II |
+| -------- | -------- | -------- |
+| Max Stress & Location | 11,294.614 psi - inside face of large hole | 11,294.614 psi - inside face of large hole |
+| Max Deflection & Location  | 0.006 in - inside face of large hole | 0.018 in - inside face of large hole |
+| Mass | 0.128 lbm | 0.173 lbm |
+| Safety Factor | 1.955 | 2.658 |
+| Number of Elements | 135,702 | 232,632 |
 
 ## Communicate
 
