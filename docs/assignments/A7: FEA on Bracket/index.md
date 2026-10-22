@@ -27,6 +27,8 @@ The objectives from the professor:
 
 <img width="1175" height="662" alt="Screenshot 2026-10-20 211301" src="https://github.com/user-attachments/assets/e601c9d2-6e0c-4042-9d7f-5d989abd27e8" />
 
+The setup for the constraints and applied load on the model. I used frictionless constraints underneath the top beams to best simulate the sliding fit of the bracket and not over constrain the bracket, which could lead to inaccurate simulations.
+
 ## Inner Loop
 
 **Coarse Mesh**
@@ -61,7 +63,7 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 <img width="540" height="677" alt="image" src="https://github.com/user-attachments/assets/39e7d656-0578-41f3-b537-4275585bc692" />
 
-The initial design, with dimensions from calculations A5.
+The initial design, with dimensions calculated in A5.
 
 **Design II**
 
@@ -90,6 +92,10 @@ The safety factor map for design III. Although the model was almost entirely blu
 <img width="950" height="657" alt="image" src="https://github.com/user-attachments/assets/a2250685-fd80-403f-952a-46591c2b966a" />
 
 <img width="937" height="647" alt="image" src="https://github.com/user-attachments/assets/910fbf84-1162-4412-904f-29b815d61442" />
+
+**Link**
+
+
 
 ## Communicate
 
