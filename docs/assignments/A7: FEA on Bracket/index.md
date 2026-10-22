@@ -57,11 +57,11 @@ The displacement with the medium mesh was greater than 7% different than the cou
 
 <img width="790" height="567" alt="image" src="https://github.com/user-attachments/assets/3905c1cf-1b64-4d07-904b-fb562be060a1" />
 
+The safety factor for the link with the medium mesh also failed to converge with the course mesh. This meant that it would also require the fine mesh.
+
 <img width="797" height="572" alt="image" src="https://github.com/user-attachments/assets/545bc281-9abe-410c-85c6-e9688ef82f9d" />
 
 <img width="775" height="555" alt="image" src="https://github.com/user-attachments/assets/b9b72438-0106-46d7-84c5-5ae406508d04" />
-
-Similarly, the safety factor 
 
 **Fine Mesh**
 
