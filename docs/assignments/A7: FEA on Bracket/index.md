@@ -25,7 +25,7 @@ Before the outer loop could begin, each model had to go through the inner loop t
 
 <img width="350" height="183" alt="image" src="https://github.com/user-attachments/assets/79b17576-4939-4366-8bab-26685f73a216" />
 
-Where a and b represent a safety factor, stress, or displacement value for two different mesh types. The difference had to be below 7% in order for the results to converge. If the data did not converge, then the fine mesh had to be used.
+Where a and b represented values for two different simulations, each with a different mesh. The difference had to be below 7% in order for the results to converge. If the data did not converge, then the fine mesh had to be used.
 
 ## Preprocessing
 
