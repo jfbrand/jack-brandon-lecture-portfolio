@@ -71,6 +71,12 @@ The safety factor for the link with the medium mesh also failed to converge with
 
 <img width="1066" height="605" alt="image" src="https://github.com/user-attachments/assets/2bae5b5d-31aa-4943-a875-8ed4abf5b0f5" />
 
+<img width="782" height="545" alt="image" src="https://github.com/user-attachments/assets/b4a9f8e7-6804-4430-88e0-1bf05587108d" />
+
+<img width="782" height="555" alt="image" src="https://github.com/user-attachments/assets/84a5f400-4b16-4fe0-a1b0-441ea0f22a75" />
+
+<img width="772" height="565" alt="image" src="https://github.com/user-attachments/assets/1ac989fd-3841-48a8-87dc-92f92b9dfed5" />
+
 ## Outer Loop
 
 **Design I**
