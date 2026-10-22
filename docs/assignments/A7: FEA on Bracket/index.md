@@ -127,7 +127,7 @@ The safety factor map for design III. Although the model was almost entirely blu
 
 |          | Design I | Design II |
 | -------- | -------- | -------- |
-| Max Stress & Location | 11,294.614 psi - inside face of large hole | 11,294.614 psi - inside face of large hole |
+| Max Stress & Location | 15,355.26 psi - inside face of large hole | 11,294.614 psi - inside face of large hole |
 | Max Deflection & Location  | 0.006 in - inside face of large hole | 0.018 in - inside face of large hole |
 | Mass | 0.128 lbm | 0.173 lbm |
 | Safety Factor | 1.955 | 2.658 |
