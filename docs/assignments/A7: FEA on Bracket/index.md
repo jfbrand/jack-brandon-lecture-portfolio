@@ -83,7 +83,9 @@ The safety factor for the link with the medium mesh also failed to converge with
 
 <img width="540" height="677" alt="image" src="https://github.com/user-attachments/assets/39e7d656-0578-41f3-b537-4275585bc692" />
 
-The initial design, with dimensions calculated in A5.
+<img width="326" height="550" alt="image" src="https://github.com/user-attachments/assets/041f8ce3-ca7c-4189-a908-a4f964e3c1a9" />
+
+The initial designs, with dimensions calculated in A5.
 
 **Design II**
 
@@ -96,6 +98,8 @@ Increased the thickness of the L/R vertical beams to 0.5 in. Added another beam 
 <img width="485" height="655" alt="image" src="https://github.com/user-attachments/assets/5048eb91-d44a-4b60-aa72-2d447d06aeb1" />
 
 Added fillets with radius 0.5 in. to corners with the highest stress, where possible. Increased thickness of beams supporting the cylinder to 0.125 in.
+
+**Bracket**
 
 |          | Design I | Design II | Design III |
 | -------- | -------- | -------- | -------- |
@@ -112,6 +116,16 @@ The safety factor map for design III. Although the model was almost entirely blu
 <img width="950" height="657" alt="image" src="https://github.com/user-attachments/assets/a2250685-fd80-403f-952a-46591c2b966a" />
 
 <img width="937" height="647" alt="image" src="https://github.com/user-attachments/assets/910fbf84-1162-4412-904f-29b815d61442" />
+
+**Link**
+
+|          | Design I | Design II | Design III |
+| -------- | -------- | -------- | -------- |
+| Max Stress & Location | 234,472.509 psi - beam w/ cylinder | 34,482.717 psi - corners | 13,781.745 psi - corners |
+| Max Deflection & Location  | 6.144 in - outside of L vertical beam | 4.461 in - outside of vertical beams | 4.345 in - outside of vertical beams|
+| Mass | 0.128 lbm | 1.47 lbm | 1.504 lbm |
+| Safety Factor | 1.955 | 0.871 | 2.178 |
+| Number of Elements | 135,702 | 264,911 | 270,335 |
 
 ## Communicate
 
