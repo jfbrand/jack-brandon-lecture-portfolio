@@ -21,7 +21,11 @@ The objectives from the professor:
 
 <img width="477" height="515" alt="image" src="https://github.com/user-attachments/assets/535959c7-4077-460b-b668-1a50876752d7" />
 
+Before the outer loop could begin, each model had to go through the inner loop to determine the optimal mesh. This required test runs with coarse and medium meshes first to determine if they converged or not. This was determined by using the percent difference equation:
 
+<img width="350" height="183" alt="image" src="https://github.com/user-attachments/assets/79b17576-4939-4366-8bab-26685f73a216" />
+
+Where a and b represent a safety factor, stress, or displacement value for two different mesh types. The difference had to be below 7% in order for the results to converge. If the data did not converge, then the fine mesh had to be used.
 
 ## Preprocessing
 
