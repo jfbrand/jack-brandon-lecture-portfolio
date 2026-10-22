@@ -41,7 +41,9 @@ The setup for the constraints and applied load on the model. I used frictionless
 
 <img width="782" height="562" alt="image" src="https://github.com/user-attachments/assets/a3ecdd05-2f79-4fd1-910a-90bc2d8ff3ca" />
 
+<img width="780" height="561" alt="image" src="https://github.com/user-attachments/assets/5bb8f03d-a35a-4e96-b511-0e64a88a9e7e" />
 
+<img width="792" height="555" alt="image" src="https://github.com/user-attachments/assets/0ed83f6f-3bb5-4386-a253-c37024f18f32" />
 
 **Medium Mesh**
 
@@ -52,6 +54,12 @@ The setup for the constraints and applied load on the model. I used frictionless
 <img width="1158" height="558" alt="Screenshot 2026-10-20 221322" src="https://github.com/user-attachments/assets/ef1e21d9-749e-4240-b7fd-67efe033c623" />
 
 The displacement with the medium mesh was greater than 7% different than the course mesh. Due to there not being convergence, I moved on to the fine mesh.
+
+<img width="790" height="567" alt="image" src="https://github.com/user-attachments/assets/3905c1cf-1b64-4d07-904b-fb562be060a1" />
+
+<img width="797" height="572" alt="image" src="https://github.com/user-attachments/assets/545bc281-9abe-410c-85c6-e9688ef82f9d" />
+
+<img width="775" height="555" alt="image" src="https://github.com/user-attachments/assets/b9b72438-0106-46d7-84c5-5ae406508d04" />
 
 **Fine Mesh**
 
