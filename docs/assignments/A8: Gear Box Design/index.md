@@ -33,6 +33,8 @@ The goal of this assignment was to design a simple gearbox with two gears by des
 
 ## Gearbox Housing Sketch
 
+<img width="552" height="426" alt="image" src="https://github.com/user-attachments/assets/de7d5c1c-93d2-4146-b9c3-db87224361fa" />
+
 ## Gearbox CAD Model
 
 Download Gearbox Model: https://a360.co/4Bx9okA
