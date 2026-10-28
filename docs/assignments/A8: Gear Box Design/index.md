@@ -34,6 +34,7 @@ The goal of this assignment was to design a simple gearbox with two gears by des
 **McMaster Carr Part Numbers**
 
 Pinion Bearing PN: 2610T1 Link: https://www.mcmaster.com/2610T1/
+
 Spur Bearing PN: 2610T5 Link: https://www.mcmaster.com/2610T5/
 
 ## Gearbox Housing Sketch
