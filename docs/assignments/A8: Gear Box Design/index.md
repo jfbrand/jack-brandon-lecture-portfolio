@@ -35,5 +35,6 @@ The goal of this assignment was to design a simple gearbox with two gears by des
 
 ## Gearbox CAD Model
 
+<img width="625" height="612" alt="image" src="https://github.com/user-attachments/assets/861b52eb-c565-4328-81c5-d3911cd6725d" />
 
 
