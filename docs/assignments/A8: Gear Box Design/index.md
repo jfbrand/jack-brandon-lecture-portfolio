@@ -31,6 +31,11 @@ The goal of this assignment was to design a simple gearbox with two gears by des
 
 <img width="572" height="582" alt="image" src="https://github.com/user-attachments/assets/83ec522d-8cf9-419e-9388-5c5d36cc5dfb" />
 
+**McMaster Carr Part Numbers**
+
+Pinion Bearing PN: 2610T1 Link: https://www.mcmaster.com/2610T1/
+Spur Bearing PN: 2610T5 Link: https://www.mcmaster.com/2610T5/
+
 ## Gearbox Housing Sketch
 
 <img width="552" height="426" alt="image" src="https://github.com/user-attachments/assets/de7d5c1c-93d2-4146-b9c3-db87224361fa" />
