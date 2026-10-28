@@ -49,8 +49,10 @@ Download Gearbox Model: https://a360.co/4Bx9okA
 
 ## Drawings
 
-<img width="1112" height="721" alt="image" src="https://github.com/user-attachments/assets/ed6e81a4-0f34-409e-9b3d-82bba840592a" />
+
 
 <img width="1117" height="722" alt="image" src="https://github.com/user-attachments/assets/0a30356a-9581-42be-b245-5c8cc4e81ab5" />
+
+<img width="1026" height="666" alt="image" src="https://github.com/user-attachments/assets/454a9640-d160-4441-8d1d-53f4fdf912e2" />
 
 ## Lessons Learned
