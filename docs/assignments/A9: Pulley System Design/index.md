@@ -24,9 +24,14 @@ Y<sub>s</sub> (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% st
 
 ## Belt
 
-## Shafts
+<img width="657" height="831" alt="image" src="https://github.com/user-attachments/assets/0c06bf0d-1867-402c-b719-184a35aa7621" />
 
-## Bearings
+## Shaft
 
+<img width="645" height="672" alt="image" src="https://github.com/user-attachments/assets/7acbebe3-67b3-4e19-83a5-b99d2bb80d48" />
 
+## Bearing
 
+<img width="637" height="677" alt="image" src="https://github.com/user-attachments/assets/b430e3ef-ea3f-4db4-84e4-cba94751c947" />
+
+## Frame
