@@ -22,10 +22,11 @@ SF (Safety Factor): 3
 
 Y<sub>s</sub> (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% strain
 
-## Belt Diameter and Circumference
+## Belt
+
+## Shafts
+
+## Bearings
 
 
-## Shaft Diameter
-
-## 
 
