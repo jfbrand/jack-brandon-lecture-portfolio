@@ -42,5 +42,8 @@ McMaster-Carr PN: 3044K606 https://www.mcmaster.com/3044K606-1835T376/
 
 <img width="931" height="601" alt="image" src="https://github.com/user-attachments/assets/e3a54332-9fbf-4961-86f4-12f07eb4e354" />
 
+Download Model: https://a360.co/4AgqIck
+
 ## Lessons Learned
 
+This assignment educated me on the relationship between friction and wrap angle with respect to tension forces in the pulley system. Before this assignment, I was not familiar but it was interesting to learn about it in lecture and then apply it in this assignment. I was already aware of the imbalance of tension forces between the tight and loose sides of the belt in a simple pulley system but solving for these forces when only given a small amount of information was somewhat of a challenge. There was a decent amount of research needed for this assignment: the friction coefficient between the belt and aluminum pulleys, the yield strength of the hardened steel shafts, and the correct material for the bearings. Overall, the assignment was more straight forward than I thought, due to finding and using the right equation for each specific parameter. I spent a total of 6 hours on this assignment. 
