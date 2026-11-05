@@ -8,7 +8,7 @@ The goal of this assignment is to design a pulley system under a certain situati
 
 <img width="411" height="147" alt="image" src="https://github.com/user-attachments/assets/5c6921e9-4164-489f-a257-21f513a21436" />
 
-Design a pulley system to transfer power between two parallel axes separated by a center distance of 4–6 inches. The system must meet the following requirements:
+L (center distance between pulleys): 4 in
 
 d<sub>p (Pulley Diameter): 3 inches
 
