@@ -10,17 +10,17 @@ The goal of this assignment is to design a pulley system under a certain situati
 
 L (center distance between pulleys): 4 in
 
-d<sub>p (Pulley Diameter): 3 inches
+d<sub>p</sub> (Pulley Diameter): 3 inches
 
 N (Rotational Speed): 2000 rpm
 
-T<sub>o (Static Tension): 6 lbf
+T<sub>o</sub> (Static Tension): 6 lbf
 
 Material: Pulleys-Aluminum, Belt-polyurethane rubber
 
 SF (Safety Factor): 3
 
-Y<sub>s (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% strain
+Y<sub>s</sub> (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% strain
 
 ## Belt Diameter and Circumference
 
