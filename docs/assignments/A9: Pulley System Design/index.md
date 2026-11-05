@@ -10,12 +10,17 @@ The goal of this assignment is to design a pulley system under a certain situati
 
 Design a pulley system to transfer power between two parallel axes separated by a center distance of 4–6 inches. The system must meet the following requirements:
 
-d_p (Pulley Diameter): 3 inches
+d<sub>p (Pulley Diameter): 3 inches
+
 N (Rotational Speed): 2000 rpm
-T_o (Static Tension): 6 lbf
+
+T<sub>o (Static Tension): 6 lbf
+
 Material: Pulleys-Aluminum, Belt-polyurethane rubber
-SF (Safety Factor):3.
-(Y_s) Polyurethane Rubber Yield strength of 3.25 MPa (471 psi) at 20% strain
+
+SF (Safety Factor): 3
+
+(Y<sub>s) Polyurethane Rubber Yield strength of 3.25 MPa (471 psi) at 20% strain
 
 ## Belt Diameter and Circumference
 
