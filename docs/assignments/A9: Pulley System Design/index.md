@@ -26,6 +26,8 @@ Y<sub>s</sub> (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% st
 
 <img width="657" height="831" alt="image" src="https://github.com/user-attachments/assets/0c06bf0d-1867-402c-b719-184a35aa7621" />
 
+McMaster-Carr PN: 3044K606 https://www.mcmaster.com/3044K606-1835T376/
+
 ## Shaft
 
 <img width="645" height="672" alt="image" src="https://github.com/user-attachments/assets/7acbebe3-67b3-4e19-83a5-b99d2bb80d48" />
