@@ -26,6 +26,8 @@ Y<sub>s</sub> (Polyurethane Rubber Yield strength) = 3.25 MPa (471 psi) at 20% s
 
 <img width="657" height="831" alt="image" src="https://github.com/user-attachments/assets/0c06bf0d-1867-402c-b719-184a35aa7621" />
 
+The belt I selected was a 1/4 in. diameter with a 17 1/4 in. circumference. I went with a slightly smaller circumference than calculated in order to provide some static tension on the pulleys and prevent slipping.
+
 McMaster-Carr PN: 3044K606 https://www.mcmaster.com/3044K606-1835T376/
 
 ## Shaft
@@ -36,9 +38,13 @@ McMaster-Carr PN: 3044K606 https://www.mcmaster.com/3044K606-1835T376/
 
 <img width="637" height="677" alt="image" src="https://github.com/user-attachments/assets/b430e3ef-ea3f-4db4-84e4-cba94751c947" />
 
+The bearing material selected was porous bronze. This material had a PV rating of 50,000 psi*fpm which could comfortably handle the stresses of my pulley system.
+
 ## Frame
 
 <img width="1075" height="657" alt="image" src="https://github.com/user-attachments/assets/ad2a9e06-78f6-4cc3-8b94-00904c9ae719" />
+
+I designed a simple frame to hold the pulleys. The holes are sized to allow 1/8 in. bearings to be installed.
 
 <img width="931" height="601" alt="image" src="https://github.com/user-attachments/assets/e3a54332-9fbf-4961-86f4-12f07eb4e354" />
 
