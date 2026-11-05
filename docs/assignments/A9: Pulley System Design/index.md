@@ -20,7 +20,7 @@ Material: Pulleys-Aluminum, Belt-polyurethane rubber
 
 SF (Safety Factor): 3
 
-(Y<sub>s) Polyurethane Rubber Yield strength of 3.25 MPa (471 psi) at 20% strain
+Y<sub>s (Polyurethane Rubber Yield strength): 3.25 MPa (471 psi) at 20% strain
 
 ## Belt Diameter and Circumference
 
