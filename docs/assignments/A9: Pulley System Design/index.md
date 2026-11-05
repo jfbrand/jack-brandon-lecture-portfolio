@@ -38,7 +38,9 @@ McMaster-Carr PN: 3044K606 https://www.mcmaster.com/3044K606-1835T376/
 
 ## Frame
 
-<img width="1056" height="680" alt="image" src="https://github.com/user-attachments/assets/4c851f51-0f91-45a8-8008-a8c37d859804" />
+<img width="1075" height="657" alt="image" src="https://github.com/user-attachments/assets/ad2a9e06-78f6-4cc3-8b94-00904c9ae719" />
+
+<img width="931" height="601" alt="image" src="https://github.com/user-attachments/assets/e3a54332-9fbf-4961-86f4-12f07eb4e354" />
 
 ## Lessons Learned
 
