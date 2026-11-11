@@ -7,14 +7,15 @@ The tensile tester uses two identical lead screws to move the crosshead and appl
 > [!NOTE]
 > **Project scope:** This document covers the lead-screw calculations and component selection. Nut/flange and crosshead design will be documented separately.
 ---
-1. Design Requirements and Initial Known Values
-Parameter	Symbol	Value
-Maximum specimen tensile force	$`F_T`$	2,000 N
-Number of identical lead screws	$`n_s`$	2
-Factor of safety	$`N`$	4
-Required crosshead speed	$`v`$	1–50 mm/min
-Minimum lead-screw length	—	18 in
-Selected screw material for calculations	—	AISI 1020 cold-drawn steel
+| Parameter | Symbol | Value |
+|---|---|---:|
+| Maximum specimen tensile force | FT | 2,000 N |
+| Number of identical lead screws | ns | 2 |
+| Factor of safety | N | 4 |
+| Required crosshead speed | v | 1–50 mm/min |
+| Minimum lead-screw length | — | 18 in |
+| Selected screw material for calculations | — | AISI 1020 cold-drawn steel |
+
 I selected AISI 1020 cold-drawn steel as the material for my initial strength calculations. I used an assumed yield strength of $`S_y = 350\ \text{MPa}`$.
 > [!WARNING]
 > This yield strength should be verified against a material datasheet or an approved material-property source before treating it as a confirmed property of the purchased screw.
