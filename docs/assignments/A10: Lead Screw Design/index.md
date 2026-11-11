@@ -459,3 +459,56 @@ A separate torque margin may be appropriate when sizing the motor or drive syste
 ---
 
 *This document records my current design process and identifies items that still require manufacturer verification. I will update it as I complete the remaining lead-screw checks and move on to the nut/flange and crosshead designs.*
+
+## Crosshead - Aidan Cadle
+
+## Specimen Gripper - Jack Brandon
+
+**Objective:** Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
+
+**Analyze:** I began the design process by visualizing the simplest and most effective way to constrain specimens of different shapes. The idea that came to mind was a c-clamp/vise style mechanism to hold the specimen in place during testing. This mechanism would allow for adjustable clamping location and force for different size and shape specimens as well as ergonomic handles to allow for necessary torque to be applied to the clamp bolts. Furthemore, the gripper needed to be modular so that it could be threaded to the load cell as well as the crosshead to hold the top and bottom of the specimen.
+
+For design inspiration, I researched various tensile testers to understand how the specimen was typically constrained.
+
+Examples:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download: https://a360.co/4jaEOpG
