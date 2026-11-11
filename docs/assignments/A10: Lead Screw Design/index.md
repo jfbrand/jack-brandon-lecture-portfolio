@@ -470,11 +470,13 @@ A separate torque margin may be appropriate when sizing the motor or drive syste
 
 For design inspiration, I researched various tensile testers to understand how the specimen was typically constrained.
 
-Tensile testers examples:
+Tensile tester examples:
 
 <img width="332" height="325" alt="image" src="https://github.com/user-attachments/assets/8cbe5982-7bc0-4251-abbc-b9d25a2c207e" />
 
 <img width="362" height="485" alt="image" src="https://github.com/user-attachments/assets/2c4ed771-0fbe-43cc-aee3-fa086f41bf64" />
+
+## Design
 
 <img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
 
