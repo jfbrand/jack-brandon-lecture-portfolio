@@ -1,6 +1,6 @@
-# A10 – Lead Screw Translating System - Isaiah
+# A10 – Lead Screw Design
 
-# Lead Screw System Design — Part 1
+## Lead Screws & Nuts - Isaiah Little
 
 ## Project Overview
 
