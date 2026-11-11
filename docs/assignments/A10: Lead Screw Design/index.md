@@ -1,6 +1,6 @@
-# A10 – Lead Screw Translating System
+# A10 – Lead Screw Translating System - Isaiah
 
-Lead Screw System Design — Part 1
+## Lead Screw 
 Project Overview
 This document records my design process for the lead-screw portion of the tensile tester assignment. I am documenting my calculations, design decisions, assumptions, and changes throughout the project rather than presenting only the final design.
 The tensile tester uses two identical lead screws to move the crosshead and apply a maximum tensile force of 2 kN to the test specimen.
