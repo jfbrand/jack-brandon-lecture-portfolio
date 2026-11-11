@@ -462,7 +462,7 @@ A separate torque margin may be appropriate when sizing the motor or drive syste
 
 ## Crosshead - Aidan Cadle
 
-## Specimen Gripper - Jack Brandon
+## Specimen Gripper & Parametric Modelling - Jack Brandon
 
 **Objective:** Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
 
