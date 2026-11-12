@@ -49,6 +49,7 @@ This assumption requires the two screws to be properly aligned and driven synchr
 
 I calculated the minimum required screw diameter using the axial normal-stress relationship:
 
+<img width="450" height="345" alt="image" src="https://github.com/user-attachments/assets/dd912fa4-076e-473c-a722-ca8cd0cb020e" />
 
 =FA
 
