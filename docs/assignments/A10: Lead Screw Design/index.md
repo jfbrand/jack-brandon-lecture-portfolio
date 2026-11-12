@@ -609,7 +609,7 @@ The final part, parametrically produced.
 
 ![Part](<part iso.png>)
 
-## Tabulating Costs
+## Tabulating Costs - Everyone
 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link |
 | :--- | :--- | :--- | :--- | :--- | :--- |
