@@ -573,7 +573,7 @@ The actual crosshead material and thickness still need to be selected. The threa
 
 ## Crosshead - Aidan Cadle
 
-## Specimen Gripper & Parametric Modelling - Jack Brandon
+# Specimen Gripper & Parametric Modelling - Jack Brandon
 
 **Objective:** Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
 
@@ -587,15 +587,18 @@ Examples:
 
 <img width="362" height="485" alt="image" src="https://github.com/user-attachments/assets/2c4ed771-0fbe-43cc-aee3-fa086f41bf64" />
 
-## Design
+## Gripper Design
 
 <img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
 
 Download: https://a360.co/4jaEOpG
 
-# Assembly
+## Assembly
 
-**Example:**
+Example:
 
 <img width="697" height="786" alt="image" src="https://github.com/user-attachments/assets/b1521681-3249-4452-9339-0d8103d485e8" />
 
+**Model**
+
+<img width="632" height="726" alt="image" src="https://github.com/user-attachments/assets/3d4067fa-fb86-430c-afe1-e34021ff5698" />
