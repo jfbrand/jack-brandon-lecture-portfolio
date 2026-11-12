@@ -773,8 +773,8 @@ In completing this assignment, there were many valuable lessons that I began to 
 | 4 | 2 | Precision Acme Externally Threaded Nut (360 Brass, 1/4"-20 Thread Size) | $58.86 each | $117.72 | [McMaster-Carr](https://www.mcmaster.com/95072A171/) |
 | 5 | 2 | Precision Acme Flange (Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size) | $61.78 each | $123.56 | Precision Acme Flange, Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size \| McMaster-Carr |
 | 6 | 8 | 18-8 Stainless Steel Pan Head Phillips Screw, 1/4"-20 Thread, 1/4" Long | $8.94 per pack of 50 / $0.18 per piece | $1.44 | [McMaster-Carr](https://www.mcmaster.com/91772A533/) |
-| 7 | 1 | Aluminum Billet (2” x ⅞” x 1’) | $31.66 | $31.66 | [McMaster-Carr](https://www.mcmaster.com/8975K941-8975K943/) |
-| | | | **Total Cost** | **$590.35** | |
+| 7 | 1 | Aluminum Billet (2” x 2” x 1’) | $55.83 | $55.83 | [McMaster-Carr](https://www.mcmaster.com/8975K941-8975K943/) |
+| | | | **Total Cost** | **$614.52** | |
 
 ## Specimen Gripper & Parametric Modeling - Jack Brandon
 
