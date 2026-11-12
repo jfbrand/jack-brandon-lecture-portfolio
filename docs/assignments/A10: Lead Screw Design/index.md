@@ -47,6 +47,8 @@ This assumption requires the two screws to be properly aligned and driven synchr
 
 I calculated the minimum required screw diameter using the axial normal-stress relationship:
 
+<img width="450" height="341" alt="image" src="https://github.com/user-attachments/assets/5408a0f9-c8a6-4b05-95c6-a2e024e7dda7" />
+
 $$\sigma = \frac{F}{A}$$
 
 For a solid circular shaft:
@@ -78,6 +80,8 @@ For a threaded screw, I used the minor (root) diameter for this preliminary chec
 ---
 
 ## 3. Lead Selection and Rotational Speed
+
+<img width="775" height="372" alt="image" src="https://github.com/user-attachments/assets/20fa1668-de3a-44dd-8f32-dd6feee73d21" />
 
 My initial goal was to use a relatively small lead so that the crosshead displacement per revolution would be small. I initially considered a lead of 1 mm/rev.
 
@@ -244,6 +248,8 @@ I should not claim that the purchased screw has this exact material grade until 
 
 ## 7. Lead-Screw Torque and Free-Body Diagram
 
+<img width="777" height="496" alt="image" src="https://github.com/user-attachments/assets/db7ba1d8-126c-4bd3-9214-100b4fbf7915" />
+
 I completed the mean-diameter work, torque derivation, and free-body diagram for the selected lead-screw system.
 
 For an Acme screw raising a load, the torque per screw is calculated using:
@@ -279,6 +285,8 @@ I did not multiply the required operating torque by the factor of safety of 4. T
 
 After selecting the lead screw, I selected a compatible bronze nut and steel mounting flange.
 
+<img width="685" height="535" alt="image" src="https://github.com/user-attachments/assets/6517f447-7866-4929-b11a-e38f5e1e034e" />
+
 ### 8.1 Bronze Nut
 
 I selected the Roton bronze threaded mount nut, part **91734**.
@@ -313,6 +321,8 @@ The bronze nut's external mounting thread engages the matching internal thread i
 I selected the steel flange to provide the mounting interface between the bronze nut assembly and the crosshead. The exact steel grade of the flange has not been established.
 
 ### 8.3 Nut Internal Acme Thread Bearing-Bending Analysis
+
+<img width="585" height="655" alt="image" src="https://github.com/user-attachments/assets/36052214-7aee-486c-b329-524d2266f38b" />
 
 I previously completed the bearing-bending analysis for the internal Acme threads in the bronze nut that engage the steel lead screw.
 
@@ -658,6 +668,10 @@ Download: https://a360.co/4sRWwSe
 <img width="1501" height="697" alt="image" src="https://github.com/user-attachments/assets/c5d8b3f2-f954-4cd2-bf67-7e574f388ed0" />
 
 The parameters used for the assembly were the T-slot stock height (h) and width (w). These parameters were used to simplify the dimensioning of the length of the bars in the frame assembly. 
+
+## Crosshead Drawing
+
+<img width="1012" height="657" alt="image" src="https://github.com/user-attachments/assets/20c3c36a-dbd5-4855-8fd4-9993e88dd21e" />
 
 ## Lessons Learned
 
