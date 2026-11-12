@@ -653,6 +653,8 @@ Example given in assignment.
 
 Complete assembly model.
 
+Download: https://a360.co/4sRWwSe
+
 <img width="1501" height="697" alt="image" src="https://github.com/user-attachments/assets/c5d8b3f2-f954-4cd2-bf67-7e574f388ed0" />
 
 The parameters used for the assembly were the T-slot stock height (h) and width (w). These parameters were used to simplify the dimensioning of the length of the bars in the frame assembly. 
