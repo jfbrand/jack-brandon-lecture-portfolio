@@ -572,11 +572,11 @@ The actual crosshead material and thickness still need to be selected. The threa
 In building the tensile tester, the crosshead had to be designed with a factor of safety of 4, a maximum deflection of 0.1 mm, and support a tensile load of 2 kN. Given the constraints and example of "low cost" testers, the chosen material is 6061-O Aluminum, and the center to center distance between the two lead screw holes is 8 in. 
 6061-O Aluminum has a yield strength of 62.05 MPa, and an elastic modulus E = 69 GPa.
 
-![calc 1](<A10 Scans_page-0001.jpg>)
+<img width="416" height="601" alt="image" src="https://github.com/user-attachments/assets/9d04730b-9574-4ca7-9443-368572884b0b" />
 
 Initially, the calculations assumed a square cross sectional area. However, this would lead the flange to "stick out" from the crosshead and mount incorrectly, so the calculations were repeated using a rectangular cross sectional area. 
 
-![calc 2](<A10 Scans_page-0002.jpg>)
+<img width="426" height="432" alt="image" src="https://github.com/user-attachments/assets/b264eaff-95d8-4730-a4b3-dbf1d04a48d6" />
 
 Calculations were repeated, but now the width of the crosshead was set to 1.6 in, the outer diameter of the flange. Using the equations for a fixed beam with a load in the center, calculating for both stress and strain, the minimum height of the crosshead was determined to be 0.866 in. 
 
