@@ -23,3 +23,6 @@ nav:
     - 'A9: Pulley System Design': 'assignments/A9: Pulley System Design/index.md'
     - 'A10: Lead Screw Design': 'assignments/A10: Lead Screw Design/index.md'
     - 'A11: Motor Selection Design': 'assignments/A11: Motor Selection Design/index.md'
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
