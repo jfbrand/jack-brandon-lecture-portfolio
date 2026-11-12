@@ -769,7 +769,7 @@ The final mass is 2.56 lbs.
 | 7 | 1 | Aluminum Billet (2” x ⅞” x 1’) | $31.66 | $31.66 | [McMaster-Carr](https://www.mcmaster.com/8975K941-8975K943/) |
 | | | | **Total Cost** | **$590.35** | |
 
-## Specimen Gripper & Parametric Modelling - Jack Brandon
+## Specimen Gripper & Parametric Modeling - Jack Brandon
 
 ## Objective: 
 
