@@ -609,8 +609,20 @@ The final part, parametrically produced.
 
 ![Part](<part iso.png>)
 
+## Tabulating Costs
 
-# Specimen Gripper & Parametric Modelling - Jack Brandon
+| Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | 2 | Toggle Clamp Holding Screw | $7.09 | $14.18 | [McMaster-Carr](https://www.mcmaster.com/5147A28/) |
+| 2 | 1 | T-Slot Framing System: Rectangle, 40 Series, Smooth, Double, 3 m Nom Lg, 80 mm x 40 mm, 6 Slots, Std | $245.87 | $245.87 | [Grainger](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48) |
+| 3 | 2 | Acme Lead Screw, 1/4 – 20, RH, Steel | $27.96 each | $55.92 | 1018 Carbon Steel Precision Acme Lead Screw, Right Hand, 1/4"-20 Thread Size, 18" Long \| McMaster-Carr |
+| 4 | 2 | Precision Acme Externally Threaded Nut (360 Brass, 1/4"-20 Thread Size) | $58.86 each | $117.72 | [McMaster-Carr](https://www.mcmaster.com/95072A171/) |
+| 5 | 2 | Precision Acme Flange (Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size) | $61.78 each | $123.56 | Precision Acme Flange, Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size \| McMaster-Carr |
+| 6 | 8 | 18-8 Stainless Steel Pan Head Phillips Screw, 1/4"-20 Thread, 1/4" Long | $8.94 per pack of 50 / $0.18 per piece | $1.44 | [McMaster-Carr](https://www.mcmaster.com/91772A533/) |
+| 7 | 1 | Aluminum Billet (2” x ⅞” x 1’) | $31.66 | $31.66 | [McMaster-Carr](https://www.mcmaster.com/8975K941-8975K943/) |
+| | | | **Total Cost** | **$590.35** | |
+
+## Specimen Gripper & Parametric Modelling - Jack Brandon
 
 ## Objective: 
 
