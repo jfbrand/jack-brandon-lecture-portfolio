@@ -1,159 +1,122 @@
 # A10 – Lead Screw Design
 
-## Lead Screws & Nuts - Isaiah Little
+# ISAIAH LITTLE: Lead Screw System Design — Tensile Tester 
 
 ## Project Overview
 
-This document records my design process for the lead-screw portion of the tensile tester assignment. I am documenting my calculations, design decisions, assumptions, and changes throughout the project rather than presenting only the final design.
+This document records my design process for the lead-screw system used in a tensile tester. It includes my calculations, component selections, design decisions, assumptions, and revisions.
 
-The tensile tester uses **two identical lead screws** to move the crosshead and apply a maximum tensile force of **2 kN** to the test specimen.
+The tensile tester uses **two identical lead screws** to move the crosshead and apply a maximum tensile force of **2,000 N** to the test specimen.
 
-> **Project scope:** This document covers the lead-screw calculations and component selection. Nut/flange and crosshead design will be documented separately.
+The design process includes:
+
+- Lead-screw sizing and selection.
+- Bronze nut selection and internal thread analysis.
+- Nut-to-flange component selection.
+- Flange-to-crosshead bolted connection analysis.
+
+I have distinguished confirmed component selections from assumed material properties and dimensions that still require verification.
 
 ---
 
-## 1. Design Requirements and Initial Known Values
+## 1. Design Requirements and Initial Knowns
 
 | Parameter | Symbol | Value |
 |---|---|---:|
 | Maximum specimen tensile force | FT | 2,000 N |
-| Number of identical lead screws | ns | 2 |
-| Factor of safety | N | 4 |
+| Number of lead screws | ns | 2 |
+| Design factor of safety for screw sizing | N | 4 |
 | Required crosshead speed | v | 1–50 mm/min |
 | Minimum lead-screw length | — | 18 in |
-| Selected screw material for calculations | — | AISI 1020 cold-drawn steel |
+| Assumed screw material for initial calculations | — | AISI 1020 cold-drawn steel |
+| Assumed screw yield strength | Sy | 350 MPa |
 
-I selected **AISI 1020 cold-drawn steel** as the material for my initial strength calculations. I used an assumed yield strength of Sy=350MPa.
+I initially selected AISI 1020 cold-drawn steel for my screw strength calculations and used an assumed yield strength of 350 MPa. The exact material grade of the purchased screw has not been independently verified.
 
-This yield strength should be verified against a material datasheet or an approved material-property source before treating it as a confirmed property of the purchased screw.
+I assumed the tensile load would be shared equally between the two lead screws:
 
-I assumed that the tensile load would be shared equally between the two identical lead screws:
+Fs=FTns
 
-$$
-F_s=\frac{F_T}{n_s}
-$$
+Fs=20002
 
-$$
-F_s=\frac{2000}{2}
-$$
+$\boxed{F_s=1000\text{ N per screw}}$
 
-$$
-\boxed{F_s=1000\text{ N per screw}}
-$$
-
-This equal-load-sharing assumption requires the two screws to be properly aligned and driven synchronously.
+This assumption requires the two screws to be properly aligned and driven synchronously.
 
 ---
 
 ## 2. Minimum Screw Diameter from Axial Stress
 
-I first calculated the minimum required screw diameter using the axial normal-stress relationship:
+I calculated the minimum required screw diameter using the axial normal-stress relationship:
 
-$$
-\sigma=\frac{F}{A}
-$$
 
-The cross-sectional area of a solid circular shaft is:
+=FA
 
-$$
-A=\frac{\pi d^2}{4}
-$$
+For a solid circular shaft:
 
-For a factor of safety of 4, I calculated the allowable stress as:
+A=d24
 
-$$
-\sigma_{\text{allow}}=\frac{S_y}{N}
-$$
+For a factor of safety of 4, the allowable stress is:
 
-Substituting:
+allow=SyN
 
-$$
-\sigma_{\text{allow}}=\frac{350}{4}
-$$
+allow=3504
 
-$$
-\boxed{\sigma_{\text{allow}}=87.5\text{ MPa}}
-$$
+$\boxed{\sigma_{\text{allow}}=87.5\text{ MPa}}$
 
-Solving the axial-stress equation for diameter:
+Solving for the minimum diameter:
 
-$$
-d_{\min}=\sqrt{\frac{4F_s}{\pi\sigma_{\text{allow}}}}
-$$
+d=4Fsallow
 
 Substituting the load carried by one screw:
 
-$$
-d_{\min}=
-\sqrt{\frac{4(1000)}
-{\pi(87.5\times10^6)}}
-$$
+d=4(1000)(87.5106)
 
-$$
-\boxed{d_{\min}=0.003815\text{ m}=3.815\text{ mm}}
-$$
+$\boxed{d_{\min}=3.815\text{ mm}}$
 
 This is the theoretical minimum diameter based on axial stress alone.
 
-For a threaded screw, the **minor (root) diameter** is the relevant nominal diameter for this check because it represents the smallest cross-section. Manufacturing tolerances and other possible failure modes must also be considered.
+For a threaded screw, I used the minor (root) diameter for this preliminary check because it represents the smallest nominal cross-section. Manufacturing tolerances and other possible failure modes must also be considered.
 
 ---
 
 ## 3. Lead Selection and Rotational Speed
 
-My initial goal was to use a relatively small lead so that the crosshead displacement per revolution would be small. I wanted finer positioning while applying tension to the specimen.
+My initial goal was to use a relatively small lead so that the crosshead displacement per revolution would be small. I initially considered a lead of 1 mm/rev.
 
-I initially considered a lead of 1mm/rev. However, when I found an available commercial screw with a lead of 0.05in/rev, I accepted changing the design lead to match the actual component.
+After finding an available commercial screw with a lead of 0.050 in/rev, I changed the design to match the available component.
 
 Converting the lead:
 
-$$
-L=0.05(25.4)
-$$
+L=0.050(25.4)
 
-$$
-\boxed{L=1.27\text{ mm/rev}}
-$$
+$\boxed{L=1.27\text{ mm/rev}}$
 
 The relationship between crosshead linear speed and screw rotational speed is:
 
-$$
 v=nL
-$$
 
 Solving for rotational speed:
 
-$$
-n=\frac{v}{L}
-$$
+n=vL
 
 At the minimum crosshead speed:
 
-$$
-n_{\min}=\frac{1}{1.27}
-$$
+n=11.27
 
-$$
-\boxed{n_{\min}=0.787\text{ RPM}}
-$$
+$\boxed{n_{\min}=0.787\text{ RPM}}$
 
 At the maximum crosshead speed:
 
-$$
-n_{\max}=\frac{50}{1.27}
-$$
+n=501.27
 
-$$
-\boxed{n_{\max}=39.37\text{ RPM}}
-$$
+$\boxed{n_{\max}=39.37\text{ RPM}}$
 
 Therefore, the required rotational speed range is:
 
-$$
-\boxed{n=0.787\text{ to }39.37\text{ RPM}}
-$$
+$\boxed{n=0.787\text{ to }39.37\text{ RPM}}$
 
-Both screws must rotate synchronously at the same speed to keep the crosshead level.
+Both screws must rotate synchronously to keep the crosshead level.
 
 A smaller lead improves displacement resolution per revolution, but it does not automatically guarantee positioning accuracy. Backlash, thread tolerances, bearing play, structural stiffness, motor control resolution, and load-cell feedback also affect positioning and force control.
 
@@ -161,35 +124,27 @@ A smaller lead improves displacement resolution per revolution, but it does not 
 
 ## 4. Thread Type and Nut Material Decisions
 
-I chose an **Acme-style power-screw thread** because it is a common thread form used in power-transmission applications.
+I selected an **Acme-style power-screw thread** because it is commonly used in power-transmission applications.
 
-For a standard Acme thread, the included thread angle is 29. Therefore, the half-angle is:
+For a standard Acme thread, the included thread angle is 29 degrees. Therefore, the half-angle is:
 
-$$
-\alpha=\frac{29^\circ}{2}
-$$
+=292
 
-$$
-\boxed{\alpha=14.5^\circ}
-$$
+$\boxed{\alpha=14.5^\circ}$
 
 I initially considered using a steel nut but changed the nut material to **bronze**.
 
-I chose bronze because a steel screw and bronze nut combination is commonly used in sliding power-screw applications. The material pairing can reduce the likelihood of galling compared with dry steel-on-steel contact.
+I chose bronze because a steel screw and bronze nut combination is commonly used in sliding power-screw applications. This material pairing can reduce the likelihood of galling compared with dry steel-on-steel contact.
 
-I also decided to use **lubricated screw/nut contact**.
+I also selected lubricated screw/nut contact for the preliminary torque calculation. I assumed:
 
-For my preliminary torque calculation, I assumed:
+$\boxed{\mu=0.15}$
 
-$$
-\boxed{\mu=0.15}
-$$
-
-This is an assumed coefficient of friction, not a verified value for the exact bronze alloy, lubricant, surface finish, and operating conditions. The final design should identify the lubrication condition and cite an appropriate friction-data source.
+This coefficient of friction is an assumption, not a verified value for the exact bronze alloy, lubricant, surface finish, and operating conditions.
 
 ---
 
-## 5. First Candidate: Roton 3/16–20 Stub Acme Screw
+## 5. First Lead-Screw Candidate
 
 My first candidate was the Roton 3/16–20 Stub Acme steel lead screw, part **62240**.
 
@@ -205,35 +160,25 @@ The dimensions I recorded from the product information were:
 
 The nominal minor diameter exceeded my calculated minimum:
 
-$$
-3.835\text{ mm}>3.815\text{ mm}
-$$
+3.835mm>3.815mm
 
 However, the margin was very small:
 
-$$
-3.835-3.815=0.020\text{ mm}
-$$
+3.835-3.815=0.020mm
 
-More importantly, I found that the bronze nut's published operating load rating was below the load required per screw.
+More importantly, the bronze nut's published operating load rating was below the load required per screw.
 
 The required load per screw was:
 
-$$
-F_s=1000\text{ N}
-$$
+Fs=1000N
 
 Converting to pounds-force:
 
-$$
-F_s=\frac{1000}{4.44822}
-$$
+Fs=10004.44822
 
-$$
-\boxed{F_s\approx224.8\text{ lbf}}
-$$
+$\boxed{F_s\approx224.8\text{ lbf}}$
 
-The published operating load rating I identified for the bronze nut was 75 lbf.
+The operating load rating I identified for the bronze nut was 75 lbf.
 
 Because the screw and nut assembly would move while applying tension, I decided not to use this first candidate.
 
@@ -241,9 +186,9 @@ This was an important design lesson: checking only the screw's diameter was not 
 
 ---
 
-## 6. Selected Candidate: Roton 1/4–20 Acme Steel Screw
+## 6. Selected Lead Screw: Roton 1/4–20 Acme Steel Screw
 
-I then selected the larger Roton 1/4–20 Acme steel screw, part **60758**.
+I selected the larger Roton 1/4–20 Acme steel screw, part **60758**.
 
 [Roton 1/4–20 Acme Steel Screw — Part 60758](https://www.roton.com/product/acme-steel-screw-right-60758/)
 
@@ -264,201 +209,367 @@ The manufacturer information I recorded for this candidate was:
 
 My calculated minimum diameter was:
 
-$$
-d_{\min}=3.815\text{ mm}
-$$
+d=3.815mm
 
 The selected screw's nominal minor diameter is:
 
-$$
-d_{\text{minor}}=4.445\text{ mm}
-$$
+dminor=4.445mm
 
 Therefore:
 
-$$
-4.445\text{ mm}>3.815\text{ mm}
-$$
+4.445mm>3.815mm
 
 The nominal minor diameter exceeds the calculated minimum by:
 
-$$
-4.445-3.815=0.630\text{ mm}
-$$
+4.445-3.815=0.630mm
 
 This candidate provides a larger nominal diameter margin than my first selection.
 
 ### 6.2 Bronze Nut Operating Load Check
 
-The load per screw is:
+The load per screw is approximately 224.8 lbf.
 
-$$
-F_s=1000\text{ N}
-$$
+The operating load rating I recorded for the selected candidate was 300 lbf:
 
-Converting to pounds-force:
+224.8lbf<300lbf
 
-$$
-F_s=\frac{1000}{4.44822}
-$$
+Therefore, the required load per nut is below the operating load rating I identified.
 
-$$
-F_s\approx224.8\text{ lbf}
-$$
-
-Using the operating load rating recorded from Roton's engineering data:
-
-$$
-224.8\text{ lbf}<300\text{ lbf}
-$$
-
-Therefore, the required load per nut is below the published operating load rating I identified for this candidate.
-
-This comparison assumes that the rating applies to the exact compatible bronze nut and the intended operating conditions. I still need to confirm the exact nut part number and the manufacturer's rating conditions.
+This comparison assumes that the rating applies to the exact compatible bronze nut and the intended operating conditions. The manufacturer's rating conditions should be verified before finalizing the design.
 
 ### 6.3 Material Verification
 
-Roton identifies the screw as steel. I selected AISI 1020 cold-drawn steel for my calculations, but I have not yet verified that part 60758 is specifically manufactured from AISI 1020 cold-drawn steel.
+Roton identifies the screw as steel. I selected AISI 1020 cold-drawn steel for my calculations, but I have not independently verified that part 60758 is specifically manufactured from that grade and condition.
 
 I should not claim that the purchased screw has this exact material grade until the manufacturer confirms it.
 
 ---
 
-## 7. Preliminary Torque Calculation
+## 7. Lead-Screw Torque and Free-Body Diagram
 
-The torque calculation determines how much rotational torque is required to raise the tensile load.
+I completed the mean-diameter work, torque derivation, and free-body diagram for the selected lead-screw system.
 
-The load is assumed to be shared equally between the two screws:
+For an Acme screw raising a load, the torque per screw is calculated using:
 
-$$
-F_s=1000\text{ N per screw}
-$$
-
-For an Acme screw raising a load, the torque per screw can be expressed as:
-
-$$
-T_s=
-\frac{F_s d_m}{2}
-\left(
-\frac{L+\pi\mu d_m\sec\alpha}
-{\pi d_m-\mu L\sec\alpha}
-\right)
-$$
+Ts=Fsdm2L+dmdm-L
 
 Where:
 
-- Fs = axial load carried by one screw
-- dm = mean or pitch diameter of the thread
-- L = lead
--  = thread friction coefficient
--  = Acme thread half-angle
+- Fs = axial load carried by one screw.
+- dm = mean or pitch diameter of the thread.
+- L = screw lead.
+-  = assumed coefficient of friction.
+-  = Acme thread half-angle.
 
 The total torque required for two identical screws is:
 
-$$
-T_{\text{total}}=2T_s
-$$
+Ttotal=2Ts
 
-### 7.1 Mean Diameter and Torque Status
+The final torque values recorded for the selected screw are:
 
-In my handwritten notes, I estimated a mean diameter of 4.305 mm for the **first 3/16-inch candidate** by averaging its major and minor diameters.
+| Parameter | Value |
+|---|---:|
+| Operating torque per screw | 0.635 N·m |
+| Total operating torque for two screws | 1.27 N·m |
 
-That value does **not** apply to the selected 1/4-inch screw.
+The final mean diameter and torque derivation correspond to the selected 1/4–20 screw. The earlier 4.305 mm mean-diameter estimate belonged to the first 3/16-inch candidate and was not reused for the final screw.
 
-I have not yet established a manufacturer-provided pitch/mean diameter or completed a verified mean-diameter estimate for part 60758. Therefore, I should not reuse the earlier 4.305 mm value for the final screw.
-
-### 7.2 Preliminary Manufacturer-Based Torque Estimate
-
-Roton's recorded drive torque ratio for the selected candidate was:
-
-$$
-0.025\frac{\text{in}\cdot\text{lbf}}{\text{lbf}}
-$$
-
-Using this ratio as a preliminary estimate:
-
-$$
-T_s=(224.8)(0.025)
-$$
-
-$$
-T_s=5.62\text{ in}\cdot\text{lbf}
-$$
-
-For two screws:
-
-$$
-T_{\text{total}}=2(5.62)
-$$
-
-$$
-T_{\text{total}}=11.24\text{ in}\cdot\text{lbf}
-$$
-
-Converting to SI units:
-
-$$
-\boxed{T_{\text{total}}\approx1.27\text{ N}\cdot\text{m}}
-$$
-
-This is a manufacturer-ratio-based preliminary estimate. I need to confirm the conditions associated with Roton's torque ratio and whether it represents the same lubrication, nut, and loading conditions as my design.
-
-### 7.3 Safety Factor Consideration
-
-I applied the factor of safety of 4 in the axial-stress diameter calculation.
-
-I did not multiply the required operating torque by 4 because the assignment asks for the torque needed to provide the specified 2 kN specimen tension.
-
-A separate torque margin may be appropriate when sizing the motor or drive system, but it should not automatically be applied a second time to the required operating torque.
+I did not multiply the required operating torque by the factor of safety of 4. The factor of safety was applied in the screw strength sizing calculation. A separate torque margin may be appropriate when selecting the motor and drive system.
 
 ---
 
-## 8. Current Design Record
+## 8. Bronze Nut and Steel Flange Selection
 
-| Design item | Current selection/status |
+After selecting the lead screw, I selected a compatible bronze nut and steel mounting flange.
+
+### 8.1 Bronze Nut
+
+I selected the Roton bronze threaded mount nut, part **91734**.
+
+[Roton Bronze Threaded Mount Nut — Part 91734](https://www.roton.com/product/acme-bronze-threaded-mount-nut-right-91734/)
+
+The nut has:
+
+- Internal thread: 1/4–20 Acme.
+- External mounting thread: 0.563–18 UNF.
+- Bronze construction.
+
+For the preliminary internal-thread analysis, I used C93200 / SAE 660 bronze as the assumed material and a yield strength of 137.9 MPa. The exact alloy should be verified against the supplier's material information.
+
+### 8.2 Steel Mounting Flange
+
+I selected the Roton steel mounting flange, part **89837**, with a matching 0.563–18 UNF center thread.
+
+The recorded flange dimensions are:
+
+| Parameter | Value |
+|---|---:|
+| Outside diameter | 1.600 in |
+| Center thread | 0.563–18 UNF |
+| Mounting holes | Four Ø0.266 in holes |
+| Mounting-hole bolt circle | 1.125 in |
+| Flange thickness | 0.410 in |
+| Side feature | 5-40 |
+
+The bronze nut's external mounting thread engages the matching internal thread in the steel flange.
+
+I selected the steel flange to provide the mounting interface between the bronze nut assembly and the crosshead. The exact steel grade of the flange has not been established.
+
+### 8.3 Nut Internal Acme Thread Bearing-Bending Analysis
+
+I previously completed the bearing-bending analysis for the internal Acme threads in the bronze nut that engage the steel lead screw.
+
+For that preliminary calculation, I assumed:
+
+| Parameter | Value |
+|---|---:|
+| Axial load per nut | 1,000 N |
+| Internal Acme thread | 1/4–20 |
+| Pitch | 0.050 in = 1.27 mm |
+| Mean thread diameter used | 0.225 in = 5.715 mm |
+| Assumed full engagement length | 0.625 in = 15.875 mm |
+| Number of engaged thread pitches | 12.5 |
+| Assumed bronze yield strength | 137.9 MPa |
+| Calculated thread bending stress | 38.3 MPa |
+
+The factor of safety from that simplified thread-bearing bending model was:
+
+SF=Syb
+
+SF=137.938.3
+
+$\boxed{SF=3.60}$
+
+This result depends on the assumed full engagement length and bronze material properties. The actual alloy and engagement should be checked against the supplier's specifications.
+
+This analysis applies to the **internal Acme threads of the bronze nut engaging the lead screw**. It is separate from the 0.563–18 UNF mounting interface between the nut and flange.
+
+---
+
+## 9. Flange-to-Crosshead Mounting Design
+
+I decided to mount the steel flange on the **underside of the moving crosshead**.
+
+The flange will be secured using four bolts passing through the flange's clearance holes and threading into tapped holes in the crosshead.
+
+I selected:
+
+- Four 1/4–20 UNC bolts.
+- SAE Grade 5 bolt material.
+- Four 0.266 in flange clearance holes.
+- Tapped 1/4–20 UNC holes in the crosshead.
+
+The crosshead thickness and exact steel grade have not yet been selected.
+
+### 9.1 Load on Each Mounting Bolt
+
+The tensile tester applies 2,000 N to the specimen. Assuming the two lead-screw assemblies share the load equally:
+
+Fassembly=20002
+
+Fassembly=1000N
+
+Each flange therefore transfers an assumed 1,000 N load.
+
+With four mounting bolts and an ideal equal-load-sharing assumption:
+
+Fb=Fassembly4
+
+Fb=10004
+
+$\boxed{F_b=250\text{ N per bolt}}$
+
+This is a preliminary load distribution. Actual bolt loading may differ because of flange stiffness, bolt preload, joint contact, and possible prying.
+
+Because the flange is mounted underneath the crosshead, the tensile load tends to pull the flange away from the crosshead. The mounting bolts therefore experience direct tensile loading in this simplified model.
+
+### 9.2 Tensile Stress in the Grade 5 Bolts
+
+For a 1/4–20 UNC bolt, the tensile stress area is:
+
+At=0.0318in2
+
+Converting the force per bolt to pounds-force:
+
+Fb=2504.44822
+
+Fb=56.20lbf
+
+The tensile stress is:
+
+b=FbAt
+
+b=56.200.0318
+
+$\boxed{\sigma_b=1767\text{ psi}}$
+
+Converting to MPa:
+
+$\boxed{\sigma_b\approx12.18\text{ MPa}}$
+
+For a 1/4 in SAE Grade 5 bolt, I used a minimum yield strength of 92,000 psi and a proof strength of 85,000 psi.
+
+The factor of safety against tensile yielding is:
+
+SFy=Syb
+
+SFy=920001767
+
+$\boxed{SF_y\approx52.1}$
+
+The factor of safety relative to proof strength is:
+
+SFproof=850001767
+
+$\boxed{SF_{\text{proof}}\approx48.1}$
+
+The bolts have a substantial calculated margin against direct tensile yielding under the assumed equal-load-sharing model.
+
+These results do not independently verify the tapped crosshead threads or the complete bolted joint.
+
+### 9.3 Preliminary Internal Thread-Stripping Check in the Crosshead
+
+The next failure mode I evaluated was stripping of the internal 1/4–20 UNC threads tapped into the steel crosshead.
+
+The crosshead thickness and material grade are not yet known. I therefore used a preliminary assumed crosshead steel tensile strength of:
+
+Sut=420MPa
+
+For this estimate, I approximated the material's shear strength as one-half its tensile strength:
+
+Ssu=0.5Sut
+
+Ssu=0.5(420)
+
+$\boxed{S_{su}=210\text{ MPa}}$
+
+This is an assumed material property for preliminary sizing, not a confirmed crosshead specification.
+
+The Industrial Fasteners Institute's thread-strength bulletin lists the internal thread stripping area for a 1/4–20 UNC tapped hole as 0.539 in² per inch of engagement.
+
+[Industrial Fasteners Institute — Calculating Thread Strength](https://www.greensladeandcompany.com/wp-content/uploads/pdf/articles/engineering/Engineering%20-%20Bulletin%20-%20Calculating%20Thread%20Strength.pdf)
+
+Therefore:
+
+Aint=0.539Le
+
+where Le is in inches and Aint is in square inches.
+
+For the preliminary design, I used a target factor of safety of 4 against internal thread stripping:
+
+SF=SsuAintFb
+
+Substituting the stripping-area relationship:
+
+SF=Ssu(0.539Le)Fb
+
+Solving for the required engagement length:
+
+Le=SFFb0.539Ssu
+
+Converting the assumed shear strength to psi:
+
+Ssu=2100.00689476
+
+Ssu30458psi
+
+Substituting the values:
+
+Le=4(56.20)0.539(30458)
+
+$\boxed{L_e=0.0137\text{ in}=0.348\text{ mm}}$
+
+This is the theoretical engagement length from the simplified stripping model. It is shorter than one thread pitch:
+
+P=120=0.050in
+
+I did not use this very short theoretical value as the final preliminary design dimension.
+
+Instead, I selected a practical preliminary engagement target equal to one nominal bolt diameter:
+
+Le=d=0.250in
+
+$\boxed{L_e=0.250\text{ in}=6.35\text{ mm}}$
+
+At this engagement length, the number of engaged thread pitches is:
+
+n=LeP
+
+n=0.2500.050
+
+$\boxed{n=5\text{ thread pitches}}$
+
+The estimated internal thread stripping factor of safety at this engagement length is:
+
+SF=Ssu(0.539Le)Fb
+
+SF=30458(0.539)(0.250)56.20
+
+$\boxed{SF\approx73.0}$
+
+This result is based on the assumed 420 MPa crosshead steel tensile strength, the estimated shear strength, the IFI stripping-area value, and equal load distribution among the four bolts.
+
+### 9.4 Preliminary Crosshead Engagement Requirement
+
+Based on this preliminary calculation, I selected:
+
+$\boxed{L_e=0.250\text{ in}=6.35\text{ mm}}$
+
+as the target usable full-thread engagement for each 1/4–20 UNC mounting bolt.
+
+The crosshead must be thick enough to provide this usable engagement. If the holes are blind, the drilled-hole depth must be greater than the usable full-thread engagement to account for the drill point and incomplete threads at the bottom of the hole.
+
+The actual crosshead material and thickness still need to be selected. The thread-stripping calculation must be revisited using the actual material properties and final hole geometry.
+
+---
+
+## 10. Current Design Record
+
+| Design item | Current selection or status |
 |---|---|
-| Number of screws | Two identical screws |
-| Screw material used for calculations | AISI 1020 cold-drawn steel (exact product grade unverified) |
+| Number of lead screws | Two identical screws |
 | Screw manufacturer/product | Roton part 60758 |
-| Thread style | Acme, 1/4–20 |
-| Major diameter | 6.350 mm |
-| Minor diameter | 4.445 mm |
-| Lead | 1.270 mm/rev |
-| Nut material | Bronze |
-| Contact condition | Lubricated |
-| Preliminary friction coefficient | =0.15, assumed |
-| Axial-stress minimum diameter | 3.815 mm |
-| Calculated screw speed range | 0.787–39.37 RPM |
-| Preliminary total operating torque | 1.27 N·m, based on manufacturer's torque ratio |
+| Screw thread | 1/4–20 Acme |
+| Screw major diameter | 6.350 mm |
+| Screw minor diameter | 4.445 mm |
+| Screw lead | 1.270 mm/rev |
+| Screw material used in calculations | AISI 1020 cold-drawn steel; exact product grade unverified |
+| Nut manufacturer/product | Roton part 91734 |
+| Nut material | Bronze; exact alloy to verify |
+| Nut internal thread | 1/4–20 Acme |
+| Nut external mounting thread | 0.563–18 UNF |
+| Flange manufacturer/product | Roton part 89837 |
+| Flange material | Steel; exact grade unverified |
+| Flange mounting arrangement | Underside of crosshead |
+| Number of flange mounting bolts | Four |
+| Bolt specification | 1/4–20 UNC SAE Grade 5 |
+| Load per flange | 1,000 N |
+| Preliminary load per bolt | 250 N |
+| Direct bolt tensile stress | 1,767 psi |
+| Bolt tensile-yield factor of safety | 52.1 |
+| Preliminary crosshead thread engagement | 0.250 in (6.35 mm) |
+| Assumed crosshead steel tensile strength | 420 MPa |
+| Preliminary thread-stripping factor of safety | 73.0 |
+| Final torque per screw | 0.635 N·m |
+| Final total operating torque | 1.27 N·m |
 
 ---
 
-## 9. Remaining Checks Before Finalizing the Lead-Screw Design
+## 12. Design Decisions and Lessons Learned
 
-- [ ] Confirm the exact compatible bronze nut part number for Roton screw 60758.
-- [ ] Confirm that the 300 lbf operating load rating applies to that nut and the intended operating conditions.
-- [ ] Confirm the screw's actual steel grade and condition with Roton if AISI 1020 cold-drawn steel is required.
-- [ ] Confirm the manufacturer's torque-ratio definition and test conditions.
-- [ ] Obtain the actual pitch/mean diameter or a manufacturer thread drawing for the selected screw.
-- [ ] Complete and include the detailed lead-screw/nut free-body diagram.
-- [ ] Verify that the selected screw's available length is at least 18 in.
-- [ ] Check screw buckling, alignment, bearing support, and synchronization as appropriate to the complete design.
-
----
-
-## 10. Design Decisions and Lessons Learned
-
-1. I began by calculating a minimum screw diameter from axial stress and a factor of safety of 4.
-2. I selected Acme threads because they are common in power-screw applications.
+1. I began by calculating a minimum screw diameter from axial stress using a factor of safety of 4.
+2. I selected Acme threads because they are commonly used in power-transmission applications.
 3. I changed the design lead to 1.27 mm/rev to match an available commercial screw.
 4. I chose a bronze nut and lubricated contact rather than dry steel-on-steel contact.
 5. My first screw candidate passed the nominal diameter check but did not meet the published bronze-nut operating load rating.
 6. I selected a larger 1/4–20 screw after checking both its minor diameter and the bronze-nut operating load rating.
-7. I learned that selecting a lead screw requires checking the screw and nut as a system, rather than checking only the screw diameter.
+7. I selected a compatible bronze threaded mount nut and steel mounting flange.
+8. I completed the internal Acme thread-bearing bending analysis for the bronze nut and calculated a factor of safety of 3.60 under the assumed full-engagement condition.
+9. I selected four 1/4–20 UNC SAE Grade 5 bolts to attach the flange to the underside of the crosshead.
+10. I calculated the direct tensile stress in the mounting bolts and evaluated the tapped crosshead threads for preliminary thread stripping.
+11. I learned that a strong bolt does not automatically guarantee a strong bolted connection. The internal threads in the component receiving the bolt must also be checked.
+12. I distinguished theoretical minimum engagement from a practical design engagement. The preliminary 0.250 in engagement target is more practical than the very short theoretical result from the simplified stripping calculation.
 
----
-
-*This document records my current design process and identifies items that still require manufacturer verification. I will update it as I complete the remaining lead-screw checks and move on to the nut/flange and crosshead designs.*
 
 ## Crosshead - Aidan Cadle
 
