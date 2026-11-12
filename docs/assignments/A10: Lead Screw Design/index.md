@@ -759,6 +759,9 @@ The final mass is 2.56 lbs.
 
 The final, modified cross bar can be found [HERE](crosshead.SLDPRT)
 
+## Lessons Learned - Aidan Cadle
+In completing this assignment, there were many valuable lessons that I began to realize. For one, it is important to trust in your teammates decisions, and know that you can depend on them. This is a drastic change compared to my experience in ENGR 1300, where half of my group failed the class and did not contribute once learning that they could not pass. Additionally, I gained knowledge about additional mkdocs formatting, and realized I had not even scratched the surface of what was possible. In analyzing the beams, I realized that beams should almost always be treated as simply supported, as opposed to fixed. Including document formatting, I spent about 9 hours on my portion of the assignment. 
+
 
 ## Tabulating Costs - Everyone
 
@@ -791,7 +794,7 @@ Examples:
 
 <img width="362" height="485" alt="image" src="https://github.com/user-attachments/assets/2c4ed771-0fbe-43cc-aee3-fa086f41bf64" />
 
-## Specimen Gripper Model
+## Specimen Gripper Model - Jack Brandon
 
 <img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
 
@@ -799,7 +802,7 @@ This is the model of the specimen gripper design. First, I designed the C-shaped
 
 Download: https://a360.co/4jaEOpG
 
-## Assembly Model
+## Assembly Model - Jack Brandon
 
 <img width="697" height="786" alt="image" src="https://github.com/user-attachments/assets/b1521681-3249-4452-9339-0d8103d485e8" />
 
@@ -815,10 +818,10 @@ Download: https://a360.co/4sRWwSe
 
 The parameters used for the assembly were the T-slot stock height (h) and width (w). These parameters were used to simplify the dimensioning of the length of the bars in the frame assembly. 
 
-## Crosshead Drawing
+## Crosshead Drawing - Jack Brandon
 
 <img width="1012" height="657" alt="image" src="https://github.com/user-attachments/assets/20c3c36a-dbd5-4855-8fd4-9993e88dd21e" />
 
-## Lessons Learned
+## Lessons Learned - Jack Brandon
 
 My main task in this project was to design and parametrically model the specimen gripper and tensile tester assembly. This entailed many hours spent brainstorming, designing, and making adjustments to the gripper sub-assembly and finally the main assembly. The main challenge was mostly with the T-slot stock. It involved the importing of the T-slot stock (which only came in a length of 3 meters), converting it to inches, extrude cutting to a more appropriate length, and figuring out how to copy the new base piece to create new pieces that would be different lengths. This involved some parametric technique in order to ensure the pieces lined up/were the correct length for the frame. I ran into many issues with parts not wanting to move or be constrained after being copied. Luckily I discovered the “copy new” function in Fusion which finally allowed me to do what was needed. Still, aligning and constraining the parts into the final assembly was a difficult process to say the least and it took several iterations to finally get it right. I spent a total of 8 hours doing my task and another hour formatting and compiling the other parts from the other group members into my portfolio. 
