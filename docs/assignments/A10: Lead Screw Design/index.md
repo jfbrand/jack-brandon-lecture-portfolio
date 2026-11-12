@@ -795,6 +795,8 @@ Examples:
 
 <img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
 
+This is the model of the specimen gripper design. First, I designed the C-shaped body to hold the two screws. I ensured that the threaded adaptor on top would work with the load cell provided and then communicated with Aidan to ensure that the crosshead would share that same thread size therefore allowing the same subassembly to be used on top and bottom of the tensile tester. I sourced toggle clamp holding screws from McMaster carr as I didn’t see a need to design something similar from scratch. Lastly, I Designed ergonomic levers to fit onto the screws to allow for the torque needed to grip the specimen with 2kN of force applied.
+
 Download: https://a360.co/4jaEOpG
 
 ## Assembly Model
@@ -805,7 +807,7 @@ Example given in assignment.
 
 <img width="632" height="726" alt="image" src="https://github.com/user-attachments/assets/3d4067fa-fb86-430c-afe1-e34021ff5698" />
 
-Complete assembly model.
+The complete assembly model with Crosshead, Leadscrews, Nuts/Flanges and Frame.
 
 Download: https://a360.co/4sRWwSe
 
