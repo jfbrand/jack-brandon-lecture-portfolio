@@ -1,6 +1,6 @@
 # A10 – Lead Screw Design
 
-# ISAIAH LITTLE: Lead Screw System Design — Tensile Tester 
+## Lead Screw System Design - Isaiah Little
 
 ## Project Overview
 
@@ -570,14 +570,55 @@ The actual crosshead material and thickness still need to be selected. The threa
 11. I learned that a strong bolt does not automatically guarantee a strong bolted connection. The internal threads in the component receiving the bolt must also be checked.
 12. I distinguished theoretical minimum engagement from a practical design engagement. The preliminary 0.250 in engagement target is more practical than the very short theoretical result from the simplified stripping calculation.
 
+## Crosshead Design - Aidan Cadle
 
-## Crosshead - Aidan Cadle
+In building the tensile tester, the crosshead had to be designed with a factor of safety of 4, a maximum deflection of 0.1 mm, and support a tensile load of 2 kN. Given the constraints and example of "low cost" testers, the chosen material is 6061-O Aluminum, and the center to center distance between the two lead screw holes is 8 in. 
+6061-O Aluminum has a yield strength of 62.05 MPa, and an elastic modulus E = 69 GPa.
+
+![calc 1](<A10 Scans_page-0001.jpg>)
+
+Initially, the calculations assumed a square cross sectional area. However, this would lead the flange to "stick out" from the crosshead and mount incorrectly, so the calculations were repeated using a rectangular cross sectional area. 
+
+![calc 2](<A10 Scans_page-0002.jpg>)
+
+Calculations were repeated, but now the width of the crosshead was set to 1.6 in, the outer diameter of the flange. Using the equations for a fixed beam with a load in the center, calculating for both stress and strain, the minimum height of the crosshead was determined to be 0.866 in. 
+
+Under the calculations, the rough multi angle sketch, with a top, front, and right view is included. While not specifically labeled, the material of the crosshead is 6061-O Aluminum, as described above. 
+Holes are included for the lead screws, flange mounting, and specimen mounting solution. 
+
+## Parametric Modelling
+
+### Crosshead - Aidan Cadle
+
+For the 3D model, the part was parametrically calculated.
+Variables and equations were defined for every useful value needed within the calculations.
+
+![eqn](eqn.png)
+
+After all of the variables, equations, and metric to imperial conversions were applied, the result matched that of the previously calculated value.
+
+Now, the sketch can be defined using these variables and calculated values.
+
+![sketch](<bar sketch.png>)
+
+The sketch was then extruded out using parametric techniques.
+
+![ext](extrude.png)
+
+The final part, parametrically produced. 
+
+![Part](<part iso.png>)
+
 
 # Specimen Gripper & Parametric Modelling - Jack Brandon
 
-**Objective:** Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
+## Objective: 
 
-**Analyze:** I began the design process by visualizing the simplest and most effective way to constrain specimens of different shapes. The idea that came to mind was a c-clamp/vise style mechanism to hold the specimen in place during testing. This mechanism would allow for adjustable clamping location and force for different size and shape specimens as well as ergonomic handles to allow for necessary torque to be applied to the clamp bolts. Furthemore, the gripper needed to be modular so that it could be threaded to the load cell as well as the crosshead to hold the top and bottom of the specimen.
+Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
+
+## Analyze: 
+
+I began the design process by visualizing the simplest and most effective way to constrain specimens of different shapes. The idea that came to mind was a c-clamp/vise style mechanism to hold the specimen in place during testing. This mechanism would allow for adjustable clamping location and force for different size and shape specimens as well as ergonomic handles to allow for necessary torque to be applied to the clamp bolts. Furthemore, the gripper needed to be modular so that it could be threaded to the load cell as well as the crosshead to hold the top and bottom of the specimen.
 
 For design inspiration, I researched various tensile testers to understand how the specimen was typically constrained.
 
@@ -587,18 +628,20 @@ Examples:
 
 <img width="362" height="485" alt="image" src="https://github.com/user-attachments/assets/2c4ed771-0fbe-43cc-aee3-fa086f41bf64" />
 
-## Gripper Design
+## Specimen Gripper Model
 
 <img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
 
 Download: https://a360.co/4jaEOpG
 
-## Assembly
-
-Example:
+## Assembly Model
 
 <img width="697" height="786" alt="image" src="https://github.com/user-attachments/assets/b1521681-3249-4452-9339-0d8103d485e8" />
 
-**Model**
+Example given in assignment.
 
 <img width="632" height="726" alt="image" src="https://github.com/user-attachments/assets/3d4067fa-fb86-430c-afe1-e34021ff5698" />
+
+Complete assembly model.
+
+<img width="1501" height="697" alt="image" src="https://github.com/user-attachments/assets/c5d8b3f2-f954-4cd2-bf67-7e574f388ed0" />
