@@ -658,7 +658,7 @@ Next, the sketch profile was extruded to 0.5". This height was chosen to provide
 
 The completed bearing mount.
 
-<img width="580" height="717" alt="Screenshot 2026-11-18 093244" src="https://github.com/user-attachments/assets/74f2708f-e386-4cec-abc2-11db0ea5dfbc" />
+<img width="596" height="687" alt="Screenshot 2026-11-18 174211" src="https://github.com/user-attachments/assets/22d2c399-5a86-4192-b782-0c85d2260757" />
 
 The bearing mounts installed on the top and bottom of the tensile tester assembly.
 
