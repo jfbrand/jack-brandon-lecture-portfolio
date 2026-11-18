@@ -605,11 +605,6 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 ## FEA of Frame
 
-Maximum von Mises stress and location.
-Maximum vertical deflection at the grip line.
-Factor of Safety (based on chosen material yield).
-Brief discussion of load path and any observed twisting/warping tendencies.
-
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
 | 1 | Large | |
@@ -622,3 +617,5 @@ Brief discussion of load path and any observed twisting/warping tendencies.
 <img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
 
 <img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
+
+## Lessons Learned
