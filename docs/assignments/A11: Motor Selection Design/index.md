@@ -607,7 +607,7 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 
 
-## Design Floating Bearing Mount
+## Floating Bearing Mount Design
 
 <img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
 
