@@ -618,7 +618,7 @@ The second task I had was to design the floating bearing mount. For this, I figu
 
 <img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
 
-The sketch for the bearing mount. The lead screw hole dimension is such that there is a 0.001 total clearance between the screw and hole, given the 1/4" nominal lead screw diameter. This falls within the standard specifications of an RC3 fit. Also, worth mentioning, is that the actual size of the lead screw can and likely will vary slightly, is a threaded surface, and needs to be able to rotate freely, so the hole was made larger to account for these factors. Typically, the dimensions would be between 0.2491 - 0.2495" and 0.25 - 0.2506" for the shaft and hole diameters respectively.
+The sketch for the bearing mount. The lead screw hole dimension is such that there is a 0.001" total clearance between the screw and hole, given the 1/4" nominal lead screw diameter. This falls within the standard specifications of an RC3 fit. Also, worth mentioning, is that the actual size of the lead screw can and likely will vary slightly, is a threaded surface, and needs to be able to rotate freely, so the hole was made larger to account for these factors. Typically, the dimensions would be between 0.2491 - 0.2495" and 0.25 - 0.2506" for the shaft and hole diameters respectively.
 
 <img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
 
