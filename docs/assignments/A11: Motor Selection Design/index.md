@@ -636,4 +636,5 @@ The bearing mounts installed on the top and bottom of the tensile tester assembl
 
 ## Drawings
 
-<img width="931" height="601" alt="Screenshot 2026-11-04 220150" src="https://github.com/user-attachments/assets/a62c9ec3-20ba-43e9-b838-5a5e04772b30" />
+<img width="1115" height="722" alt="Screenshot 2026-11-18 114536" src="https://github.com/user-attachments/assets/63657c34-4b15-459c-8172-d8a49d167427" />
+
