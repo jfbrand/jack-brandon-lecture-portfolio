@@ -614,12 +614,22 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 ## Floating Bearing Mount Design
 
+The second task I had was to design the floating bearing mount. For this, I figured that at the very least a plate would be necessary a bearing system to be attached to the T-slot. I considered adding supplier bearings but since that was not detailed in the instructions for the assignment, I simply made the plate with the appropriate RC3 class fit for the lead screw and correct size/spacing for the bolts.
+
 <img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
+
+The sketch for the bearing mount. The lead screw hole dimension is such that there is a 0.001 total clearance between the screw and hole, given the 1/4" nominal lead screw diameter. This falls within the standard specifications of an RC3 fit. Also, worth mentioning, is that the actual size of the lead screw can and likely will vary slightly, is a threaded surface, and needs to be able to rotate freely, so the hole was made larger to account for these factors. Typically, the dimensions would be between 0.2491 - 0.2495" and 0.25 - 0.2506" for the shaft and hole diameters respectively.
 
 <img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
 
+Next, the sketch profile was extruded to 0.5". This height was chosen to provide strength to the bearing mount without causing potential unnecessary friction between the hole and lead screw in the case that the two touch while the tester is running.
+
 <img width="668" height="480" alt="Screenshot 2026-11-18 093328" src="https://github.com/user-attachments/assets/960f19b4-74ea-4d1b-9ec6-0105b3ab1bd2" />
 
+The completed bearing mount.
+
 <img width="580" height="717" alt="Screenshot 2026-11-18 093244" src="https://github.com/user-attachments/assets/74f2708f-e386-4cec-abc2-11db0ea5dfbc" />
+
+The bearing mounts installed on the top and bottom of the tensile tester assembly.
 
 ## Lessons Learned
