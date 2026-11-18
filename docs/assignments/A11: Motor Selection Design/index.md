@@ -605,6 +605,12 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 ## FEA of Frame
 
+
+
 ## Design Floating Bearing Mount
 
 <img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
+
+<img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
+
+<img width="540" height="652" alt="Screenshot 2026-11-17 195159" src="https://github.com/user-attachments/assets/48400776-a82e-4a0d-8aef-27423aa77445" />
