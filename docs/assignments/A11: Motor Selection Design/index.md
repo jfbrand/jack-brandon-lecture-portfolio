@@ -605,7 +605,17 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 ## FEA of Frame
 
+Maximum von Mises stress and location.
+Maximum vertical deflection at the grip line.
+Factor of Safety (based on chosen material yield).
+Brief discussion of load path and any observed twisting/warping tendencies.
 
+| Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
+|---|---|---|---|---|
+| 1 | Large | |
+| 2 | Medium | |
+| 3 | Small | | |
+| 4 | Small | | |
 
 ## Floating Bearing Mount Design
 
