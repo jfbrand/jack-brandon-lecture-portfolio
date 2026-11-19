@@ -705,7 +705,7 @@ As can be seen from the table, the results never converged to a 2% difference fo
 
 <img width="566" height="682" alt="Screenshot 2026-11-18 224333" src="https://github.com/user-attachments/assets/82f771c0-840d-4f6e-b394-7cc1d8f953f4" />
 
-Although the columns were already well above the required safety factor of 4, I wanted to see how much stronger they and the frame could be made. In order to do this I added plates to the front and back of the columns to increase their rigidity. These will in effect increase the cross sectional area of the columns, therefore increasing their stiffness.
+Although the columns were already well above the required safety factor of 4, I wanted to see how much stronger they and the frame could be made. In order to do this I added plates to the front and back of the columns to increase their rigidity. These in effect increased the cross sectional area of the columns, therefore increasing their stiffness.
 
 
 
@@ -734,6 +734,10 @@ The bearing mounts installed on the top and bottom of the tensile tester assembl
 Download Link: https://a360.co/4A5ueqb
 
 ## Lessons Learned
+
+This project revealed two crucial aspects of a team engineering effort. First, was the importance of communication. Due to the way that our team's tasks were divided, some of us had overlapping tasks. For example, Aidan and I were both doing our own FEA on two separate parts of the frame. Because of this, we each arrived at different bracket solutions in order to complete the assembly and prepare it for verification. I later realized that we had different brackets (Grainger vs McMaster Carr) being used to connect the top horizontal beam to the vertical columns. This caused a delay in getting the FEA verifications completed as one of our assemblies had to be changed to maintain consistent brackets. Second, another issue occurred when the tester assembly file was not shared early enough in the process. This created issues with the motor mount and coupling designs. Once the file was shared, the designs were updated accordingly. The lesson was that these problems could have been avoided if communication was taken more seriously by myself.
+
+Second, this project highlighted the importance of critical thinking when running an FEA. In this instance, the supplied brackets came with mounting hardware (bolts and t-slot parts) which created many extra small components in the frame. When it came time to run the first FEA simulation, the mesh failed. It took some time to figure out why but after going through the error messages, it became clear that the assembly was not constrained and there were too many complex surfaces for the mesh. These two issues were solved by using the automatic contacts function to fix all the components together as an assembly as designed and by removing the unnecessary hardware from the L-brackets. Finally the mesh was able to be produced and the FEA could be run.
 
 ## Drawings
 
