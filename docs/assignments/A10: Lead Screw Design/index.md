@@ -1,4 +1,4 @@
-# A11- Motor Selection
+# A11 - Motor Selection
 
 # Motor Selection, Bracket Design, and Coupler Selection - Isaiah Little
 
