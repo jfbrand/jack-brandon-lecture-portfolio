@@ -637,7 +637,7 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 <img width="1305" height="683" alt="Screenshot 2026-11-18 182433" src="https://github.com/user-attachments/assets/0c59dd41-489e-4fea-90ba-4861e1c36793" />
 
-<img width="1201" height="436" alt="Screenshot 2026-11-18 182620" src="https://github.com/user-attachments/assets/c8546168-8e27-4506-b104-c3e32b3a39be" />
+
 
 <img width="1242" height="516" alt="Screenshot 2026-11-18 182810" src="https://github.com/user-attachments/assets/050fab5a-a315-4408-8881-9357c689b8ee" />
 
