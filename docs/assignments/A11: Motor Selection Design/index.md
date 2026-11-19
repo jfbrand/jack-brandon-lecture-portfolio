@@ -633,15 +633,25 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 # FEA of Frame and Floating Bearing Mount Design - Jack Brandon
 
-## FEA of Frame
+## FEA of Vertical Components of Frame
+
+The first task I had was to run an FEA simulation on the frame by applying the transverse and axial loads to the motor mounts. In order to prepare the assembly for this evaluation, I first checked that all of the components were properly aligned and constrained in the design. Moving to the simulation, I did the same by using the "automatic contacts" function in Fusion which ensured that all of the components were constrained to each other via the L-brackets.
 
 <img width="1305" height="683" alt="Screenshot 2026-11-18 182433" src="https://github.com/user-attachments/assets/0c59dd41-489e-4fea-90ba-4861e1c36793" />
 
+Here, I applied the fixed constraints to the "feet" of the tester to ensure it was on a stable base.
+
 <img width="992" height="446" alt="Screenshot 2026-11-18 200543" src="https://github.com/user-attachments/assets/7a7ef6f7-a5db-4a61-9440-26b06cec6aad" />
+
+Next I a applied the 2.54 N-M torque/moment to the motor mounts.
 
 <img width="1242" height="516" alt="Screenshot 2026-11-18 182810" src="https://github.com/user-attachments/assets/050fab5a-a315-4408-8881-9357c689b8ee" />
 
+The compressive axial load of 1000 N per mount was then applied.
+
 <img width="547" height="776" alt="Screenshot 2026-11-18 182905" src="https://github.com/user-attachments/assets/beeb3965-f14b-42ca-beb3-ebf7d620650c" />
+
+The mesh size selected for the first pass was the maximum (10%).
 
 <img width="1025" height="511" alt="Screenshot 2026-11-18 205548" src="https://github.com/user-attachments/assets/ee9f9741-2d8b-4f87-aa45-e3d5dea9b274" />
 
@@ -661,9 +671,9 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
-| 1 | Large | 12.5 MPa | 0.001 mm | 31.9 |
+| 1 | Coarse | 12.5 MPa | 0.001 mm | 31.9 |
 | 2 | Medium | 10.8 MPa | 0.001 mm | 32.6 |
-| 3 | Medium |  |  |  |
+| 3 | Fine |  |  |  |
 
 ## Floating Bearing Mount Design
 
