@@ -753,3 +753,4 @@ Second, this project highlighted the importance of critical thinking when runnin
 
 <img width="1115" height="722" alt="Screenshot 2026-11-18 114536" src="https://github.com/user-attachments/assets/63657c34-4b15-459c-8172-d8a49d167427" />
 
+<img width="1021" height="662" alt="Screenshot 2026-11-18 232424" src="https://github.com/user-attachments/assets/f09c31a7-9df6-45b6-8b0c-1d16dedf741a" />
