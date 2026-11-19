@@ -955,7 +955,9 @@ Second, this project highlighted the importance of critical thinking when runnin
 <img width="940" height="610" alt="Screenshot 2026-11-18 232600" src="https://github.com/user-attachments/assets/1e8ac8c8-b1a0-4a4c-a998-798a18da9e7a" />
 
 <img width="1120" height="728" alt="Screenshot 2026-11-18 233740" src="https://github.com/user-attachments/assets/f6d7684f-a023-410c-878e-e484b8c71ca3" />
+
 ## Tabulating Costs - Group Effort, Aidan Formatting
+
 | Item Number | Quantity | Name | Cost per Item | Total Cost | Link |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 2 | Toggle Clamp Holding Screw | $7.09 | $14.18 | [link](https://www.mcmaster.com/5147A28/) | 
