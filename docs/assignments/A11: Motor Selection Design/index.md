@@ -643,13 +643,9 @@ The first task I had was to run an FEA simulation on the frame by applying the t
 
 Here, I applied the fixed constraints to the "feet" of the tester to ensure it was on a stable base.
 
-<img width="992" height="446" alt="Screenshot 2026-11-18 200543" src="https://github.com/user-attachments/assets/7a7ef6f7-a5db-4a61-9440-26b06cec6aad" />
-
-Next I a applied the 2.54 N-M torque/moment to the motor mounts.
-
 <img width="1242" height="516" alt="Screenshot 2026-11-18 182810" src="https://github.com/user-attachments/assets/050fab5a-a315-4408-8881-9357c689b8ee" />
 
-The compressive axial load of 1000 N per mount was then applied.
+The 1000 N compressive axial loads (2 kN total)  and 20.7 N-M torque/moments were applied to the individual motor mounts. 
 
 <img width="547" height="776" alt="Screenshot 2026-11-18 182905" src="https://github.com/user-attachments/assets/beeb3965-f14b-42ca-beb3-ebf7d620650c" />
 
@@ -760,3 +756,4 @@ Second, this project highlighted the importance of critical thinking when runnin
 <img width="940" height="610" alt="Screenshot 2026-11-18 232600" src="https://github.com/user-attachments/assets/1e8ac8c8-b1a0-4a4c-a998-798a18da9e7a" />
 
 <img width="1120" height="728" alt="Screenshot 2026-11-18 233740" src="https://github.com/user-attachments/assets/f6d7684f-a023-410c-878e-e484b8c71ca3" />
+
