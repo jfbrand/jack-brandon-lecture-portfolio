@@ -651,7 +651,7 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
-| 1 | Large | |
+| 1 | Large | 12.5 MPa | 0.001 mm | 31.9 |
 | 2 | Medium | |
 | 3 | Small | | |
 | 4 | Small | | |
