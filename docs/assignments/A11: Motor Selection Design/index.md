@@ -673,13 +673,23 @@ The next pass was performed with a medium (~6%) mesh size.
 
 <img width="1917" height="917" alt="Screenshot 2026-11-18 204827" src="https://github.com/user-attachments/assets/893e549f-d1c5-4d8e-9cc7-b8a7bc44ff2f" />
 
+<img width="1030" height="512" alt="Screenshot 2026-11-18 220331" src="https://github.com/user-attachments/assets/d8f23c09-456d-4b7f-b905-b0f68ff62d9f" />
 
+Finally, the last pass was performed with the finest mesh (1%).
+
+<img width="1917" height="917" alt="Screenshot 2026-11-18 215853" src="https://github.com/user-attachments/assets/8da3843b-9ee1-43e3-9455-8bbf6382ddcb" />
+
+<img width="1917" height="945" alt="Screenshot 2026-11-18 215930" src="https://github.com/user-attachments/assets/1ca854a8-a12d-4f1d-b9f2-28759349635d" />
+
+<img width="1917" height="943" alt="Screenshot 2026-11-18 215942" src="https://github.com/user-attachments/assets/d565b849-7006-4a21-9fed-57ea83fa28bf" />
 
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
 | 1 | Coarse | 12.5 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 31.9 |
-| 2 | Medium | 10.8 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 32.6 |
-| 3 | Fine |  |  |  |
+| 2 | Medium | 10.8 MPa (same locations) | 0.001 mm | 32.6 |
+| 3 | Fine | 15.3 MPa (same locations) | 0.001 mm | 13.6 |
+
+As can be seen from the table, the results never converged to a 2% difference for the von mises stress and so the fine mesh was used.
 
 ## Floating Bearing Mount Design
 
