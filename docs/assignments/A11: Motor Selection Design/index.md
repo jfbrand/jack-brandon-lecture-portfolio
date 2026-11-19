@@ -707,7 +707,17 @@ As can be seen from the table, the results never converged to a 2% difference fo
 
 Although the columns were already well above the required safety factor of 4, I wanted to see how much stronger they and the frame could be made. In order to do this I added plates to the front and back of the columns to increase their rigidity. These in effect increased the cross sectional area of the columns, therefore increasing their stiffness.
 
+<img width="1917" height="945" alt="Screenshot 2026-11-18 230428" src="https://github.com/user-attachments/assets/fec7fa57-21b3-4d73-8c50-867a1e54c57a" />
 
+<img width="1917" height="946" alt="Screenshot 2026-11-18 230454" src="https://github.com/user-attachments/assets/d518eead-932e-4ea9-9c55-252ca959cb95" />
+
+<img width="1917" height="912" alt="Screenshot 2026-11-18 230511" src="https://github.com/user-attachments/assets/dec81d0d-51a7-468a-8378-6dbc7748baac" />
+
+| Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
+|---|---|---|---|---|
+| Optimization | Fine | 14.9 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 13.9 |
+
+As can be seen from the table above, the optimization performed as expected. The maximum stress decreased slightly from 15.3 to 14.9 MPa. The factor of safety increased from 13.6 to 13.9 and the maximum z displacement stayed the same. Overall, the optimization would likely not be worth it due to the increase in mass and cost for a marginal increase in strength.
 
 ## Floating Bearing Mount Design
 
