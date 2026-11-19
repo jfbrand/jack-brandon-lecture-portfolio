@@ -699,7 +699,7 @@ Finally, the last pass was performed with the finest mesh (1%).
 | 2 | Medium | 10.8 MPa (same locations) | 0.001 mm | 32.6 |
 | 3 | Fine | 15.3 MPa (same locations) | 0.001 mm | 13.6 |
 
-As can be seen from the table, the results never converged to a 2% difference for the von mises stress and so the fine mesh was used.
+As can be seen from the table, the results never converged to a 2% difference for the von mises stress (14% difference between coarse and medium) and so the fine mesh was used.
 
 **Optimization Pass**
 
