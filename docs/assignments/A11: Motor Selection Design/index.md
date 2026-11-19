@@ -649,12 +649,17 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 <img width="1917" height="888" alt="Screenshot 2026-11-18 202337" src="https://github.com/user-attachments/assets/c5d43682-f177-4102-9d22-40078bda051e" />
 
+<img width="1917" height="890" alt="Screenshot 2026-11-18 204726" src="https://github.com/user-attachments/assets/bb7acacc-745b-4840-b976-7b2078eb7f6a" />
+
+<img width="1917" height="946" alt="Screenshot 2026-11-18 204756" src="https://github.com/user-attachments/assets/af5fdc88-8a58-4daf-b238-d305275eccd3" />
+
+<img width="1917" height="917" alt="Screenshot 2026-11-18 204827" src="https://github.com/user-attachments/assets/893e549f-d1c5-4d8e-9cc7-b8a7bc44ff2f" />
+
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
 | 1 | Large | 12.5 MPa | 0.001 mm | 31.9 |
-| 2 | Medium | |
-| 3 | Small | | |
-| 4 | Small | | |
+| 2 | Medium | 10.8 MPa | 0.001 mm | 32.6 |
+| 3 | Medium |  |  |  |
 
 ## Floating Bearing Mount Design
 
