@@ -741,7 +741,11 @@ The completed bearing mount.
 
 The bearing mounts installed on the top and bottom of the tensile tester assembly.
 
-Download Link: https://a360.co/4A5ueqb
+**CAD File Downloads**
+
+Frame Only: https://a360.co/4A5ueqb
+
+Full Assembly: https://a360.co/4sRWwSe
 
 ## Lessons Learned
 
