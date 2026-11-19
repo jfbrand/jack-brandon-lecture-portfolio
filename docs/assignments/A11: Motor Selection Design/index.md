@@ -677,8 +677,8 @@ The next pass was performed with a medium (~6%) mesh size.
 
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
-| 1 | Coarse | 12.5 MPa | 0.001 mm | 31.9 |
-| 2 | Medium | 10.8 MPa | 0.001 mm | 32.6 |
+| 1 | Coarse | 12.5 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 31.9 |
+| 2 | Medium | 10.8 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 32.6 |
 | 3 | Fine |  |  |  |
 
 ## Floating Bearing Mount Design
