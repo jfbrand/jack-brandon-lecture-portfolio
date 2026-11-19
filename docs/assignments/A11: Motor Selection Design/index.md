@@ -637,6 +637,8 @@ Finally, I learned that engineering calculations must be tied to the actual geom
 
 The first task I had was to run an FEA simulation on the frame by applying the transverse and axial loads to the motor mounts. In order to prepare the assembly for this evaluation, I first checked that all of the components were properly aligned and constrained in the design. Moving to the simulation, I did the same by using the "automatic contacts" function in Fusion which ensured that all of the components were constrained to each other via the L-brackets.
 
+**Model Setup**
+
 <img width="1305" height="683" alt="Screenshot 2026-11-18 182433" src="https://github.com/user-attachments/assets/0c59dd41-489e-4fea-90ba-4861e1c36793" />
 
 Here, I applied the fixed constraints to the "feet" of the tester to ensure it was on a stable base.
@@ -653,6 +655,8 @@ The compressive axial load of 1000 N per mount was then applied.
 
 All four of the independent loads applied to the two motor mounts.
 
+**Meshing and Verification 1**
+
 <img width="1025" height="511" alt="Screenshot 2026-11-18 205548" src="https://github.com/user-attachments/assets/ee9f9741-2d8b-4f87-aa45-e3d5dea9b274" />
 
 The mesh size selected for the first pass was the maximum (10%).
@@ -662,6 +666,8 @@ The mesh size selected for the first pass was the maximum (10%).
 <img width="1917" height="887" alt="Screenshot 2026-11-18 202031" src="https://github.com/user-attachments/assets/72cf205a-8959-459f-8c1c-4fc26dde7560" />
 
 <img width="1917" height="888" alt="Screenshot 2026-11-18 202337" src="https://github.com/user-attachments/assets/c5d43682-f177-4102-9d22-40078bda051e" />
+
+**Meshing and Verification 2**
 
 <img width="1027" height="510" alt="Screenshot 2026-11-18 205457" src="https://github.com/user-attachments/assets/31cb88a4-8223-4652-abf8-b05f275c8489" />
 
@@ -673,6 +679,8 @@ The next pass was performed with a medium (~6%) mesh size.
 
 <img width="1917" height="917" alt="Screenshot 2026-11-18 204827" src="https://github.com/user-attachments/assets/893e549f-d1c5-4d8e-9cc7-b8a7bc44ff2f" />
 
+**Meshing and Verification 3**
+
 <img width="1030" height="512" alt="Screenshot 2026-11-18 220331" src="https://github.com/user-attachments/assets/d8f23c09-456d-4b7f-b905-b0f68ff62d9f" />
 
 Finally, the last pass was performed with the finest mesh (1%).
@@ -683,6 +691,8 @@ Finally, the last pass was performed with the finest mesh (1%).
 
 <img width="1917" height="943" alt="Screenshot 2026-11-18 215942" src="https://github.com/user-attachments/assets/d565b849-7006-4a21-9fed-57ea83fa28bf" />
 
+**Results**
+
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
 | 1 | Coarse | 12.5 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 31.9 |
@@ -690,6 +700,10 @@ Finally, the last pass was performed with the finest mesh (1%).
 | 3 | Fine | 15.3 MPa (same locations) | 0.001 mm | 13.6 |
 
 As can be seen from the table, the results never converged to a 2% difference for the von mises stress and so the fine mesh was used.
+
+**Optimization Pass**
+
+
 
 ## Floating Bearing Mount Design
 
