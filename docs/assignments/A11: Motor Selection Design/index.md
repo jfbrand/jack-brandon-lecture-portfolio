@@ -1,3 +1,4 @@
+<img width="992" height="446" alt="Screenshot 2026-11-18 200543" src="https://github.com/user-attachments/assets/7a7ef6f7-a5db-4a61-9440-26b06cec6aad" />
 # A11 – Motor Selection
 
 # Motor Selection, Bracket Design, and Coupler Selection - Isaiah Little
