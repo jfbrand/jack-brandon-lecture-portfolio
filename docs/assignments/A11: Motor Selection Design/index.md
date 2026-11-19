@@ -651,9 +651,11 @@ The compressive axial load of 1000 N per mount was then applied.
 
 <img width="547" height="776" alt="Screenshot 2026-11-18 182905" src="https://github.com/user-attachments/assets/beeb3965-f14b-42ca-beb3-ebf7d620650c" />
 
-The mesh size selected for the first pass was the maximum (10%).
+All four of the independent loads applied to the two motor mounts.
 
 <img width="1025" height="511" alt="Screenshot 2026-11-18 205548" src="https://github.com/user-attachments/assets/ee9f9741-2d8b-4f87-aa45-e3d5dea9b274" />
+
+The mesh size selected for the first pass was the maximum (10%).
 
 <img width="1917" height="910" alt="Screenshot 2026-11-18 201819" src="https://github.com/user-attachments/assets/936db4fd-80de-4515-be99-6802784c7c22" />
 
@@ -663,11 +665,15 @@ The mesh size selected for the first pass was the maximum (10%).
 
 <img width="1027" height="510" alt="Screenshot 2026-11-18 205457" src="https://github.com/user-attachments/assets/31cb88a4-8223-4652-abf8-b05f275c8489" />
 
+The next pass was performed with a medium (~6%) mesh size.
+
 <img width="1917" height="890" alt="Screenshot 2026-11-18 204726" src="https://github.com/user-attachments/assets/bb7acacc-745b-4840-b976-7b2078eb7f6a" />
 
 <img width="1917" height="946" alt="Screenshot 2026-11-18 204756" src="https://github.com/user-attachments/assets/af5fdc88-8a58-4daf-b238-d305275eccd3" />
 
 <img width="1917" height="917" alt="Screenshot 2026-11-18 204827" src="https://github.com/user-attachments/assets/893e549f-d1c5-4d8e-9cc7-b8a7bc44ff2f" />
+
+
 
 | Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
 |---|---|---|---|---|
