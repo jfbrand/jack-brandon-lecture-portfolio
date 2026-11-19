@@ -1,827 +1,978 @@
-# A10 – Lead Screw Design
+# A11- Motor Selection
 
-## Lead Screw System Design - Isaiah Little
+# Motor Selection, Bracket Design, and Coupler Selection - Isaiah Little
 
-This document records my design process for the lead-screw system used in a tensile tester. It includes my calculations, component selections, design decisions, assumptions, and revisions.
+## Motor Bracket CAD Files below:
 
-The tensile tester uses **two identical lead screws** to move the crosshead and apply a maximum tensile force of **2,000 N** to the test specimen.
+### Solidworks Part File:
 
-The design process includes:
+https://github.com/ilittle8/design-projects-portfolio/blob/main/docs/assignments/a11/A11%20Motor%20Bracket%20(Remake).SLDPRT
 
-- Lead-screw sizing and selection.
-- Bronze nut selection and internal thread analysis.
-- Nut-to-flange component selection.
-- Flange-to-crosshead bolted connection analysis.
+### STEP File:
 
-I have distinguished confirmed component selections from assumed material properties and dimensions that still require verification.
+https://github.com/ilittle8/design-projects-portfolio/blob/main/docs/assignments/a11/A11%20Motor%20Bracket%20(Remake).STEP
 
----
+### Motor Mount SolidWorks Drawing File:
 
-## 1. Design Requirements and Initial Knowns
+https://github.com/ilittle8/design-projects-portfolio/blob/main/docs/assignments/a11/A11%20Motor%20Bracket%20(Remake).SLDDRW
 
-| Parameter | Symbol | Value |
-|---|---|---:|
-| Maximum specimen tensile force | $F_T$ | 2,000 N |
-| Number of lead screws | $n_s$ | 2 |
-| Design factor of safety for screw sizing | $N$ | 4 |
-| Required crosshead speed | $v$ | 1–50 mm/min |
-| Minimum lead-screw length | — | 18 in |
-| Assumed screw material for initial calculations | — | AISI 1020 cold-drawn steel |
-| Assumed screw yield strength | $S_y$ | 350 MPa |
+<img width="1500" height="1151" alt="image" src="https://github.com/user-attachments/assets/0d66c746-da42-420e-a386-1db363f278bd" />
 
-I initially selected AISI 1020 cold-drawn steel for my screw strength calculations and used an assumed yield strength of 350 MPa. The exact material grade of the purchased screw has not been independently verified.
 
-I assumed the tensile load would be shared equally between the two lead screws:
 
-$$F_s = \frac{F_T}{n_s}$$
+## 1. Project Overview
 
-$$F_s = \frac{2000}{2}$$
+The objective of this project is to design a motorized leadscrew system for a tensile tester. The system uses two leadscrews to produce controlled linear motion of the crosshead.
 
-$$\boxed{F_s = 1000\text{ N per screw}}$$
+The design uses one stepper gearmotor per leadscrew. Each motor independently drives one screw, allowing the system to provide the required motion while distributing the torque demand between two motors.
 
-This assumption requires the two screws to be properly aligned and driven synchronously.
+The primary design considerations documented here are the leadscrew geometry, required rotational speed, operating torque, and motor torque-speed performance.
 
----
+## 2. Leadscrew Geometry
 
-## 2. Minimum Screw Diameter from Axial Stress
+The selected leadscrew is a single-start Acme screw with a nominal diameter of 1/4 inch and 20 threads per inch.
 
-I calculated the minimum required screw diameter using the axial normal-stress relationship:
+For a single-start screw, the lead is equal to the thread pitch:
 
-<img width="450" height="341" alt="image" src="https://github.com/user-attachments/assets/5408a0f9-c8a6-4b05-95c6-a2e024e7dda7" />
+$$
+L = \frac{1}{20}\text{ in/rev}
+$$
 
-$$\sigma = \frac{F}{A}$$
+Converting the lead to millimeters:
 
-For a solid circular shaft:
+$$
+L = \frac{25.4}{20}
+$$
 
-$$A = \frac{\pi d^2}{4}$$
+$$
+\boxed{L = 1.27\text{ mm/rev}}
+$$
 
-For a factor of safety of 4, the allowable stress is:
+Therefore, one complete revolution of the leadscrew produces 1.27 mm of linear travel.
 
-$$\sigma_{\text{allow}} = \frac{S_y}{N}$$
+## 3. Leadscrew Operating Torque
 
-$$\sigma_{\text{allow}} = \frac{350}{4}$$
+The calculated operating torque required to drive one leadscrew is:
 
-$$\boxed{\sigma_{\text{allow}} = 87.5\text{ MPa}}$$
+$$
+\boxed{T_{\text{operating}} = 0.635\text{ N}\cdot\text{m}}
+$$
 
-Solving for the minimum diameter:
+Because the design uses two independent motors, each motor is responsible for supplying the operating torque of one leadscrew.
 
-$$d = \sqrt{\frac{4F_s}{\pi \sigma_{\text{allow}}}}$$
+The total operating torque across both screws is:
 
-Substituting the load carried by one screw:
+$$
+T_{\text{total}} = 2T_{\text{operating}}
+$$
 
-$$d = \sqrt{\frac{4(1000)}{\pi (87.5 \times 10^6)}}$$
+$$
+T_{\text{total}} = 2(0.635)
+$$
 
-$$\boxed{d_{\min} = 3.815\text{ mm}}$$
+$$
+\boxed{T_{\text{total}} = 1.27\text{ N}\cdot\text{m}}
+$$
 
-This is the theoretical minimum diameter based on axial stress alone.
+A design factor of safety of 4 is used to establish the required motor torque.
 
-For a threaded screw, I used the minor (root) diameter for this preliminary check because it represents the smallest nominal cross-section. Manufacturing tolerances and other possible failure modes must also be considered.
+For each motor:
 
----
+$$
+T_{\text{design}} = 4T_{\text{operating}}
+$$
 
-## 3. Lead Selection and Rotational Speed
+$$
+T_{\text{design}} = 4(0.635)
+$$
 
-<img width="775" height="372" alt="image" src="https://github.com/user-attachments/assets/20fa1668-de3a-44dd-8f32-dd6feee73d21" />
+$$
+\boxed{T_{\text{design}} = 2.54\text{ N}\cdot\text{m}}
+$$
 
-My initial goal was to use a relatively small lead so that the crosshead displacement per revolution would be small. I initially considered a lead of 1 mm/rev.
+Thus, each motor must provide at least $2.54\text{ N}\cdot\text{m}$ under the relevant operating conditions.
 
-After finding an available commercial screw with a lead of 0.050 in/rev, I changed the design to match the available component.
+## 4. Motor Selection
 
-Converting the lead:
+The selected motor candidate is the McMaster-Carr NEMA 23 stepper gearmotor, part number 4801N14.
 
-$$L = 0.050(25.4)$$
+### McMaster Carr Link (CAD FILES CAN BE FOUND IN LINK):
+https://www.mcmaster.com/4801N14/
 
-$$\boxed{L = 1.27\text{ mm/rev}}$$
+The design uses one motor per leadscrew. Consequently, the motor must independently satisfy the torque and rotational-speed requirements of a single screw.
 
-The relationship between crosshead linear speed and screw rotational speed is:
+### 4.1 Required Motor Speed
 
-$$v = nL$$
+The assignment specifies a crosshead linear velocity range of 1 to 50mm/min.
 
-Solving for rotational speed:
+The relationship between linear velocity and screw rotational speed is:
 
-$$n = \frac{v}{L}$$
+$$
+n = \frac{v}{L}
+$$
 
-At the minimum crosshead speed:
+where:
 
-$$n = \frac{1}{1.27}$$
+- n is the rotational speed in RPM.
+- v is the crosshead linear velocity in mm/min.
+- L is the leadscrew lead in mm/rev.
 
-$$\boxed{n_{\min} = 0.787\text{ RPM}}$$
+At the minimum crosshead velocity:
 
-At the maximum crosshead speed:
+$$
+n_{\min} = \frac{1}{1.27}
+$$
 
-$$n = \frac{50}{1.27}$$
+$$
+\boxed{n_{\min} = 0.79\text{ RPM}}
+$$
 
-$$\boxed{n_{\max} = 39.37\text{ RPM}}$$
+At the maximum crosshead velocity:
 
-Therefore, the required rotational speed range is:
+$$
+n_{\max} = \frac{50}{1.27}
+$$
 
-$$\boxed{n = 0.787\text{ to }39.37\text{ RPM}}$$
+$$
+\boxed{n_{\max} = 39.37\text{ RPM}}
+$$
 
-Both screws must rotate synchronously to keep the crosshead level.
+Therefore, each motor must operate over an approximate speed range of:
 
-A smaller lead improves displacement resolution per revolution, but it does not automatically guarantee positioning accuracy. Backlash, thread tolerances, bearing play, structural stiffness, motor control resolution, and load-cell feedback also affect positioning and force control.
+$$
+\boxed{0.79\text{–}39.37\text{ RPM}}
+$$
 
----
+### 4.2 Torque-Speed Curve Evaluation
 
-## 4. Thread Type and Nut Material Decisions
+The motor's torque-speed curve was evaluated using the manufacturer's published performance data. The referenced curve specifies operation at 24VDC and 2.2A using half-stepping.
 
-I selected an **Acme-style power-screw thread** because it is commonly used in power-transmission applications.
+At approximately 40RPM, the curve indicates an available torque of roughly $700\text{ oz}\cdot\text{in}$.
 
-For a standard Acme thread, the included thread angle is 29 degrees. Therefore, the half-angle is:
+Converting this value to SI units:
 
-$$\alpha = \frac{29}{2}$$
+$$
+1\text{ oz}\cdot\text{in} = 0.0070616\text{ N}\cdot\text{m}
+$$
 
-$$\boxed{\alpha = 14.5^\circ}$$
+$$
+T_{\text{available}} = 700(0.0070616)
+$$
 
-I initially considered using a steel nut but changed the nut material to **bronze**.
+$$
+\boxed{T_{\text{available}} \approx 4.94\text{ N}\cdot\text{m}}
+$$
 
-I chose bronze because a steel screw and bronze nut combination is commonly used in sliding power-screw applications. This material pairing can reduce the likelihood of galling compared with dry steel-on-steel contact.
+The available torque is compared with the required design torque for one motor:
 
-I also selected lubricated screw/nut contact for the preliminary torque calculation. I assumed:
+$$
+4.94\text{ N}\cdot\text{m} > 2.54\text{ N}\cdot\text{m}
+$$
 
-$$\boxed{\mu = 0.15}$$
+The estimated available torque at the maximum required operating speed exceeds the design torque requirement.
 
-This coefficient of friction is an assumption, not a verified value for the exact bronze alloy, lubricant, surface finish, and operating conditions.
+The ratio of estimated available torque to operating torque is:
 
----
+$$
+\frac{T_{\text{available}}}{T_{\text{operating}}} = \frac{4.94}{0.635} 
+$$
 
-## 5. First Lead-Screw Candidate
+$$
+\boxed{\frac{T_{\text{available}}}{T_{\text{operating}}}\approx 7.78}
+$$
 
-My first candidate was the Roton 3/16–20 Stub Acme steel lead screw, part **62240**.
+This comparison indicates that the motor candidate has sufficient estimated torque capacity at approximately the maximum required screw speed, based on the manufacturer's torque-speed curve.
 
-[Roton 3/16–20 Stub Acme Steel Lead Screw](https://www.roton.com/product/stub-acme-lead-screw-3-16-20-rh-steel/)
+## 5. Motor Selection Summary
 
-The dimensions I recorded from the product information were:
+The selected design uses two NEMA 23 stepper gearmotors, with one motor driving each leadscrew.
+
+<img width="1050" height="811" alt="image" src="https://github.com/user-attachments/assets/13ddc33e-5d81-4014-808f-88b20b8ae267" />
+
+
+The calculated requirements for each motor are:
+
+- Operating torque: $0.635\text{ N}\cdot\text{m}$
+- Design torque, using a factor of safety of 4: $2.54\text{ N}\cdot\text{m}$
+- Required rotational speed: 0.79 – 39.37RPM
+- Estimated available torque near 40RPM: $4.94\text{ N}\cdot\text{m}$
+
+<img width="1045" height="773" alt="image" src="https://github.com/user-attachments/assets/3d7df07f-5f37-4ea5-845e-2b41d151fd31" />
+
+
+Based on the approximate torque-speed curve reading, the selected motor candidate exceeds the calculated design torque requirement at the maximum required operating speed.
+
+
+## 6. Task 2 — Motor Mount Design
+
+### Knowns
 
 | Parameter | Value |
 |---|---:|
-| Major diameter | 0.188 in = 4.775 mm |
-| Minor diameter | 0.151 in = 3.835 mm |
-| Lead | 0.050 in/rev = 1.27 mm/rev |
-
-The nominal minor diameter exceeded my calculated minimum:
-
-$$3.835\text{ mm} > 3.815\text{ mm}$$
-
-However, the margin was very small:
-
-$$3.835 - 3.815 = 0.020\text{ mm}$$
-
-More importantly, the bronze nut's published operating load rating was below the load required per screw.
-
-The required load per screw was:
-
-$$F_s = 1000\text{ N}$$
-
-Converting to pounds-force:
-
-$$F_s = \frac{1000}{4.44822}$$
-
-$$\boxed{F_s \approx 224.8\text{ lbf}}$$
-
-The operating load rating I identified for the bronze nut was 75 lbf.
-
-Because the screw and nut assembly would move while applying tension, I decided not to use this first candidate.
-
-This was an important design lesson: checking only the screw's diameter was not enough. I also needed to check the operating load rating of the nut.
-
----
-
-## 6. Selected Lead Screw: Roton 1/4–20 Acme Steel Screw
-
-I selected the larger Roton 1/4–20 Acme steel screw, part **60758**.
-
-[Roton 1/4–20 Acme Steel Screw — Part 60758](https://www.roton.com/product/acme-steel-screw-right-60758/)
-
-The manufacturer information I recorded for this candidate was:
-
-| Parameter | Value |
-|---|---:|
-| Thread | 1/4–20 Acme |
-| Major diameter | 0.250 in = 6.350 mm |
-| Minor diameter | 0.175 in = 4.445 mm |
-| Lead | 0.050 in/rev = 1.270 mm/rev |
-| Bronze-nut static load rating | 1,000 lbf |
-| Bronze-nut operating load rating | 300 lbf |
-| Forward-drive efficiency | 32% |
-| Drive torque ratio | 0.025 in·lbf/lbf |
-
-### 6.1 Minor Diameter Check
-
-My calculated minimum diameter was:
-
-$$d = 3.815\text{ mm}$$
-
-The selected screw's nominal minor diameter is:
-
-$$d_{\text{minor}} = 4.445\text{ mm}$$
-
-Therefore:
-
-$$4.445\text{ mm} > 3.815\text{ mm}$$
-
-The nominal minor diameter exceeds the calculated minimum by:
-
-$$4.445 - 3.815 = 0.630\text{ mm}$$
-
-This candidate provides a larger nominal diameter margin than my first selection.
-
-### 6.2 Bronze Nut Operating Load Check
-
-The load per screw is approximately 224.8 lbf.
-
-The operating load rating I recorded for the selected candidate was 300 lbf:
-
-$$224.8\text{ lbf} < 300\text{ lbf}$$
-
-Therefore, the required load per nut is below the operating load rating I identified.
-
-This comparison assumes that the rating applies to the exact compatible bronze nut and the intended operating conditions. The manufacturer's rating conditions should be verified before finalizing the design.
-
-### 6.3 Material Verification
-
-Roton identifies the screw as steel. I selected AISI 1020 cold-drawn steel for my calculations, but I have not independently verified that part 60758 is specifically manufactured from that grade and condition.
-
-I should not claim that the purchased screw has this exact material grade until the manufacturer confirms it.
-
----
-
-## 7. Lead-Screw Torque and Free-Body Diagram
-
-<img width="777" height="496" alt="image" src="https://github.com/user-attachments/assets/db7ba1d8-126c-4bd3-9214-100b4fbf7915" />
-
-I completed the mean-diameter work, torque derivation, and free-body diagram for the selected lead-screw system.
-
-For an Acme screw raising a load, the torque per screw is calculated using:
-
-$$T_s = \frac{F_s d_m}{2} \left( \frac{L + \pi \mu d_m \sec\alpha}{\pi d_m - \mu L \sec\alpha} \right)$$
-
-Where:
-
-- $F_s$ = axial load carried by one screw.
-- $d_m$ = mean or pitch diameter of the thread.
-- $L$ = screw lead.
-- $\mu$ = assumed coefficient of friction.
-- $\alpha$ = Acme thread half-angle.
-
-The total torque required for two identical screws is:
-
-$$T_{\text{total}} = 2T_s$$
-
-The final torque values recorded for the selected screw are:
-
-| Parameter | Value |
-|---|---:|
-| Operating torque per screw | 0.635 N·m |
-| Total operating torque for two screws | 1.27 N·m |
-
-The final mean diameter and torque derivation correspond to the selected 1/4–20 screw. The earlier 4.305 mm mean-diameter estimate belonged to the first 3/16-inch candidate and was not reused for the final screw.
-
-I did not multiply the required operating torque by the factor of safety of 4. The factor of safety was applied in the screw strength sizing calculation. A separate torque margin may be appropriate when selecting the motor and drive system.
-
----
-
-## 8. Bronze Nut and Steel Flange Selection
-
-After selecting the lead screw, I selected a compatible bronze nut and steel mounting flange.
-
-<img width="685" height="535" alt="image" src="https://github.com/user-attachments/assets/6517f447-7866-4929-b11a-e38f5e1e034e" />
-
-### 8.1 Bronze Nut
-
-I selected the Roton bronze threaded mount nut, part **91734**.
-
-[Roton Bronze Threaded Mount Nut — Part 91734](https://www.roton.com/product/acme-bronze-threaded-mount-nut-right-91734/)
-
-The nut has:
-
-- Internal thread: 1/4–20 Acme.
-- External mounting thread: 0.563–18 UNF.
-- Bronze construction.
-
-For the preliminary internal-thread analysis, I used C93200 / SAE 660 bronze as the assumed material and a yield strength of 137.9 MPa. The exact alloy should be verified against the supplier's material information.
-
-### 8.2 Steel Mounting Flange
-
-I selected the Roton steel mounting flange, part **89837**, with a matching 0.563–18 UNF center thread.
-
-The recorded flange dimensions are:
-
-| Parameter | Value |
-|---|---:|
-| Outside diameter | 1.600 in |
-| Center thread | 0.563–18 UNF |
-| Mounting holes | Four Ø0.266 in holes |
-| Mounting-hole bolt circle | 1.125 in |
-| Flange thickness | 0.410 in |
-| Side feature | 5-40 |
-
-The bronze nut's external mounting thread engages the matching internal thread in the steel flange.
-
-I selected the steel flange to provide the mounting interface between the bronze nut assembly and the crosshead. The exact steel grade of the flange has not been established.
-
-### 8.3 Nut Internal Acme Thread Bearing-Bending Analysis
-
-<img width="585" height="655" alt="image" src="https://github.com/user-attachments/assets/36052214-7aee-486c-b329-524d2266f38b" />
-
-I previously completed the bearing-bending analysis for the internal Acme threads in the bronze nut that engage the steel lead screw.
-
-For that preliminary calculation, I assumed:
-
-| Parameter | Value |
-|---|---:|
-| Axial load per nut | 1,000 N |
-| Internal Acme thread | 1/4–20 |
-| Pitch | 0.050 in = 1.27 mm |
-| Mean thread diameter used | 0.225 in = 5.715 mm |
-| Assumed full engagement length | 0.625 in = 15.875 mm |
-| Number of engaged thread pitches | 12.5 |
-| Assumed bronze yield strength | 137.9 MPa |
-| Calculated thread bending stress | 38.3 MPa |
-
-The factor of safety from that simplified thread-bearing bending model was:
-
-$$SF = \frac{S_y}{\sigma_b}$$
-
-$$SF = \frac{137.9}{38.3}$$
-
-$$\boxed{SF = 3.60}$$
-
-This result depends on the assumed full engagement length and bronze material properties. The actual alloy and engagement should be checked against the supplier's specifications.
-
-This analysis applies to the **internal Acme threads of the bronze nut engaging the lead screw**. It is separate from the 0.563–18 UNF mounting interface between the nut and flange.
-
----
-
-## 9. Flange-to-Crosshead Mounting Design
-
-I decided to mount the steel flange on the **underside of the moving crosshead**.
-
-The flange will be secured using four bolts passing through the flange's clearance holes and threading into tapped holes in the crosshead.
-
-I selected:
-
-- Four 1/4–20 UNC bolts.
-- SAE Grade 5 bolt material.
-- Four 0.266 in flange clearance holes.
-- Tapped 1/4–20 UNC holes in the crosshead.
-
-The crosshead thickness and exact steel grade have not yet been selected.
-
-### 9.1 Load on Each Mounting Bolt
-
-The tensile tester applies 2,000 N to the specimen. Assuming the two lead-screw assemblies share the load equally:
-
-$$F_{\text{assembly}} = \frac{2000}{2}$$
-
-$$F_{\text{assembly}} = 1000\text{ N}$$
-
-Each flange therefore transfers an assumed 1,000 N load.
-
-With four mounting bolts and an ideal equal-load-sharing assumption:
-
-$$F_b = \frac{F_{\text{assembly}}}{4}$$
-
-$$F_b = \frac{1000}{4}$$
-
-$$\boxed{F_b = 250\text{ N per bolt}}$$
-
-This is a preliminary load distribution. Actual bolt loading may differ because of flange stiffness, bolt preload, joint contact, and possible prying.
-
-Because the flange is mounted underneath the crosshead, the tensile load tends to pull the flange away from the crosshead. The mounting bolts therefore experience direct tensile loading in this simplified model.
-
-### 9.2 Tensile Stress in the Grade 5 Bolts
-
-For a 1/4–20 UNC bolt, the tensile stress area is:
-
-$$A_t = 0.0318\text{ in}^2$$
-
-Converting the force per bolt to pounds-force:
-
-$$F_b = \frac{250}{4.44822}$$
-
-$$F_b = 56.20\text{ lbf}$$
-
-The tensile stress is:
-
-$$\sigma_b = \frac{F_b}{A_t}$$
-
-$$\sigma_b = \frac{56.20}{0.0318}$$
-
-$$\boxed{\sigma_b = 1767\text{ psi}}$$
-
-Converting to MPa:
-
-$$\boxed{\sigma_b \approx 12.18\text{ MPa}}$$
-
-For a 1/4 in SAE Grade 5 bolt, I used a minimum yield strength of 92,000 psi and a proof strength of 85,000 psi.
-
-The factor of safety against tensile yielding is:
-
-$$SF_y = \frac{S_y}{\sigma_b}$$
-
-$$SF_y = \frac{92000}{1767}$$
-
-$$\boxed{SF_y \approx 52.1}$$
-
-The factor of safety relative to proof strength is:
-
-$$SF_{\text{proof}} = \frac{85000}{1767}$$
-
-$$\boxed{SF_{\text{proof}} \approx 48.1}$$
-
-The bolts have a substantial calculated margin against direct tensile yielding under the assumed equal-load-sharing model.
-
-These results do not independently verify the tapped crosshead threads or the complete bolted joint.
-
-### 9.3 Preliminary Internal Thread-Stripping Check in the Crosshead
-
-The next failure mode I evaluated was stripping of the internal 1/4–20 UNC threads tapped into the steel crosshead.
-
-The crosshead thickness and material grade are not yet known. I therefore used a preliminary assumed crosshead steel tensile strength of:
-
-$$S_{ut} = 420\text{ MPa}$$
-
-For this estimate, I approximated the material's shear strength as one-half its tensile strength:
-
-$$S_{su} = 0.5 S_{ut}$$
-
-$$S_{su} = 0.5(420)$$
-
-$$\boxed{S_{su} = 210\text{ MPa}}$$
-
-This is an assumed material property for preliminary sizing, not a confirmed crosshead specification.
-
-The Industrial Fasteners Institute's thread-strength bulletin lists the internal thread stripping area for a 1/4–20 UNC tapped hole as 0.539 in² per inch of engagement.
-
-[Industrial Fasteners Institute — Calculating Thread Strength](https://www.greensladeandcompany.com/wp-content/uploads/pdf/articles/engineering/Engineering%20-%20Bulletin%20-%20Calculating%20Thread%20Strength.pdf)
-
-Therefore:
-
-$$A_{\text{int}} = 0.539 L_e$$
-
-where $L_e$ is in inches and $A_{\text{int}}$ is in square inches.
-
-For the preliminary design, I used a target factor of safety of 4 against internal thread stripping:
-
-$$SF = \frac{S_{su} A_{\text{int}}}{F_b}$$
-
-Substituting the stripping-area relationship:
-
-$$SF = \frac{S_{su}(0.539 L_e)}{F_b}$$
-
-Solving for the required engagement length:
-
-$$L_e = \frac{SF \cdot F_b}{0.539 S_{su}}$$
-
-Converting the assumed shear strength to psi:
-
-$$S_{su} = \frac{210}{0.00689476}$$
-
-$$S_{su} \approx 30458\text{ psi}$$
-
-Substituting the values:
-
-$$L_e = \frac{4(56.20)}{0.539(30458)}$$
-
-$$\boxed{L_e = 0.0137\text{ in} = 0.348\text{ mm}}$$
-
-This is the theoretical engagement length from the simplified stripping model. It is shorter than one thread pitch:
-
-$$P = \frac{1}{20} = 0.050\text{ in}$$
-
-I did not use this very short theoretical value as the final preliminary design dimension.
-
-Instead, I selected a practical preliminary engagement target equal to one nominal bolt diameter:
-
-$$L_e = d = 0.250\text{ in}$$
-
-$$\boxed{L_e = 0.250\text{ in} = 6.35\text{ mm}}$$
-
-At this engagement length, the number of engaged thread pitches is:
-
-$$n = \frac{L_e}{P}$$
-
-$$n = \frac{0.250}{0.050}$$
-
-$$\boxed{n = 5\text{ thread pitches}}$$
-
-The estimated internal thread stripping factor of safety at this engagement length is:
-
-$$SF = \frac{S_{su}(0.539 L_e)}{F_b}$$
-
-$$SF = \frac{30458(0.539)(0.250)}{56.20}$$
-
-$$\boxed{SF \approx 73.0}$$
-
-This result is based on the assumed 420 MPa crosshead steel tensile strength, the estimated shear strength, the IFI stripping-area value, and equal load distribution among the four bolts.
-
-### 9.4 Preliminary Crosshead Engagement Requirement
-
-Based on this preliminary calculation, I selected:
-
-$$\boxed{L_e = 0.250\text{ in} = 6.35\text{ mm}}$$
-
-as the target usable full-thread engagement for each 1/4–20 UNC mounting bolt.
-
-The crosshead must be thick enough to provide this usable engagement. If the holes are blind, the drilled-hole depth must be greater than the usable full-thread engagement to account for the drill point and incomplete threads at the bottom of the hole.
-
-The actual crosshead material and thickness still need to be selected. The thread-stripping calculation must be revisited using the actual material properties and final hole geometry.
-
----
-
-## 10. Current Design Record
-
-| Design item | Current selection or status |
+| Mount configuration | Adapter plate mounted between the motor bracket and tester frame |
+| Motor mounting bracket | Supplied with the selected motor |
+| Plate width | 2.90 in |
+| Plate length | 2.90 in |
+| Selected plate thickness | 0.125 in (1/8 in) |
+| Plate material | AISI 1018 cold-drawn steel |
+| Assumed material yield strength | 53,700 psi |
+| Motor-side mounting pattern | 1.95 in × 1.95 in |
+| Motor bracket hole diameter | 0.217 in |
+| Frame-side mounting pattern | 2.65 in × 2.65 in |
+| Frame-side fastener diameter | 0.250 in |
+| Number of motor-side mounting locations | 4 |
+| Number of frame-side mounting locations | 4 |
+| Operating torque per motor | 5.62 lb·in |
+| Frame-side bolt-pattern radius | 1.874 in |
+| Calculated frame-side force per fastener | 0.750 lbf |
+| Allowable bearing stress | 13,425 psi |
+| Calculated minimum plate thickness | 0.000224 in |
+| Selected plate thickness compared with calculated minimum | 0.125 in |
+
+### Unknowns
+
+| Parameter | Information Needed |
 |---|---|
-| Number of lead screws | Two identical screws |
-| Screw manufacturer/product | Roton part 60758 |
-| Screw thread | 1/4–20 Acme |
-| Screw major diameter | 6.350 mm |
-| Screw minor diameter | 4.445 mm |
-| Screw lead | 1.270 mm/rev |
-| Screw material used in calculations | AISI 1020 cold-drawn steel; exact product grade unverified |
-| Nut manufacturer/product | Roton part 91734 |
-| Nut material | Bronze; exact alloy to verify |
-| Nut internal thread | 1/4–20 Acme |
-| Nut external mounting thread | 0.563–18 UNF |
-| Flange manufacturer/product | Roton part 89837 |
-| Flange material | Steel; exact grade unverified |
-| Flange mounting arrangement | Underside of crosshead |
-| Number of flange mounting bolts | Four |
-| Bolt specification | 1/4–20 UNC SAE Grade 5 |
-| Load per flange | 1,000 N |
-| Preliminary load per bolt | 250 N |
-| Direct bolt tensile stress | 1,767 psi |
-| Bolt tensile-yield factor of safety | 52.1 |
-| Preliminary crosshead thread engagement | 0.250 in (6.35 mm) |
-| Assumed crosshead steel tensile strength | 420 MPa |
-| Preliminary thread-stripping factor of safety | 73.0 |
-| Final torque per screw | 0.635 N·m |
-| Final total operating torque | 1.27 N·m |
+| Motor-side fasteners | Final fastener diameter, thread size, and length |
+| Motor-side tapped holes | Required thread engagement and available plate thickness for tapping |
+| Frame-side fasteners | Final bolt length, grade, and thread engagement |
+| Frame material | Exact material and properties of the tester frame |
+| Plate attachment | Final details of how the plate is secured to the frame |
+| Alignment | Final verification that the motor output shaft is aligned with the leadscrew |
+| Structural validation | Further verification of the plate, fasteners, and complete torque load path |
 
----
 
-## 12. Design Decisions and Lessons Learned
+### 6.1 Mounting Plate Design
 
-1. I began by calculating a minimum screw diameter from axial stress using a factor of safety of 4.
-2. I selected Acme threads because they are commonly used in power-transmission applications.
-3. I changed the design lead to 1.27 mm/rev to match an available commercial screw.
-4. I chose a bronze nut and lubricated contact rather than dry steel-on-steel contact.
-5. My first screw candidate passed the nominal diameter check but did not meet the published bronze-nut operating load rating.
-6. I selected a larger 1/4–20 screw after checking both its minor diameter and the bronze-nut operating load rating.
-7. I selected a compatible bronze threaded mount nut and steel mounting flange.
-8. I completed the internal Acme thread-bearing bending analysis for the bronze nut and calculated a factor of safety of 3.60 under the assumed full-engagement condition.
-9. I selected four 1/4–20 UNC SAE Grade 5 bolts to attach the flange to the underside of the crosshead.
-10. I calculated the direct tensile stress in the mounting bolts and evaluated the tapped crosshead threads for preliminary thread stripping.
-11. I learned that a strong bolt does not automatically guarantee a strong bolted connection. The internal threads in the component receiving the bolt must also be checked.
-12. I distinguished theoretical minimum engagement from a practical design engagement. The preliminary 0.250 in engagement target is more practical than the very short theoretical result from the simplified stripping calculation.
+I designed a horizontal steel adapter plate to connect the motor's existing mounting bracket to the top of the tensile tester frame. The adapter plate provides four mounting locations for the motor bracket and four additional mounting locations for attachment to the frame.
+<img width="743" height="962" alt="image" src="https://github.com/user-attachments/assets/555e6371-8495-4a90-9fd5-a275b322631e" />
 
-## Crosshead Design - Aidan Cadle
+The selected plate dimensions are:
 
-In building the tensile tester, the crosshead had to be designed with a factor of safety of 4, a maximum deflection of 0.1 mm, and support a tensile load of 2 kN. Given the constraints and example of "low cost" testers, the chosen material is 6061-O Aluminum, and the center to center distance between the two lead screw holes is 8 in. 
-6061-O Aluminum has a yield strength of 62.05 MPa, and an elastic modulus E = 69 GPa.
+- Plate width: 2.90 in
+- Plate length: 2.90 in
+- Selected material: AISI 1018 cold-drawn steel
+- Selected plate thickness: 0.125 in (1/8 in)
 
-![calc 1](<A10 Scans_page-0001.jpg>)
+The assumed yield strength of AISI 1018 cold-drawn steel is:
 
-Initially, the calculations assumed a square cross sectional area. However, this would lead the flange to "stick out" from the crosshead and mount incorrectly, so the calculations were repeated using a rectangular cross sectional area. 
+$$
+S_y=53,700\text{ psi}
+$$
 
-![calc 2](<A10 Scans_page-0002.jpg>)
+### 6.2 Bearing Stress Analysis
 
-Calculations were repeated, but now the width of the crosshead was set to 1.6 in, the outer diameter of the flange. Using the equations for a fixed beam with a load in the center, calculating for both stress and strain, the minimum height of the crosshead was determined to be 0.866 in. 
+I evaluated the bearing stress at the frame-side mounting holes to determine the minimum required plate thickness.
 
-Under the calculations, the rough multi angle sketch, with a top, front, and right view is included. While not specifically labeled, the material of the crosshead is 6061-O Aluminum, as described above. 
-Holes are included for the lead screws, flange mounting, and specimen mounting solution. 
+The allowable bearing stress is calculated using the required factor of safety of 4:
 
-## Parametric Modelling
+$$
+\sigma_{b,\text{allow}}=\frac{S_y}{N}
+$$
 
-### Crosshead - Aidan Cadle
+$$
+\sigma_{b,\text{allow}}=\frac{53,700}{4}
+$$
 
-For the 3D model, the part was parametrically calculated.
-Variables and equations were defined for every useful value needed within the calculations.
+$$
+\boxed{\sigma_{b,\text{allow}}=13,425\text{ psi}}
+$$
 
-![eqn](eqn.png)
+The operating torque per motor is:
 
-After all of the variables, equations, and metric to imperial conversions were applied, the result matched that of the previously calculated value.
+$$
+T=0.635\text{ N}\cdot\text{m}
+$$
 
-Now, the sketch can be defined using these variables and calculated values.
+Converting to pound-inches:
 
-![sketch](<bar sketch.png>)
+$$
+T=0.635(8.8507)
+$$
 
-The sketch was then extruded out using parametric techniques.
+$$
+T=5.62\text{ lb}\cdot\text{in}
+$$
 
-![ext](extrude.png)
+The outer frame mounting pattern consists of four holes arranged in a square with a center-to-center spacing of 2.65 in.
 
-The final part, parametrically produced. 
+The radius from the center of the bolt pattern to each mounting hole is:
 
-![Part](<part iso.png>)
+$$
+r_f=\sqrt{\left(\frac{2.65}{2}\right)^2+
+\left(\frac{2.65}{2}\right)^2}
+$$
 
+$$
+\boxed{r_f=1.874\text{ in}}
+$$
 
-## FEA - Aidan Cadle
+Assuming equal torque distribution among the four mounting fasteners, the force per fastener is:
 
-### Initial Part
+$$
+F_f=\frac{T}{4r_f}
+$$
 
-For the FEA, some assumptions were made about the configuration.
+$$
+F_f=\frac{5.62}{4(1.874)}
+$$
 
-The mounting holes for the flange were treated as fixed geometry.
+$$
+\boxed{F_f=0.750\text{ lbf}}
+$$
 
-![fix 1](<fea files/fea fixtures.png>)
+The bearing stress relationship is:
 
-The tensile load was treated as acting down through the specimen mounting hole.
+$$
+\sigma_b=\frac{F}{td}
+$$
 
-![loading](<fea files/fea loading.png>)
+Rearranging to solve for the minimum plate thickness:
 
-The test was run three times, with the mesh density increasing each time.
+$$
+t_{\min}=\frac{F}{d\sigma_{b,\text{allow}}}
+$$
 
-For the first run, the mesh was coarse.
+Using a 0.250 in frame-side fastener diameter:
 
-![mesh 1](<fea files/mesh 1.png>)
+$$
+t_{\min}=\frac{0.750}{(0.250)(13,425)}
+$$
 
-The results for the first run.
+$$
+\boxed{t_{\min}=0.000224\text{ in}}
+$$
 
-![stress 1](<fea files/von mises coarse.png>)
+### 6.3 Final Plate Thickness Selection
 
-Peak stress is 35MN.
+Based on the bearing-stress calculation, the minimum required plate thickness is approximately 0.000224 in.
 
-![disp 1](<fea files/displacement coarse.png>)
+I selected a final plate thickness of:
 
-Peak displacement is 0.03 mm.
+$$
+\boxed{t_{\text{selected}}=0.125\text{ in}}
+$$
 
-![Fos 1](<fea files/fos coarse.png>)
+The selected thickness is substantially greater than the calculated minimum bearing thickness. I chose a standard 1/8 in steel plate as a practical thickness for the motor adapter.
 
-The minimum factor of safety is 1.763.
+The calculated minimum is based specifically on the frame-side bearing-stress model and equal distribution of the motor's operating torque among the four frame mounting fasteners. The selected thickness is therefore a preliminary design selection rather than a complete verification of every possible plate failure mode.
 
-The mesh size was then increased to medium, between coarse and fine
+### 6.4 CAD Drawing
 
-![mesh 2](<fea files/mesh 2.png>)
+### Frame-Side Mounting Holes
 
-Rerunning the study, the displacement converged within 10%, but the factor of safety and peak stress did not.
+I designed the adapter plate with four tapped 10-32 holes to secure it to the frame. The holes are arranged in a square pattern with a center-to-center spacing of 2.40 in in both directions. This updated pattern replaces my previous 2.65 in spacing and 1/4 in fastener selection. I did this in order to make sure all the holes fit into my 2.9 inch bracket length and width.
 
-![disp 2](<fea files/disp mid.png>)
+<img width="950" height="792" alt="image" src="https://github.com/user-attachments/assets/4241f902-8a71-44e1-be51-c8cf3da11a57" />
 
-Peak displacement is 0.03124 mm.
+## 6. Task 2 — Motor Mount Design REVISION
 
-![Stress 2](<fea files/von mises mid.png>)
+### Knowns
 
-Peak stress is 42.5 MN
+| Parameter | Value |
+|---|---:|
+| Mount configuration | Custom motor bracket mounted between the motor and tester frame |
+| Bracket width | 2.90 in |
+| Bracket length | 2.90 in |
+| Bracket overall height | 1.71875 in |
+| Central coupling bore diameter | 1.078125 in |
+| Inner motor-side holes | Four tapped blind holes |
+| Inner tapped-hole depth | 0.859375 in |
+| Outer frame-side holes | Four tapped through-holes |
+| Plate/bracket material | AISI 1018 cold-drawn steel (previously selected; verify for revised part) |
+| Assumed material yield strength | 53,700 psi |
+| Motor-side mounting pattern | 1.95 in × 1.95 in (verify against current CAD) |
+| Motor bracket hole diameter | 0.217 in (existing motor-bracket interface dimension) |
+| Frame-side mounting pattern | 2.40 in × 2.40 in |
+| Frame-side thread | 10-32 tapped through-holes |
+| Number of inner motor-side mounting locations | 4 |
+| Number of outer frame-side mounting locations | 4 |
 
-![fos 2](<fea files/fos mid.png>)
+### Unknowns
 
-The minimum factor of safety is 1.461
+| Parameter | Information Needed |
+|---|---|
+| Motor-side fasteners | Final fastener diameter, thread size, and length for the four inner tapped holes |
+| Inner blind-hole engagement | Verify that 0.859375 in of tapped depth provides sufficient thread engagement |
+| Frame-side fasteners | Final 10-32 fastener length, grade, and engagement |
+| Coupling clearance | Verify the actual coupling outside diameter and whether additional clearance is needed around the 1.078125 in bore |
+| Coupling installation | Verify that both hubs and the spider can be installed and rotate without contacting the bracket |
+| Frame material | Exact material and properties of the tester frame |
+| Alignment | Verify that the motor output shaft, coupling, and leadscrew are properly aligned |
+| Structural validation | Verify the revised bracket, tapped holes, fasteners, and complete torque load path using the final CAD geometry |
 
-Since the results did not converge within 10%, the part was re-analyzed. 
+### 6.1 Revised Motor Bracket Design
 
-The mesh density was increased to fine.
+I redesigned the motor bracket to accommodate the McMaster-Carr L050 spider coupling. The revised geometry provides a central opening for the coupling and separate mounting locations for attaching the motor and the bracket to the tensile tester frame.
 
-![mesh 3](<fea files/mesh 3.png>)
+The updated bracket has an overall height of **1.71875 in**. I selected this dimension to match the full assembled height of the L050 spider coupling.
 
-On this run, the values almost converged within 10%, but did not.
+I also added a central through-hole with a diameter of **1.078125 in**. This opening is sized to match the outside diameter of the coupling so that the coupling can occupy the center of the bracket without interfering with its rotation. The actual coupling dimensions should be checked against the supplier drawing, and the bore clearance should be verified before manufacturing.
 
-![stress 3](<fea files/stress 3.png>)
+The revised bracket uses two separate sets of tapped holes:
 
-Peak stress is 47.1 MN.
+- **Inner motor-mounting holes:** I added four tapped blind holes to secure the motor to the bracket. Each hole has a tapped depth equal to one-half of the bracket's overall height.
 
-![disp 3](<fea files/disp 3.png>)
+$$
+d_{\text{inner}}=\frac{1.71875}{2}
+$$
 
-Peak displacement is 0.03129 mm.
+$$
+\boxed{d_{\text{inner}}=0.859375\text{ in}}
+$$
 
-![fos 3](<fea files/fos 3.png>)
+- **Outer frame-mounting holes:** I added four tapped holes that extend completely through the bracket. These holes secure the bracket to the tensile tester frame.
 
-The minimum factor of safety is 1.317.
+The inner holes are used exclusively to attach the motor, while the outer holes are used to attach the bracket to the frame. Separating these mounting locations allows the motor and coupling to be positioned within the bracket while maintaining a separate frame attachment.
 
-Since the peak stress and resulting factor of safety are not within the allowable range, some changes will be made to improve the characteristics of the crossbar.
+The existing material selection is AISI 1018 cold-drawn steel, with an assumed yield strength of:
 
-The maximum stress occured at the inner most mounting hole for the flange, in the direction of the center of the beam. The hole for the specimen gripper also had elevated stress, but that moved out towards the side of the beam. 
-Peak deflection always occured in the middle of the beam near the load. 
+$$
+S_y=53,700\text{ psi}
+$$
 
-The initial mass is 1.24 lbs.
+The material selection and assumed yield strength must be verified for the revised bracket before completing the final structural analysis.
 
-### Modifications
 
-Fillets will be added to the holes to reduce the stress concentration, with a radius of 1/8 in on all edges.
-Additionally, a boss will be added for the flange to increase rigidity, with a thickness of 1/4 in.
-Since the initial stress was much higher than expected, the height of the beam was doubled compared to the original calculated value.
+### 6.2 Revised Bracket Geometry and Mounting Arrangement
 
-Modified beam
+The final bracket geometry incorporates the following dimensions:
 
-![beam](<fea files/part change.png>)
+| Feature | Dimension |
+|---|---:|
+| Overall bracket height | 1.71875 in |
+| Central through-hole diameter | 1.078125 in |
+| Inner tapped-hole depth | 0.859375 in |
+| Frame-side mounting pattern | 2.40 in × 2.40 in |
+| Frame-side thread | 10-32 |
+| Number of inner tapped holes | 4 |
+| Number of outer tapped through-holes | 4 |
 
-Similar to the first round of FEA, the mesh started at coarse.
+The center opening accommodates the L050 coupling, while the inner and outer tapped holes provide the two separate mounting interfaces.
 
-The peak stress is 9 MN.
+The four outer frame-side holes are arranged in a square pattern with a center-to-center spacing of 2.40 in in both directions. This pattern replaces my previous 2.65 in spacing and 1/4 in fastener selection. I selected the 2.40 in pattern to keep the mounting holes within the 2.90 in bracket length and width.
 
-![stress 1](<fea files/stress 2 1.png>)
+The four inner tapped blind holes secure the motor to the bracket. Their tapped depth is 0.859375 in, which is half of the bracket's overall height.
 
-The peak displacement is 0.00578 mm.
+<img width="710" height="506" alt="image" src="https://github.com/user-attachments/assets/c1b1e081-ebb6-478b-9bd1-45f9dc671cf7" />
 
-![disp 2 1](<fea files/disp 2 1.png>)
 
-The minimum factor of safety is 6.84
+### 6.3 Structural Analysis and Verification
 
-![fos 2 1](<fea files/fos 2 1.png>)
+The previous bearing-stress calculation used the older 2.65 in frame-side mounting pattern and a 0.250 in fastener diameter. Those assumptions no longer represent the revised bracket geometry.
 
-The mesh was then increased to medium
+Therefore, the previous calculated minimum thickness of 0.000224 in should not be treated as a verified result for the updated design.
 
-The peak stress is 11.5 MN
+The revised bracket requires a new structural analysis that accounts for its actual geometry, including:
 
-![stress 2 2](<fea files/stress 2 2.png>)
+- The 1.71875 in overall height.
+- The 1.078125 in central coupling opening.
+- The four inner tapped blind holes.
+- The four outer tapped through-holes.
+- The final fastener dimensions and thread engagement.
+- The actual material properties.
 
-The peak displacement is 0.005813
+The inner blind holes must provide sufficient thread engagement to secure the motor without breaking through the bracket. The outer through-tapped holes must provide adequate engagement with the selected frame fasteners.
 
-![disp 2 2](<fea files/displacement 2 2.png>)
+The central opening also removes material from the bracket, so its effect on the bracket's strength and stiffness must be considered. The bracket should be checked for bearing, shear, bending, and deflection as appropriate to the actual loading and attachment arrangement.
 
-The minimum factor of safety is 5.398
+The revised CAD geometry will be used for the updated calculations rather than relying on the previous mounting-plate analysis.
 
-![fos 2 2](<fea files/factor of safety 2 2.png>)
+## Task 3 — Coupler Selection and Torsional Analysis
 
-Since these values do not converge, a final run using the fine mesh will be conducted.
+### 1. Coupler Selection
 
-The peak stress is 12.3 MN
+<img width="2388" height="1668" alt="38711" src="https://github.com/user-attachments/assets/9428dbdf-8c5b-45ad-a9b2-01ab5acd3a0f" />
 
-![stress 2 3](<fea files/stress 2 3.png>)
+#### Known and Unknown Variables
 
-The peak displacement is 0.00582 mm
+**Known variables**
 
-![disp 2 3](<fea files/displacement 2 3.png>)
+| Variable | Description | Value |
+|---|---|---:|
+| Top | Operating torque per motor | 0.635 N·m |
+| N | Design factor of safety | 4 |
+| Td | Design torque per coupling | 2.54 N·m |
+| Td | Design torque per coupling, converted | 22.48 in·lbf |
+| Hub trade size | Coupling size | L050 |
+| Motor-side nominal bore | Hub 6408K11 | 16 mm |
+| Leadscrew-side nominal bore | Hub 6408K92 | 1/4 in (6.35 mm) |
+| Spider material | Spider 6408K91 | Hytrel |
+| Hub material | Hubs 6408K11 and 6408K92 | Iron |
+| Spider maximum torque | McMaster catalog value | 50 in·lbf |
+| Maximum catalog speed | L050 spider | 18,000 RPM |
 
-The minimum factor of safety is 5.039.
+**Unknown variables and required verification**
 
-![fos 2 3](<fea files/fos 2 3.png>)
+- Confirm that the keyed 16 mm motor-side hub can securely retain the motor's D-shaped output shaft.
+- Confirm the motor shaft engagement length and set-screw location.
+- Confirm that the 1/4 in hub bore and set screw securely fit the actual leadscrew end.
+- Verify the complete coupling dimensions and hub cross-sections using the supplier drawings.
+- Verify that the coupling's catalog torque and speed limits are suitable for the actual operating duty and service conditions.
+- Confirm that the motor and leadscrew are aligned within the coupling's published misalignment limits.
 
-These values converge within 10%, so the values calculated using the fine mesh will be used. 
+I changed the coupling selection from a one-piece NBK jaw coupling to a **McMaster-Carr L050 spider coupling**. A spider coupling consists of two metal hubs with a flexible center element (the spider) between them. The spider transmits torque while allowing a limited amount of angular and parallel misalignment.
 
-Despite the changes, the general locations of the peak stress and displacement did not change.
-The modified part is within the given specifications.
+The selected L050 assembly uses the following three components:
 
-There were no notable changes in stress or displacement patterns. 
+| Component | McMaster-Carr Part Number | Description | Material / Shaft Interface |
+|---|---|---|---|
+| Motor-side hub | [6408K11](https://www.mcmaster.com/6408K11-6413K119/) | L050 keyed hub, 16 mm bore | Iron; keyed bore |
+| Leadscrew-side hub | [6408K92](https://www.mcmaster.com/6408K92-6408K111/) | L050 hub, 1/4 in bore | Iron; set-screw shaft mount |
+| Flexible spider | [6408K91](https://www.mcmaster.com/6408K91/) | L050 spider | Hytrel |
 
-The final mass is 2.56 lbs. 
 
-The final, modified cross bar can be found [HERE](crosshead.SLDPRT)
+The two hubs must have the same L050 coupling trade size as the spider. McMaster identifies the 6408K11 hub as a keyed 16 mm option and the 6408K92 hub as an iron set-screw hub available with a 1/4 in bore. The selected spider is the L050 Hytrel version.
+
+**Important fit verification:** The motor output shaft is 16 mm in diameter and has a D-shaped profile. Although the selected motor-side hub has a 16 mm bore, McMaster lists it as a keyed hub. A keyed bore is not automatically a confirmed match for a D-shaped shaft. The shaft must be checked against the hub drawing, and the set-screw/retention arrangement must be verified before ordering or manufacturing. The 1/4 in leadscrew-side bore also needs to be checked against the actual leadscrew end.
+
+### 2. Coupling Specifications
+
+| Specification | Selected L050 Spider Coupling |
+|---|---:|
+| Manufacturer / supplier | McMaster-Carr |
+| Coupling type | L050 spider (jaw) coupling |
+| Motor-side hub | 6408K11 |
+| Leadscrew-side hub | 6408K92 |
+| Spider | 6408K91 |
+| Hub material | Iron |
+| Spider material | Hytrel |
+| Motor-side nominal bore | 16 mm |
+| Leadscrew-side nominal bore | 1/4 in (6.35 mm) |
+| Maximum catalog torque for selected spider | 50 in·lbf |
+| Maximum catalog speed | 18,000 RPM |
+| Catalog parallel misalignment capability | 0.015 in |
+| Catalog angular misalignment capability | 0.5° |
+
+<img width="724" height="554" alt="image" src="https://github.com/user-attachments/assets/6fbdb7e9-d73b-4462-bc3c-3a25f51e00ca" />
+
+<img width="749" height="493" alt="image" src="https://github.com/user-attachments/assets/bcfd0c28-ad29-430c-9fcf-85c321f0432d" />
+
+<img width="710" height="547" alt="image" src="https://github.com/user-attachments/assets/22213e33-a531-4367-b74c-4bd55ed638af" />
+
+
+McMaster describes Hytrel as a relatively stiff spider material that provides direct torque transfer and less vibration damping than softer spider materials. The spider coupling's flexible center accommodates limited misalignment; it does not eliminate the need to align the motor and leadscrew carefully.
+
+### 3. Design Torque and Catalog Capacity Check
+
+Each motor drives one leadscrew, so each coupling transmits the torque from one motor.
+
+The operating torque per motor is:
+
+$$
+T_{op}=0.635\text{ N}\cdot\text{m}
+$$
+
+Using the design factor of safety of 4:
+
+$$
+T_d=4T_{op}
+$$
+
+$$
+T_d=4(0.635)
+$$
+
+$$
+\boxed{T_d=2.54\text{ N}\cdot\text{m}}
+$$
+
+Converting the design torque to pound-inches:
+
+$$
+T_d=2.54(8.8507)
+$$
+
+$$
+\boxed{T_d\approx22.48\text{ in}\cdot\text{lbf}}
+$$
+
+The selected L050 Hytrel spider has a published maximum torque of 50 in·lbf. The ratio of the catalog maximum torque to the required design torque is:
+
+$$
+\text{Torque Ratio}=\frac{50}{22.48}
+$$
+
+$$
+\boxed{\text{Torque Ratio}\approx2.22}
+$$
+
+The published maximum torque is greater than the calculated design torque. This is a preliminary catalog-capacity check; the manufacturer's maximum torque value should not be treated as a substitute for checking the complete coupling's service conditions, duty cycle, and shaft retention.
+
+### 4. Torsional Loading and Analysis
+
+Each coupling transmits the design torque from one motor to one leadscrew:
+
+$$
+\boxed{T_d=2.54\text{ N}\cdot\text{m}}
+$$
+
+The torque is transferred from the motor shaft into the motor-side iron hub, through the Hytrel spider, into the leadscrew-side iron hub, and finally into the leadscrew.
+
+The coupling components do not have the same geometry as the previously considered NBK MJC-30-WH coupling. Therefore, the earlier calculations based on a 30 mm outside diameter, 16 mm and 6.35 mm hub bores, and A2017 aluminum hubs do **not** describe this L050 coupling and should not be used as its hub stress results.
+
+A numerical torsional shear-stress calculation for the iron hubs requires the actual hub cross-sectional dimensions from the McMaster/manufacturer drawings. Those dimensions have not yet been verified. The spider's published maximum torque provides a separate catalog-level capacity check, but it does not replace a detailed stress analysis of the hubs or verification of the shaft-to-hub connections.
+
+### 5. Coupler Selection Summary
+
+The updated design uses two iron L050 hubs and one Hytrel spider. The motor-side hub has a nominal 16 mm bore, and the leadscrew-side hub has a nominal 1/4 in bore. The selected spider has a published maximum torque of 50 in·lbf, compared with the required design torque of approximately 22.48 in·lbf.
+
+The catalog torque check is promising, but the coupling is not yet a confirmed drop-in fit because the motor-side hub is listed as keyed while the motor shaft is D-shaped. That shaft-retention detail must be resolved before the coupling is finalized.
+
+McMaster-Carr component links:
+
+- Motor-side hub: https://www.mcmaster.com/6408K11-6413K119/
+- Leadscrew-side hub: https://www.mcmaster.com/6408K92-6408K111/
+- Hytrel spider: https://www.mcmaster.com/6408K91/
+- Spider coupling catalog: https://www.mcmaster.com/products/spider-couplings/
+
+## Lessons Learned
+
+Throughout this design process, I learned the importance of translating the requirements of a mechanical system into practical component selections and design decisions. Selecting a motor required more than checking its rated torque; I also had to consider the required operating speed and verify that sufficient torque was available across the entire operating range.
+
+I also learned that designing mounting hardware requires careful attention to hole patterns, fastener dimensions, alignment, and load transfer. The motor already included a mounting bracket, so I designed an adapter plate to connect that bracket to the frame rather than unnecessarily redesigning the motor mount itself. I also recognized the importance of distinguishing between a clearance-hole diameter and the actual fastener diameter.
+
+For the coupler, I learned that compatibility involves more than matching shaft diameters. I needed to consider the hub bores, shaft-retention method, spider material, torque capacity, and allowable misalignment. The updated design uses two iron L050 hubs with a Hytrel spider. I also learned that a catalog bore diameter alone does not prove compatibility with a D-shaped motor shaft; the hub's keyed geometry and retention method must be checked against the actual shaft.
+
+Finally, I learned that engineering calculations must be tied to the actual geometry and assumptions of the design. A calculated minimum thickness is not automatically the same as a sensible manufacturing thickness. I chose a 1/8-inch adapter plate, recognizing that practical considerations such as rigidity, fabrication, and fastener engagement also matter when finalizing a design.
+
+## T Slot Connectors - Aidan Cadle
+
+In designing the frame, the top must be rigid enough to support the moment induced by the motors.
+The material of the bracket candidate, the 90 degree flush L bracket, is listed on Mcmaster as 6063 T6 Aluminum, which has a yield strength of 214 MPA, or 214 N/mm^2.
+The moment induced from each motor is known, with a stall torque of 2931 in-ozf, which converted into metric, is 20.7 N*m per motor.
+The interior width of the frame is 12in, add the column width, and the total length of the beam is known, at 15.15 in. Solving for the distance between the leadscrew hole and the face of the bar, the distance is 3.575 in, or 90.8mm.
+Since the beam is symmetric about the center, one side of the beam will be analyzed to simplify the analysis.
+Summing moments around the leadscrew hole, and treating the resultant reaction force as a single-point force at the furthest edge of beam, a force acting on the bracket can be calculated. 
+
+<img width="3929" height="4936" alt="A11 Work_page-0001" src="https://github.com/user-attachments/assets/770edb44-83c4-4f91-b499-37472d371e48" />
+
+The bracket is treated as a beam that is fixed on one end, and loaded at the other. Since the first mounting point on the bracket is 20mm away from the edge of the bracket, this is treated as the effective beam length. 
+The width of the bracket is doubled, as there is one bracket on each side of the column. 
+Using the appropriate equation for stress and section modulus, as found in the Machinery's Handbook, the maximum bending stress is determined to be 4.87 MPa.
+Since this is significantly lower than the yield strength of the material, 2 L brackets are more than adequate to support the top of the frame. 
+
+The link for the bracket can be found [here](https://www.mcmaster.com/3136N924/)
+
+
+## Frame FEA - Aidan Cadle
+
+The top of the frame was analyzed to ensure adequate strength and minimal deflection given the 2kN axial load and moments induced by the 2 chosen electric motors.
+The stall torque from the electric motors data sheet was used in order to design for the 'worst case' scenario.
+In an attempt to accurately conduct the FEA, the column brackets were mated to a double 40 series beam, as that is how our frame is assembled.
+
+<img width="1513" height="1007" alt="initial model" src="https://github.com/user-attachments/assets/35e8d7fb-5593-4589-a701-0d44ed5259f7" />
+
+The column brackets were set as fixed geometry, and center holes were placed where the leadscrews would go. The loading was centered around these holes. 
+
+<img width="1896" height="906" alt="initial load" src="https://github.com/user-attachments/assets/9516322e-2643-4331-a9b3-c35d871a64d9" />
+
+Then, the FEA was attempted. However, unlike previous assignments, the end results were not clear. The first pass was conducted on the coarse setting within Solidworks.
+
+### Initial Results
+<img width="1896" height="895" alt="assembly fea test" src="https://github.com/user-attachments/assets/9dc6ef62-87aa-4227-89dc-e4892c214e15" />
+
+Stress
+
+<img width="1851" height="748" alt="assemb disp" src="https://github.com/user-attachments/assets/5274ca81-42d9-4df6-8551-52769f7926d4" />
+
+Strain
+
+<img width="1749" height="725" alt="assemb FOS" src="https://github.com/user-attachments/assets/0314cbf7-c434-475e-bd64-e593155fd56b" />
+
+Factor of Safety
+
+As can be seen in both the stress and factor of safety images, there is almost no color variation, and yet the plot ranges all the way to 21 GPa, well outside of the yield strength of aluminum.
+Despite this, the deformation plot seemed to be accurate, showing gradual variation, and a peak displacement of only 0.0078 mm. 
+
+In an attempt to fix this, a finer mesh was used. However, despite multiple attempts, Solidworks would not run the same simulation on a finer mesh
+
+<img width="253" height="159" alt="fea failure" src="https://github.com/user-attachments/assets/522d5d37-0f36-4aba-970c-5d5309bbb27d" />
+
+One of many error codes.
+
+### Second Assembly Configuration
+
+Since motor mount plates were designed and now available as Solidworks parts, those were added to the assembly in an attempt to resolve this issue.
+The loads were applied through the motor mounts, as that is how the loads would be distributed on a physical frame.
+
+<img width="1126" height="679" alt="load" src="https://github.com/user-attachments/assets/a32800f1-f8ca-478d-bfb5-f5152bfeac0f" />
+
+Despite the computer's best efforts, often exceeding 77 degrees Celsius, this did not solve the problem. The stress and factor of safety again came out monochromatic, and the displacement plot appeared to be properly scaled. 
+
+<img width="1399" height="1026" alt="run 2 stress" src="https://github.com/user-attachments/assets/c3a09a4f-b1e2-4c34-99e3-aa0f6f98469f" />
+
+Stress
+
+<img width="974" height="854" alt="disp 2" src="https://github.com/user-attachments/assets/b105fcad-b126-4873-b796-ec24b47e27e6" />
+
+Displacement
+
+<img width="923" height="787" alt="run 2 fos" src="https://github.com/user-attachments/assets/ef921a3f-ead0-45fc-8688-d00563f25cca" />
+
+Factor of Safety
+
+In addition to adding the motor mounts, the scale of the charts were adjusted in an attempt to view a rough idea of the maximum stress. The upper limit was set to that of the yield strength of aluminum, 275 MPa. Despite this, the charts remained monochromatic. 
+
+A finer mesh was used, however the computer took over 10 minutes to complete it, and the results were not significantly different or more conclusive than the coarser mesh. 
+
+### Final Assembly Config
+
+In a final attempt to 'correctly' conduct the FEA, the column L brackets were removed, but the motor mounts remained. In this configuration, the ends of the beams were treated as fixed geometry, but the loads were still applied through the motor mounts. 
+
+<img width="1494" height="639" alt="fea 3 fixtures" src="https://github.com/user-attachments/assets/970bdc74-9c3b-4730-b666-b2002dd5109e" />
+
+The model was meshed on coarse, and the FEA simulation was run.
+
+Worth noting, for every FEA conducted for this assignment, Solidworks always had a warning pop-up saying the mesh contained distorted elements. It did not matter the mesh density, although the number was generally higher the finer the mesh.
+
+Despite the new constraints, the results did not change.
+
+<img width="954" height="815" alt="stress 3" src="https://github.com/user-attachments/assets/7682a2e5-3b67-4408-9a6b-fef135e2951f" />
+
+Stress
+
+<img width="961" height="684" alt="disp 3" src="https://github.com/user-attachments/assets/a3b7a37a-64ce-4d45-a129-12345c29964e" />
+
+Displacement
+
+<img width="946" height="747" alt="fos 3" src="https://github.com/user-attachments/assets/6dc3dd94-c7df-400d-b377-eabed9693d21" />
+
+Factor of Safety
+
+The stress plots appear to be inconclusive, but the displacement plots tell another story. They show minimal deflection in every test, suggesting that the beam is indeed rigid enough to support the given loading. 
+
+### Final FEA attempt
+
+In a final attempt to gain usable data, FEA was conducted on the beam only. 
+The ends were set as fixed geometry, and the force and torque were applied around vertical walls of the clearance holes for the lead screw. 
+
+<img width="1690" height="748" alt="part load and fixture" src="https://github.com/user-attachments/assets/eea4604a-a9a6-4575-9abb-d870cb1e797c" />
+
+The mesh was set to coarse, and the simulation was run.
+
+Finally, the simulation resulted in usable results. 
+
+<img width="1343" height="604" alt="stress" src="https://github.com/user-attachments/assets/4cbf3bea-dc82-489a-87c7-e621e50480d8" />
+
+Stress. Peak 116 MPa
+
+<img width="921" height="785" alt="disp 4 1" src="https://github.com/user-attachments/assets/5d3477e2-33c1-4c7e-b224-1d8f16f87094" />
+
+Displacement. Peak 0.042 mm
+
+<img width="860" height="744" alt="fos 4 1" src="https://github.com/user-attachments/assets/7bfd108c-3cc7-4b0e-88b1-1f793c86c582" />
+
+Factor of Safety. Minimum 2.4
+
+All plots now show a gradient, and appear to show correct stresses and factors of safety. Now, the mesh was refined in order to gather more data, and to look for possible convergence. 
+
+According to Solidworks, for both the coarse and medium fine mesh, there were no distorted elements. This is significantly different than the previous attempts.
+
+<img width="1408" height="772" alt="stress 4 2" src="https://github.com/user-attachments/assets/624aaf54-e8e6-459a-bc28-549fecbecbe2" />
+
+Stress. Peak 120 MPa
+
+<img width="885" height="749" alt="displacement 4 2" src="https://github.com/user-attachments/assets/f9c8475b-8f38-46aa-b097-b790300c0b3e" />
+
+Displacement. Peak 0.042mm
+
+<img width="845" height="690" alt="fos 4 2" src="https://github.com/user-attachments/assets/dd7f1997-425c-49da-af73-44d4b0366bf7" />
+
+Factor of Safety. Minimum 2.3
+
+These values converge within 4.2% of one another, so further refinements are not necessary. 
+
+Although the factor of safety is not 4, the beam itself appears to be adequate to support the loading scenario for the frame. There is not significant deflection, there appears to be no torsion, and the stress is less than half of the yield strength. If Solidworks could properly analyze the assembly, further modifications to the final product may not be necessary. Additionally, the areas experiencing the highest stress are the surfaces of the clearance hole, which in a real application, would not see the direct axial force or moment induced by the motors. 
+
+### Possible Refinements
+
+For refinements, the frame may not need double wide framing, and that would drastically cut down on both weight and material cost. 
+
+The beam was loaded and fixed in the same manner as the previous beam.
+
+Initially, the part was meshed at a coarse setting. However, after many failed attempts, the mesh size was increased to medium, and the mesh quality was reduced to draft, at which point it successfully meshed.
+
+The results were similar to the previous test, although stress distribution changed.
+
+<img width="639" height="1013" alt="stress 5 1" src="https://github.com/user-attachments/assets/5e447413-988d-4f29-8070-90a996c966a0" />
+
+Stress. Peak 96 MPa
+
+<img width="622" height="708" alt="disp 5 1" src="https://github.com/user-attachments/assets/2f094ea5-48aa-439a-a673-2190e47da90e" />
+
+Displacement. Peak 0.32 mm
+
+<img width="632" height="667" alt="fos 5 1" src="https://github.com/user-attachments/assets/94df4ca8-b507-4d71-8b33-77763e345843" />
+
+Factor of Safety. Minimum 2.88
+
+Initially, these appear to be better results than the unrefined pass, and save almost 50% of the weight. However, to verify the results, the mesh must be refined, and the analysis re-ran. 
+
+The mesh size was then increased to medium fine (~75% towards fine on the slider).
+
+<img width="1554" height="923" alt="stress 5 2" src="https://github.com/user-attachments/assets/322f5f2d-7ad8-41a0-9960-7bc06a319fef" />
+
+Stress. Peak 104 MPa
+
+<img width="1441" height="831" alt="disp 5 2" src="https://github.com/user-attachments/assets/c5da71db-6295-4022-a340-56acc913c987" />
+
+Displacement. Peak 0.32 mm
+
+<img width="1578" height="810" alt="fos 5 2" src="https://github.com/user-attachments/assets/f8b5d464-494a-4b2f-bfd0-3d7c79303b5f" />
+
+Factor of Safety, Minimum 2.66
+
+These results converge within 10%, with a maximum difference of 8.3%. The results of the finer mesh are used for analysis.
+
+Since the results converge, conclusions can be drawn regarding the proposed change. While stress remains high around the leadscrew clearance hole, the stress has increased near the ends of the beam, showing how the stress distribution has changed. The displacement and factor of safety plots do not show a significant change in the distribution. Overall, the single wide frame appears to be a better solution for this application, although it would require a redesign of the motor mount. 
 
 ## Lessons Learned - Aidan Cadle
-In completing this assignment, there were many valuable lessons that I began to realize. For one, it is important to trust in your teammates decisions, and know that you can depend on them. This is a drastic change compared to my experience in ENGR 1300, where half of my group failed the class and did not contribute once learning that they could not pass. Additionally, I gained knowledge about additional mkdocs formatting, and realized I had not even scratched the surface of what was possible. In analyzing the beams, I realized that beams should almost always be treated as simply supported, as opposed to fixed. Including document formatting, I spent about 9 hours on my portion of the assignment. 
+I learned that using Solidworks for assembly analysis is not ideal, and that I need more information about assemblies in order to adequately use the function. Additionally, I was able to find 'bandaid' workarounds, showcasing the problem solving required of engineers at any given moment. This portion of the assignment took around 6 hours.
 
+# FEA of Vertical Components of Frame, Floating Bearing Mount Design, CAD Assembly, Drawings - Jack Brandon
 
-## Tabulating Costs - Everyone
+## FEA of Vertical Components of Frame
 
-| Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | 2 | Toggle Clamp Holding Screw | $7.09 | $14.18 | [McMaster-Carr](https://www.mcmaster.com/5147A28/) |
-| 2 | 1 | T-Slot Framing System: Rectangle, 40 Series, Smooth, Double, 3 m Nom Lg, 80 mm x 40 mm, 6 Slots, Std | $245.87 | $245.87 | [Grainger](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48) |
-| 3 | 2 | Acme Lead Screw, 1/4 – 20, RH, Steel | $27.96 each | $55.92 | 1018 Carbon Steel Precision Acme Lead Screw, Right Hand, 1/4"-20 Thread Size, 18" Long \| McMaster-Carr |
-| 4 | 2 | Precision Acme Externally Threaded Nut (360 Brass, 1/4"-20 Thread Size) | $58.86 each | $117.72 | [McMaster-Carr](https://www.mcmaster.com/95072A171/) |
-| 5 | 2 | Precision Acme Flange (Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size) | $61.78 each | $123.56 | Precision Acme Flange, Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size \| McMaster-Carr |
-| 6 | 8 | 18-8 Stainless Steel Pan Head Phillips Screw, 1/4"-20 Thread, 1/4" Long | $8.94 per pack of 50 / $0.18 per piece | $1.44 | [McMaster-Carr](https://www.mcmaster.com/91772A533/) |
-| 7 | 1 | Aluminum Billet (2” x 2” x 1’) | $55.83 | $55.83 | [McMaster-Carr](https://www.mcmaster.com/8975K941-8975K943/) |
-| | | | **Total Cost** | **$614.52** | |
+The first task I had was to run an FEA simulation on the frame by applying the transverse and axial loads to the motor mounts. In order to prepare the assembly for this evaluation, I first checked that all of the components were properly aligned and constrained in the design. Moving to the simulation, I did the same by using the "automatic contacts" function in Fusion which ensured that all of the components were constrained to each other via the L-brackets.
 
-## Specimen Gripper & Parametric Modeling - Jack Brandon
+**Model Setup**
 
-## Objective: 
+<img width="1305" height="683" alt="Screenshot 2026-11-18 182433" src="https://github.com/user-attachments/assets/0c59dd41-489e-4fea-90ba-4861e1c36793" />
 
-Provide robust specimen gripping, simple calibration provisions (mechanical), and safe, ergonomic operation. 
+Here, I applied the fixed constraints to the "feet" of the tester to ensure it was on a stable base.
 
-## Analyze: 
+<img width="1242" height="516" alt="Screenshot 2026-11-18 182810" src="https://github.com/user-attachments/assets/050fab5a-a315-4408-8881-9357c689b8ee" />
 
-I began the design process by visualizing the simplest and most effective way to constrain specimens of different shapes. The idea that came to mind was a c-clamp/vise style mechanism to hold the specimen in place during testing. This mechanism would allow for adjustable clamping location and force for different size and shape specimens as well as ergonomic handles to allow for necessary torque to be applied to the clamp bolts. Furthemore, the gripper needed to be modular so that it could be threaded to the load cell as well as the crosshead to hold the top and bottom of the specimen.
+The 1000 N compressive axial loads (2 kN total)  and 20.7 N-M torque/moments were applied to the individual motor mounts. 
 
-For design inspiration, I researched various tensile testers to understand how the specimen was typically constrained.
+<img width="547" height="776" alt="Screenshot 2026-11-18 182905" src="https://github.com/user-attachments/assets/beeb3965-f14b-42ca-beb3-ebf7d620650c" />
 
-Examples:
+All four of the independent loads applied to the two motor mounts.
 
-<img width="332" height="325" alt="image" src="https://github.com/user-attachments/assets/8cbe5982-7bc0-4251-abbc-b9d25a2c207e" />
+**Meshing and Verification 1**
 
-<img width="362" height="485" alt="image" src="https://github.com/user-attachments/assets/2c4ed771-0fbe-43cc-aee3-fa086f41bf64" />
+<img width="1025" height="511" alt="Screenshot 2026-11-18 205548" src="https://github.com/user-attachments/assets/ee9f9741-2d8b-4f87-aa45-e3d5dea9b274" />
 
-## Specimen Gripper Model - Jack Brandon
+The mesh size selected for the first pass was the maximum (10%).
 
-<img width="862" height="437" alt="image" src="https://github.com/user-attachments/assets/b0835863-8ef2-4dd8-947a-6a6e2e039aa2" />
+<img width="1917" height="910" alt="Screenshot 2026-11-18 201819" src="https://github.com/user-attachments/assets/936db4fd-80de-4515-be99-6802784c7c22" />
 
-This is the model of the specimen gripper design. First, I designed the C-shaped body to hold the two screws. I ensured that the threaded adaptor on top would work with the load cell provided and then communicated with Aidan to ensure that the crosshead would share that same thread size therefore allowing the same subassembly to be used on top and bottom of the tensile tester. I sourced toggle clamp holding screws from McMaster carr as I didn’t see a need to design something similar from scratch. Lastly, I Designed ergonomic levers to fit onto the screws to allow for the torque needed to grip the specimen with 2kN of force applied.
+<img width="1917" height="887" alt="Screenshot 2026-11-18 202031" src="https://github.com/user-attachments/assets/72cf205a-8959-459f-8c1c-4fc26dde7560" />
 
-Download: https://a360.co/4jaEOpG
+<img width="1917" height="888" alt="Screenshot 2026-11-18 202337" src="https://github.com/user-attachments/assets/c5d43682-f177-4102-9d22-40078bda051e" />
 
-## Assembly Model - Jack Brandon
+**Meshing and Verification 2**
 
-<img width="697" height="786" alt="image" src="https://github.com/user-attachments/assets/b1521681-3249-4452-9339-0d8103d485e8" />
+<img width="1027" height="510" alt="Screenshot 2026-11-18 205457" src="https://github.com/user-attachments/assets/31cb88a4-8223-4652-abf8-b05f275c8489" />
 
-Example given in assignment.
+The next pass was performed with a medium (~6%) mesh size.
 
-<img width="632" height="726" alt="image" src="https://github.com/user-attachments/assets/3d4067fa-fb86-430c-afe1-e34021ff5698" />
+<img width="1917" height="890" alt="Screenshot 2026-11-18 204726" src="https://github.com/user-attachments/assets/bb7acacc-745b-4840-b976-7b2078eb7f6a" />
 
-The complete assembly model with Crosshead, Leadscrews, Nuts/Flanges and Frame.
+<img width="1917" height="946" alt="Screenshot 2026-11-18 204756" src="https://github.com/user-attachments/assets/af5fdc88-8a58-4daf-b238-d305275eccd3" />
 
-Download: https://a360.co/4sRWwSe
+<img width="1917" height="917" alt="Screenshot 2026-11-18 204827" src="https://github.com/user-attachments/assets/893e549f-d1c5-4d8e-9cc7-b8a7bc44ff2f" />
 
-<img width="1501" height="697" alt="image" src="https://github.com/user-attachments/assets/c5d8b3f2-f954-4cd2-bf67-7e574f388ed0" />
+**Meshing and Verification 3**
 
-The parameters used for the assembly were the T-slot stock height (h) and width (w). These parameters were used to simplify the dimensioning of the length of the bars in the frame assembly. 
+<img width="1030" height="512" alt="Screenshot 2026-11-18 220331" src="https://github.com/user-attachments/assets/d8f23c09-456d-4b7f-b905-b0f68ff62d9f" />
 
-## Crosshead Drawing - Jack Brandon
+Finally, the last pass was performed with the finest mesh (1%).
 
-<img width="1012" height="657" alt="image" src="https://github.com/user-attachments/assets/20c3c36a-dbd5-4855-8fd4-9993e88dd21e" />
+<img width="1917" height="917" alt="Screenshot 2026-11-18 215853" src="https://github.com/user-attachments/assets/8da3843b-9ee1-43e3-9455-8bbf6382ddcb" />
 
-## Lessons Learned - Jack Brandon
+<img width="1917" height="945" alt="Screenshot 2026-11-18 215930" src="https://github.com/user-attachments/assets/1ca854a8-a12d-4f1d-b9f2-28759349635d" />
 
-My main task in this project was to design and parametrically model the specimen gripper and tensile tester assembly. This entailed many hours spent brainstorming, designing, and making adjustments to the gripper sub-assembly and finally the main assembly. The main challenge was mostly with the T-slot stock. It involved the importing of the T-slot stock (which only came in a length of 3 meters), converting it to inches, extrude cutting to a more appropriate length, and figuring out how to copy the new base piece to create new pieces that would be different lengths. This involved some parametric technique in order to ensure the pieces lined up/were the correct length for the frame. I ran into many issues with parts not wanting to move or be constrained after being copied. Luckily I discovered the “copy new” function in Fusion which finally allowed me to do what was needed. Still, aligning and constraining the parts into the final assembly was a difficult process to say the least and it took several iterations to finally get it right. I spent a total of 8 hours doing my task and another hour formatting and compiling the other parts from the other group members into my portfolio. 
+<img width="1917" height="943" alt="Screenshot 2026-11-18 215942" src="https://github.com/user-attachments/assets/d565b849-7006-4a21-9fed-57ea83fa28bf" />
+
+**Results**
+
+| Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
+|---|---|---|---|---|
+| 1 | Coarse | 12.5 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 31.9 |
+| 2 | Medium | 10.8 MPa (same locations) | 0.001 mm | 32.6 |
+| 3 | Fine | 15.3 MPa (same locations) | 0.001 mm | 13.6 |
+
+As can be seen from the table, the results never converged to a 2% difference for the von mises stress (14% difference between coarse and medium) and so the fine mesh was used.
+
+**Optimization Pass**
+
+<img width="566" height="682" alt="Screenshot 2026-11-18 224333" src="https://github.com/user-attachments/assets/82f771c0-840d-4f6e-b394-7cc1d8f953f4" />
+
+Although the columns were already well above the required safety factor of 4, I wanted to see how much stronger they and the frame could be made. In order to do this I added plates to the front and back of the columns to increase their rigidity. These in effect increased the cross sectional area of the columns, therefore increasing their stiffness.
+
+<img width="1917" height="945" alt="Screenshot 2026-11-18 230428" src="https://github.com/user-attachments/assets/fec7fa57-21b3-4d73-8c50-867a1e54c57a" />
+
+<img width="1917" height="946" alt="Screenshot 2026-11-18 230454" src="https://github.com/user-attachments/assets/d518eead-932e-4ea9-9c55-252ca959cb95" />
+
+<img width="1917" height="912" alt="Screenshot 2026-11-18 230511" src="https://github.com/user-attachments/assets/dec81d0d-51a7-468a-8378-6dbc7748baac" />
+
+| Iteration | Mesh Size | Max Von Mises Stress & Location | Max Vertical Deflection at Grip Line | Factor of Safety |
+|---|---|---|---|---|
+| Optimization | Fine | 14.9 MPa (top and bottom of columns and center of top horizontal beam) | 0.001 mm | 13.9 |
+
+As can be seen from the table above, the optimization performed as expected. The maximum stress decreased slightly from 15.3 to 14.9 MPa. The factor of safety increased from 13.6 to 13.9 and the maximum z displacement stayed the same. Overall, the optimization would likely not be worth it due to the increase in mass and cost for a marginal increase in strength.
+
+## Floating Bearing Mount Design
+
+The second task I had was to design the floating bearing mount. For this, I figured that at the very least a plate would be necessary a bearing system to be attached to the T-slot. I considered adding supplier bearings but since that was not detailed in the instructions for the assignment, I simply made the plate with the appropriate RC3 class fit for the lead screw and correct size/spacing for the bolts.
+
+<img width="783" height="618" alt="Screenshot 2026-11-17 183607" src="https://github.com/user-attachments/assets/094c22cb-5b23-4dc9-8f89-0d67d34cbd01" />
+
+The sketch for the bearing mount. The lead screw hole dimension is such that there is a 0.001" total clearance between the screw and hole, given the 1/4" nominal lead screw diameter. This falls within the standard specifications of an RC3 fit. Also, worth mentioning, is that the actual size of the lead screw can and likely will vary slightly, is a threaded surface, and needs to be able to rotate freely, so the hole was made larger to account for these factors. Typically, the dimensions would be between 0.2491 - 0.2495" and 0.25 - 0.2506" for the shaft and hole diameters respectively.
+
+The holes for the 1/4-20 screws to be used to fasten the plate were sized 0.266" as per the recommendation for a clearance hole.
+
+<img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
+
+Next, the sketch profile was extruded to 0.5". This height was chosen to provide strength to the bearing mount without causing potential unnecessary friction between the hole and lead screw in the case that the two touch while the tester is running.
+
+<img width="668" height="480" alt="Screenshot 2026-11-18 093328" src="https://github.com/user-attachments/assets/960f19b4-74ea-4d1b-9ec6-0105b3ab1bd2" />
+
+The completed bearing mount.
+
+<img width="596" height="687" alt="Screenshot 2026-11-18 174211" src="https://github.com/user-attachments/assets/22d2c399-5a86-4192-b782-0c85d2260757" />
+
+The bearing mounts installed on the top and bottom of the tensile tester assembly.
+
+**CAD File Downloads**
+
+Frame Only: https://a360.co/4A5ueqb
+
+Full Assembly: https://a360.co/4sRWwSe
+
+## Lessons Learned
+
+This project revealed two crucial aspects of a team engineering effort. First, was the importance of communication. Due to the way that our team's tasks were divided, some of us had overlapping tasks. For example, Aidan and I were both doing our own FEA on two separate parts of the frame. Because of this, we each arrived at different bracket solutions in order to complete the assembly and prepare it for verification. I later realized that we had different brackets (Grainger vs McMaster Carr) being used to connect the top horizontal beam to the vertical columns. This caused a delay in getting the FEA verifications completed as one of our assemblies had to be changed to maintain consistent brackets. Second, another issue occurred when the tester assembly file was not shared early enough in the process. This created issues with the motor mount and coupling designs. Once the file was shared, the designs were updated accordingly. The lesson was that these problems could have been avoided if communication was taken more seriously by myself.
+
+Second, this project highlighted the importance of critical thinking when running an FEA. In this instance, the supplied brackets came with mounting hardware (bolts and t-slot parts) which created many extra small components in the frame. When it came time to run the first FEA simulation, the mesh failed. It took some time to figure out why but after going through the error messages, it became clear that the assembly was not constrained and there were too many complex surfaces for the mesh. These two issues were solved by using the automatic contacts function to fix all the components together as an assembly as designed and by removing the unnecessary hardware from the L-brackets. Finally the mesh was able to be produced and the FEA could be run.
+
+## Drawings
+
+<img width="1115" height="722" alt="Screenshot 2026-11-18 114536" src="https://github.com/user-attachments/assets/63657c34-4b15-459c-8172-d8a49d167427" />
+
+<img width="940" height="610" alt="Screenshot 2026-11-18 232600" src="https://github.com/user-attachments/assets/1e8ac8c8-b1a0-4a4c-a998-798a18da9e7a" />
+
+<img width="1120" height="728" alt="Screenshot 2026-11-18 233740" src="https://github.com/user-attachments/assets/f6d7684f-a023-410c-878e-e484b8c71ca3" />
+
+## Tabulating Costs - Group Effort, Aidan Formatting
+| Item Number | Quantity | Name | Cost per Item | Total Cost | Link |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | 2 | Toggle Clamp Holding Screw | $7.09 | $14.18 | [link](https://www.mcmaster.com/5147A28/) | 
+| 2 | 1 | T-Slot Framing System: Rectangle, 40 Series, Smooth, Double, 3 m Nom Lg, 80 mm x 40 mm, 6 Slots, Std | $245.87 | $245.87 | [link](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48) | 
+| 3 | 2 | Acme Lead Screw, 1/4 – 20, RH, Steel | $27.96 | $55.92 | [link](https://www.mcmaster.com/99030A984/) | 
+| 4 | 2 | Precision Acme Externally Threaded Nut 360 Brass, 1/4"-20 Thread Size | $58.86 | $117.72 | [link](https://www.mcmaster.com/95072A171/) |
+| 5 | 2 | Precision Acme Flange Black-Oxide 1117 Carbon Steel, 9/16"-18 Thread Size | $61.78 | $123.56 | [link](https://www.mcmaster.com/1329K101/) |
+| 6 | 8 | 18-8 Stainless Steel Pan Head Phillips Screw, 1/4"-20 Thread, 1/4" Long | $0.18 | $1.44 | [link](https://www.mcmaster.com/91772A533/) |
+| 7 | 1 | 2"x 2"x 1' 6061 Aluminum Billet | $55.83 | $55.83 | [link](https://www.mcmaster.com/9008K53-9008K531/) |
+| 8 | 2 | McMaster-Carr 4801N14 NEMA 23 Planetary Gearmotor | $677.86  | $1355.72 | [link](https://www.mcmaster.com/4801N14/) |
+| 9 | 2 | (16mm bore) Flexible Shaft Coupling with Set Screw, 1-23/32" Overall Length, Keyed Shaft | $9.06 | $18.12 | [link](https://www.mcmaster.com/6408K11-6413K119/) |
+| 10 | 2 | (1/4” bore)Flexible Shaft Coupling with Set Screw, 1-23/32" Overall Length, Round Shaft | $9.84 | $19.68 | [link](https://www.mcmaster.com/6408K92-6408K111/) | 
+| 11 | 2 | 18000 rpm Hytrel Rubber Spider for 1-5/64" OD Flexible Shaft Coupling | $18.18  $36.36 | [link](https://www.mcmaster.com/6408K91/) |
+| 12 | 2 | Flush 90 Degree Angle Bracket for 40mm High Rail T-Slotted Framing | $22.20 | $44.40 | [link](https://www.mcmaster.com/3136N924/) |
+| 13 | 4 | Inside Corner Bracket: Wide Inside-Corner Bracket, 40 Series, 40 mm x 76 mm x 40 mm, 4 Holes, Silver | $10.92 | $43.68 | [link](https://www.grainger.com/product/80-20-Inside-Corner-Bracket-Wide-5JRU7) | 
+| 14 | 2 | Custom AISI 1018 Cold-Drawn Steel Motor Adapter Plates (2.90 in × 2.90 in × 1.72 in) | Custom | Custom | Custom fabricated | 
+| 15 | 31 | Design Labor, Total | $35.00/hour | $1085 | N/A | 
+|  |  |  | Total Cost | $3,217.48  |  |
+
