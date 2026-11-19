@@ -703,6 +703,10 @@ As can be seen from the table, the results never converged to a 2% difference fo
 
 **Optimization Pass**
 
+<img width="566" height="682" alt="Screenshot 2026-11-18 224333" src="https://github.com/user-attachments/assets/82f771c0-840d-4f6e-b394-7cc1d8f953f4" />
+
+Although the columns were already well above the required safety factor of 4, I wanted to see how much stronger they and the frame could be made. In order to do this I added plates to the front and back of the columns to increase their rigidity. These will in effect increase the cross sectional area of the columns, therefore increasing their stiffness.
+
 
 
 ## Floating Bearing Mount Design
@@ -726,6 +730,8 @@ The completed bearing mount.
 <img width="596" height="687" alt="Screenshot 2026-11-18 174211" src="https://github.com/user-attachments/assets/22d2c399-5a86-4192-b782-0c85d2260757" />
 
 The bearing mounts installed on the top and bottom of the tensile tester assembly.
+
+Download Link: https://a360.co/4A5ueqb
 
 ## Lessons Learned
 
