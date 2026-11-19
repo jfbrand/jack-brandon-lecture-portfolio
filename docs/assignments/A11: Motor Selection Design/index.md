@@ -631,7 +631,7 @@ For the coupler, I learned that compatibility involves more than matching shaft 
 Finally, I learned that engineering calculations must be tied to the actual geometry and assumptions of the design. A calculated minimum thickness is not automatically the same as a sensible manufacturing thickness. I chose a 1/8-inch adapter plate, recognizing that practical considerations such as rigidity, fabrication, and fastener engagement also matter when finalizing a design.
 
 
-# FEA of Frame and Floating Bearing Mount Design - Jack Brandon
+# FEA of Vertical Components of Frame, Floating Bearing Mount Design, CAD Assembly, Drawings - Jack Brandon
 
 ## FEA of Vertical Components of Frame
 
