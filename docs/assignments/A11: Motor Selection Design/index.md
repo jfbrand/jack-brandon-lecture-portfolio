@@ -689,6 +689,8 @@ The second task I had was to design the floating bearing mount. For this, I figu
 
 The sketch for the bearing mount. The lead screw hole dimension is such that there is a 0.001" total clearance between the screw and hole, given the 1/4" nominal lead screw diameter. This falls within the standard specifications of an RC3 fit. Also, worth mentioning, is that the actual size of the lead screw can and likely will vary slightly, is a threaded surface, and needs to be able to rotate freely, so the hole was made larger to account for these factors. Typically, the dimensions would be between 0.2491 - 0.2495" and 0.25 - 0.2506" for the shaft and hole diameters respectively.
 
+The holes for the 1/4-20 screws to be used to fasten the plate were sized 0.266" as per the recommendation for a clearance hole.
+
 <img width="822" height="562" alt="Screenshot 2026-11-17 195318" src="https://github.com/user-attachments/assets/3c87c278-ba4c-492c-af16-17895049f382" />
 
 Next, the sketch profile was extruded to 0.5". This height was chosen to provide strength to the bearing mount without causing potential unnecessary friction between the hole and lead screw in the case that the two touch while the tester is running.
