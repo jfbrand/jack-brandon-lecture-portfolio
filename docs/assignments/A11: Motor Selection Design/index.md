@@ -970,7 +970,7 @@ Second, this project highlighted the importance of critical thinking when runnin
 | 8 | 2 | McMaster-Carr 4801N14 NEMA 23 Planetary Gearmotor | $677.86  | $1355.72 | [link](https://www.mcmaster.com/4801N14/) |
 | 9 | 2 | (16mm bore) Flexible Shaft Coupling with Set Screw, 1-23/32" Overall Length, Keyed Shaft | $9.06 | $18.12 | [link](https://www.mcmaster.com/6408K11-6413K119/) |
 | 10 | 2 | (1/4” bore)Flexible Shaft Coupling with Set Screw, 1-23/32" Overall Length, Round Shaft | $9.84 | $19.68 | [link](https://www.mcmaster.com/6408K92-6408K111/) | 
-| 11 | 2 | 18000 rpm Hytrel Rubber Spider for 1-5/64" OD Flexible Shaft Coupling | $18.18  $36.36 | [link](https://www.mcmaster.com/6408K91/) |
+| 11 | 2 | 18000 rpm Hytrel Rubber Spider for 1-5/64" OD Flexible Shaft Coupling | $18.18 | $36.36 | [link](https://www.mcmaster.com/6408K91/) |
 | 12 | 2 | Flush 90 Degree Angle Bracket for 40mm High Rail T-Slotted Framing | $22.20 | $44.40 | [link](https://www.mcmaster.com/3136N924/) |
 | 13 | 4 | Inside Corner Bracket: Wide Inside-Corner Bracket, 40 Series, 40 mm x 76 mm x 40 mm, 4 Holes, Silver | $10.92 | $43.68 | [link](https://www.grainger.com/product/80-20-Inside-Corner-Bracket-Wide-5JRU7) | 
 | 14 | 2 | Custom AISI 1018 Cold-Drawn Steel Motor Adapter Plates (2.90 in × 2.90 in × 1.72 in) | Custom | Custom | Custom fabricated | 
